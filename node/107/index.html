@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/107 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:31:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Jabber Server bug | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-107" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a></div>        <h2 class="page-title">Jabber Server bug</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-107" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por marcansoft el 19 October, 2003 - 09:37.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_3 first last"><a href="../../taxonomy/term/3/" rel="tag" title="">Servidores</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>We have identified a bug in the server concerning <code>&lt;</code> and <code>&gt;</code> characters in nicks in MUC chatrooms and normal conference chatrooms. The behaviour is not identical, but it shares a common base. </p>
+<p>The examples here are for a MUC chatroom, <code>chatroom@muc.jabber.org</code></p>
+<p>Here, one user (<code>user1@jabber.org</code>) enters the chatroom with nick <code>|&lt;USER1&gt;|</code><br />
+<code><br />
+OUT(1,user1@jabber.org/tkabber):<br />
+&lt;presence to='chatroom@muc.jabber.org/|&amp;lt;USER1&amp;gt;|'&gt;<br />
+&nbsp;&nbsp;&lt;x xmlns='http://jabber.org/protocol/muc'/&gt;<br />
+&lt;/presence&gt;<br />
+</code><br />
+As we can see, the client correctly encodes and sends the nick.<br />
+<code><br />
+IN(1,user1@jabber.org/tkabber):<br />
+&lt;presence from='chatroom@muc.jabber.org/|&amp;amp;lt;USER1&amp;gt;|'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to='user1@jabber.org/tkabber'&gt;<br />
+&nbsp;&nbsp;&lt;x xmlns='http://jabber.org/protocol/muc#user'&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;item role='participant'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;affiliation='none'/&gt;<br />
+&nbsp;&nbsp;&lt;/x&gt;<br />
+&lt;/presence&gt;<br />
+</code><br />
+Here problems start. The nick has been either half-decoded or decoded and half-reencoded, or something of the like, before being recoded again for transmission back to the client. The <code>&amp;amp;lt;</code> is the result of encoding again <code>&amp;lt;</code> but <code>&amp;gt;</code> remains unchanged. </p>
+<p>Now the nick seems to be internally stored inside the server as <code>|&amp;lt;USER1&gt;|</code> which leads to everything ending up with that nick (but everything is re-encoded for transmission, so really it just causes annoyance because of the nick change, and some artifacts due to the client not knowing that it has changed, mainly that the client thinks that someone else is talking.) </p>
+<p>The rest of the conversation is carried out normally, but everybody in the chatroom sees <code>|&amp;lt;USER1&gt;|</code></p>
+<p>A second user (<code>user2@jabber.org</code>) tries to enter the chatroom. </p>
+<p>Now here's the really annoying problem: </p>
+<p>The user expands the jabber browser item for the chatroom and the xml stream gets corrupted and restarts. Here's why:<br />
+<code><br />
+OUT(1,user2@jabber.org/tkabber):<br />
+&lt;iq id='7'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;to='chatroom@muc.jabber.org'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;type='get'&gt;<br />
+&nbsp;&nbsp;&lt;item xmlns='jabber:iq:browse'/&gt;<br />
+&lt;/iq&gt;'<br />
+</code><br />
+The client asks for the channel browse.<br />
+<code><br />
+IN(1,user2@jabber.org/tkabber):<br />
+&lt;iq from='jabberes@muc.jabber.org'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id='7'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;to='user2@jabber.org/tkabber'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type='result'&gt;<br />
+&nbsp;&nbsp;&lt;item version='0.5.3-20031015a'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name='chatroom'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns='jabber:iq:browse'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type='public'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;category='conference'&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;item jid='jabberes@muc.jabber.org/Moderator'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name='Moderator'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type='client'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;category='moderator'/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;item jid='jabberes@muc.jabber.org/|&amp;lt;USER1&gt;|'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name='|&amp;lt;USER1&gt;|'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type='client'<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;category='user'/&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;ns&gt;http://jabber.org/protocol/muc&lt;/ns&gt;<br />
+&nbsp;&nbsp;&lt;/item&gt;<br />
+&lt;/iq&gt;<br />
+</code><br />
+The server responds with user-list. Now here the user is transmitted literally as <code>|&amp;lt;USER1&gt;|</code> and the <code>&gt;</code> confuses the XML parser. </p>
+<p>I think the solution(s) would be to remove that extra semi-enconding step at the beginning that is obviously wrong, and to make sure everything is encoded before output (the userlist misses that step.) </p>
+<p>BTW, this might have something to do with the fact that in this context this: </p>
+<p><code>&lt;tag&gt; &amp;lt; &gt; &lt;/tag&gt;</code></p>
+<p>is valid since the <code>&gt;</code> doesn't close any tag, so it isn't encoded, but the <code>&lt;</code> would seem to open one, so that's why it is encoded. Since in the userlist the names would be inside a parameter, not a tag, it would need to be the opposite: </p>
+<p><code>&lt;tag name='&lt; &amp;gt;' /&gt;</code></p>
+<p>so as to not confuse the parser. </p>
+<p>IMHO everything should be encoded e.g. <code>&lt;tag&gt; &amp;lt; &amp;gt; &lt;/tag&gt;</code> so as to avoid confusion.</p>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><a id="comment-65"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-65" class="active">please check on conference.jabber.ru</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  19 October, 2003 - 16:58.  </div>
+
+  <div class="content">
+    <p>&lt;aleksey&gt;<span class='body'>looks like bug of conference component</span><br /><br />
+&lt;aleksey&gt;<span class='body'>try on conference.jabber.ru</span><br /><br />
+&lt;aleksey&gt;<span class='body'>it seems conference.jabber.ru work fine, so this is bug of conference-v0.4 and mu-c</span><br /><br />
+&lt;aleksey&gt;<span class='body'>or maybe in jabberd14 library</span><br /><br />
+&lt;badlop&gt;<span class='body'>does jabber.ru use ejabberd?</span><br /><br />
+&lt;aleksey&gt;<span class='body'>conference.jabber.ru</span><br /><br />
+&lt;aleksey&gt;<span class='body'>jabber.ru will use it soon :)</span><br /></p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-68"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-68" class="active">Jabber.ru is the same</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por marcansoft el  20 October, 2003 - 15:23.  </div>
+
+  <div class="content">
+    <p>It still doesn't work.</p>
+<p>conference.jabber.ru is a MUC and behaves exactly like jabber.org MUCs. </p>
+<p>MUCs let you enter with a &lt;&gt; nick, and no one else can enter <b>after</b> you, plus any operation regarding a change of nick hangs the client, plus the nick shows that ugly <code>&lt;</code> .</p>
+<p>Normal chatrooms just hang the client when you try to enter with a &lt;&gt; nick.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/107 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:31:46 GMT -->
+</html>

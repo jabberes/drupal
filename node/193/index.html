@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/193 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:27:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Seguridad en la comunicación entre contactos: GnuPG | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="prev" href="../192/" />
+<link rel="up" href="../192/" />
+<link rel="next" href="../141/" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-193" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="expanded first last active-trail"><a href="../../libro/">El Libro de Jabber</a><ul class="menu"><li class="leaf first"><a href="../../introduccion/">Introducción a Jabber</a></li>
+<li class="expanded active-trail"><a href="../../cualidades/">Cualidades de Jabber</a><ul class="menu"><li class="expanded first active-trail"><a href="../192/">Clientes</a><ul class="menu"><li class="leaf first last active-trail"><a href="index.html" class="active">Seguridad en la comunicación entre contactos: GnuPG</a></li>
+</ul></li>
+<li class="collapsed last"><a href="../141/">Protocolo</a></li>
+</ul></li>
+<li class="collapsed"><a href="../../clientes/">Clientes</a></li>
+<li class="collapsed"><a href="../../preguntas-frecuentes/">Preguntas frecuentes</a></li>
+<li class="collapsed"><a href="../52/">Servicios públicos disponibles</a></li>
+<li class="collapsed"><a href="../../documentos/">Documentos</a></li>
+<li class="collapsed"><a href="../54/">Migración desde otras redes</a></li>
+<li class="collapsed"><a href="../21/">Administración de un servidor Jabber</a></li>
+<li class="leaf"><a href="../../glosario/">Glosario Jabber</a></li>
+<li class="leaf"><a href="../60/">Enlaces</a></li>
+<li class="collapsed last"><a href="../373/">Asuntos de JabberES</a></li>
+</ul></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../libro/">El Libro de Jabber</a> :: <a href="../../cualidades/">Cualidades de Jabber</a> :: <a href="../192/">Clientes</a></div>        <h2 class="page-title">Seguridad en la comunicación entre contactos: GnuPG</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-193" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por badlop el 20 January, 2004 - 18:19.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_19 first last"><a href="../../taxonomy/term/19/" rel="tag" title="Cualidad:
+(Del lat. qualĭtas, -">Cualidades</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>Sin duda el mayor grado de seguridad posible en una comunicación se consigue usando cifrado punto-punto, es decir, que el emisor cifra su mensaje y solo el receptor sea capaz de descifrarlo. En Jabber es común usar GPG (GnuPG) ya que es un sistema libre, gratuito, y disponible en las plataformas más comunes. Enlace recomendado: <a href="http://bulma.net/body.phtml?nIdNoticia=1684">Introducción GnuPG<br />
+Necesidad y guía rápida de 7 pasos</a> en Bulma.</p>
+<p>Los mejores clientes Jabber soportan cifrado con GPG.</p>
+<p>
+Tu llave pública GnuPG la puedes subir a algun servidor de claves (hay muchos, en RedIris mismo tienen uno) o exportarla a un ficherito de texto y publicarla en tu web (los miembros de JabberES.org podemos publicar la llave en nuestro perfil de la web), o enviarla por correo a quien te la pida, o ponerla en la vcard de tu cuenta Jabber.
+</p>
+  <div id="book-navigation-15" class="book-navigation">
+    
+        <div class="page-links clear-block">
+              <a href="../192/" class="page-previous" title="Ir a página anterior">‹ Clientes</a>
+                    <a href="../192/" class="page-up" title="Ir a la página padre">arriba</a>
+                    <a href="../141/" class="page-next" title="Ir a página siguiente">Protocolo ›</a>
+          </div>
+    
+  </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/193"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-tDCJGyufJqPGt6jsYvRB7CIjbUew4B1O8C06Cdya3lE" value="form-tDCJGyufJqPGt6jsYvRB7CIjbUew4B1O8C06Cdya3lE"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-252"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-252" class="active">Si el contacto te envía algo</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  22 January, 2004 - 17:19.  </div>
+
+  <div class="content">
+    <p>Si el contacto te envía algo cifrado y eres capaz de descifrarlo no estás validando absolutamente nada.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-254"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-254" class="active">Si adjuntamos una explicación, pues mejor</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  23 January, 2004 - 00:24.  </div>
+
+  <div class="content">
+    <p>Repito el planteamiento: Tengo algo importante que decir a un contacto, y no quiero que nadie más pueda leerlo. Por tanto, yo cifraré mi mensaje con su clave pública, de forma que solo él, con su clave privada pueda descifrarlo. El problema es conseguir su clave pública y asegurarme de que realmente es la suya, y no la de un intermediario que pretende leer mi mensaje. Para asegurarme, una vez conseguida su supuesta clave pública le pediré que él me envie un mensaje que sólo él puede enviar (por ejemplo un dato personal o una vivencia comun que nadie más conozca) cifrado con su clave privada. Si soy capaz de descifrarlo con su supuesta clave pública entonces es que esa clave es realmente la suya, ya que si fuera de un intermediario:</p>
+<ul>
+<li>O bien no habría podido descifrar el mensaje, ya que dada la clave privada de mi contacto solo existe una clave pública que realize el proceso inverso.
+</li><li>O bien el mensaje no contenía datos que solo mi contacto conociera. Que me diga su número de telefono no me da ninguna garantia.
+</li></ul>
+<p>Creo que esta es una posible forma de validar la llave pública de un contacto.</p>
+<p><br /><br /></p>
+<p>¿Hay algun error en la explicación? ¿Tienes un método más fiable, rápido o sencillo? ¿Tienes algun otro método? A ver si la próxima vez aportas una explicación junto con la aserción, que genera más dudas de las que resuelve.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-255"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-255" class="active">Sí, hay errores en tu nueva</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  23 January, 2004 - 08:31.  </div>
+
+  <div class="content">
+    <p>Sí, hay errores en tu nueva aserción. Perdón por no haberme extendido demasiado en el comentario anterior, pero no tenía tiempo en ese momento y tu afirmación no era del todo precisa. Igual que ahora. Tú dices:</p>
+<p>"Para asegurarme, una vez conseguida su supuesta clave pública le pediré que él me envie un mensaje que sólo él puede enviar (por ejemplo un dato personal o una vivencia comun que nadie más conozca) cifrado con su clave privada. Si soy capaz de descifrarlo con su supuesta clave pública entonces es que esa clave es realmente la suya, ya que si fuera de un intermediario:"</p>
+<p>El método que propones de verificación no es correcto del todo. Alice y Badlop (:-)) quieren intercambiar sus llaves. Eve interviene de forma que:</p>
+<ul>
+<li> Eve da a Alice su llave pública
+</li><li> Eve da a Badlop su llave pública
+</li></ul>
+<p>Con esto, es evidente, que tu método de verificación de la llave casca ya que ni Alice ni Badlop, con lo que tu planteas, tienen forma de saber si realmente la llave es de Badlop/Alice o de Eve. Cualquier mensaje cifrado de Alice a Badlop puede ser descrifrado por Eve y por lo tanto conocer el número de cuenta, el piso secreto, o lo que quieras :-)</p>
+<p>Ciertamente, no existe un método que sea 100% fiable, como tampoco puedes garantizar la seguridad de un sistema.</p>
+<p>Una mejor solución es emplear el modelo de confianza del PGP. Valida la llave si un tercero de confianza te dice que es confiable. Y ya si nos ponemos paranoicos llama por teléfono y pide el fingerprint o cosas similares... pero eso ya es más caro y en la mayoría de contextos innecesario.</p>
+<p>No era mi intención ofender... sólo pensé que había una pequeña imprecisión que convenía aclarar. Habéis hecho un gran trabajo por aquí.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-258"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-258" class="active">Argg</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  23 January, 2004 - 12:09.  </div>
+
+  <div class="content">
+    <p>Vaya, pues tiene un boquete como una casa el sistema que proponía. Entonces solo es fiable verificarla en persona, en tiempo real por voz o por confianza en un tercero. Pues nada, actualizo el texto.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-2601"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-2601" class="active">Solucion, espero...</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por juampa el  10 October, 2006 - 06:36.  </div>
+
+  <div class="content">
+    <p>Estaba casi bien el planteamiento original. Voy a adaptarlo con usuario A y B, para simplificarlo:</p>
+<p>Si A quiere enviar un mensaje cifrado a B , lo q hará serán 2 pasos: primero cifrara el mensaje con su llave privada, y a continuacion lo hara con la llave pública de B. Despues envia el mensaje ...</p>
+<p>B recibe el mensaje , y lo descifra primero con su llave privada (solo la tiene él) , y luego descifra con la llave publica de A (que es la unica q puede descifrar el mensaje de A).</p>
+<p>Con esto nos aseguramos que los mensajes son de A y que la comunicacion es segura.</p>
+<p>Un saludo</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/193 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:27:16 GMT -->
+</html>

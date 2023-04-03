@@ -1,0 +1,2315 @@
+<?xml version="1.0" ?>
+<servers>
+	<server jid="0nl1ne.at" offline="no">
+		<component available="yes" category="pubsub" jid="0nl1ne.at" type="pep"/>
+		<component available="yes" category="server" jid="0nl1ne.at" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.0nl1ne.at" type="service"/>
+	</server>
+	<server jid="12jabber.com" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.12jabber.com" type="service"/>
+		<component available="yes" category="server" jid="12jabber.com" type="im"/>
+		<component available="yes" category="pubsub" jid="12jabber.com" type="pep"/>
+		<component available="yes" category="conference" jid="conference.12jabber.com" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.12jabber.com" type="text"/>
+		<component available="yes" category="directory" jid="vjud.12jabber.com" type="user"/>
+	</server>
+	<server jid="12jabber.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.12jabber.net" type="service"/>
+		<component available="yes" category="server" jid="12jabber.net" type="im"/>
+		<component available="yes" category="pubsub" jid="12jabber.net" type="pep"/>
+		<component available="yes" category="conference" jid="conference.12jabber.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.12jabber.net" type="text"/>
+		<component available="yes" category="directory" jid="vjud.12jabber.net" type="user"/>
+	</server>
+	<server jid="adastra.re" offline="no">
+		<component available="yes" category="server" jid="adastra.re" type="im"/>
+		<component available="yes" category="pubsub" jid="adastra.re" type="pep"/>
+		<component available="no" category="conference" jid="conference.adastra.re" type="text"/>
+		<component available="no" category="conference" jid="conference.adastra.re" type="x-muc"/>
+	</server>
+	<server jid="alpha-labs.net" offline="no">
+		<component available="yes" category="conference" jid="irc.alpha-labs.net" type="irc"/>
+		<component available="yes" category="directory" jid="conference.alpha-labs.net" type="chatroom"/>
+		<component available="yes" category="server" jid="alpha-labs.net" type="im"/>
+		<component available="yes" category="directory" jid="search.alpha-labs.net" type="user"/>
+		<component available="yes" category="gateway" jid="facebook.alpha-labs.net" type="facebook"/>
+		<component available="no" category="pubsub" jid="pubsub.alpha-labs.net" type="service"/>
+		<component available="yes" category="pubsub" jid="alpha-labs.net" type="pep"/>
+		<component available="yes" category="gateway" jid="gadugadu.alpha-labs.net" type="gadu-gadu"/>
+		<component available="yes" category="gateway" jid="gtalk.alpha-labs.net" type="gtalk"/>
+		<component available="yes" category="conference" jid="conference.alpha-labs.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.alpha-labs.net" type="text"/>
+		<component available="yes" category="gateway" jid="icq.alpha-labs.net" type="icq"/>
+		<component available="yes" category="gateway" jid="aim.alpha-labs.net" type="aim"/>
+		<component available="yes" category="gateway" jid="yahoo.alpha-labs.net" type="yahoo"/>
+	</server>
+	<server jid="aqq.eu" offline="yes">
+		<component available="yes" category="pubsub" jid="pubsub.aqq.eu" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.aqq.eu" type="bytestreams"/>
+		<component available="yes" category="server" jid="aqq.eu" type="im"/>
+		<component available="yes" category="directory" jid="vjud.aqq.eu" type="user"/>
+		<component available="no" category="component" jid="webpresence.aqq.eu" type="presence"/>
+		<component available="yes" category="pubsub" jid="aqq.eu" type="pep"/>
+		<component available="no" category="gateway" jid="wapstersms.aqq.eu" type="sms"/>
+		<component available="yes" category="gateway" jid="gg.aqq.eu" type="gadu-gadu"/>
+		<component available="yes" category="conference" jid="conference.aqq.eu" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.aqq.eu" type="text"/>
+		<component available="yes" category="gateway" jid="icq.aqq.eu" type="icq"/>
+		<component available="yes" category="gateway" jid="aim.aqq.eu" type="aim"/>
+	</server>
+	<server jid="aszlig.net" offline="no">
+		<component available="yes" category="server" jid="aszlig.net" type="im"/>
+	</server>
+	<server jid="bbs.docksud.com.ar" offline="no">
+		<component available="yes" category="pubsub" jid="bbs.docksud.com.ar" type="pep"/>
+		<component available="yes" category="server" jid="bbs.docksud.com.ar" type="im"/>
+		<component available="yes" category="conference" jid="conf.bbs.docksud.com.ar" type="text"/>
+		<component available="yes" category="proxy" jid="files.bbs.docksud.com.ar" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conf.bbs.docksud.com.ar" type="x-muc"/>
+	</server>
+	<server jid="binaryfreedom.info" offline="yes">
+		<component available="no" category="server" jid="binaryfreedom.info" type="im"/>
+	</server>
+	<server jid="blah.im" offline="no">
+		<component available="yes" category="pubsub" jid="blah.im" type="pep"/>
+		<component available="yes" category="server" jid="blah.im" type="im"/>
+		<component available="yes" category="conference" jid="rooms.blah.im" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.blah.im" type="bytestreams"/>
+		<component available="yes" category="conference" jid="rooms.blah.im" type="x-muc"/>
+	</server>
+	<server jid="boese-ban.de" offline="no">
+		<component available="yes" category="pubsub" jid="boese-ban.de" type="pep"/>
+		<component available="yes" category="server" jid="boese-ban.de" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.boese-ban.de" type="service"/>
+		<component available="yes" category="pubsub" jid="pubsub.boese-ban.de" type="service"/>
+		<component available="yes" category="conference" jid="conference.boese-ban.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.boese-ban.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.boese-ban.de" type="text"/>
+		<component available="yes" category="conference" jid="conference.boese-ban.de" type="text"/>
+	</server>
+	<server jid="boxbox.org" offline="no">
+		<component available="no" category="proxy" jid="proxy.boxbox.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="boxbox.org" type="im"/>
+		<component available="yes" category="pubsub" jid="boxbox.org" type="pep"/>
+		<component available="no" category="conference" jid="conference.boxbox.org" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.boxbox.org" type="text"/>
+		<component available="no" category="gateway" jid="icq.boxbox.org" type="icq"/>
+	</server>
+	<server jid="brauchen.info" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.brauchen.info" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.brauchen.info" type="bytestreams"/>
+		<component available="yes" category="server" jid="brauchen.info" type="im"/>
+		<component available="yes" category="pubsub" jid="brauchen.info" type="pep"/>
+		<component available="yes" category="conference" jid="conference.brauchen.info" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.brauchen.info" type="text"/>
+	</server>
+	<server jid="cassilis.net" offline="yes">
+		<component available="no" category="server" jid="cassilis.net" type="im"/>
+	</server>
+	<server jid="celest.in" offline="no">
+		<component available="yes" category="pubsub" jid="celest.in" type="pep"/>
+		<component available="yes" category="server" jid="celest.in" type="im"/>
+		<component available="no" category="conference" jid="conference.celest.in" type="text"/>
+		<component available="no" category="conference" jid="conference.celest.in" type="x-muc"/>
+	</server>
+	<server jid="ch3kr.net" offline="no">
+		<component available="yes" category="pubsub" jid="ch3kr.net" type="pep"/>
+		<component available="yes" category="server" jid="ch3kr.net" type="im"/>
+		<component available="yes" category="conference" jid="muc.ch3kr.net" type="text"/>
+		<component available="yes" category="conference" jid="muc.ch3kr.net" type="x-muc"/>
+	</server>
+	<server jid="chat.safic.net" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.chat.safic.net" type="service"/>
+		<component available="no" category="proxy" jid="proxy.chat.safic.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="chat.safic.net" type="im"/>
+		<component available="yes" category="pubsub" jid="chat.safic.net" type="pep"/>
+		<component available="no" category="conference" jid="conference.chat.safic.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.chat.safic.net" type="text"/>
+	</server>
+	<server jid="chatmask.com" offline="yes">
+		<component available="no" category="server" jid="chatmask.com" type="im"/>
+	</server>
+	<server jid="chatme.im" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chatme.im" type="service"/>
+		<component available="yes" category="server" jid="chatme.im" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.chatme.im" type="directory"/>
+		<component available="yes" category="server" jid="chatme.im" type="im"/>
+		<component available="yes" category="server" jid="anonymous.chatme.im" type="im"/>
+		<component available="yes" category="pubsub" jid="chatme.im" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.chatme.im" type="pep"/>
+		<component available="yes" category="conference" jid="conference.chatme.im" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.chatme.im" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.chatme.im" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.chatme.im" type="user"/>
+	</server>
+	<server jid="chatme.link" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chatme.link" type="service"/>
+		<component available="yes" category="server" jid="chatme.link" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.chatme.link" type="directory"/>
+		<component available="yes" category="server" jid="chatme.link" type="im"/>
+		<component available="yes" category="server" jid="anonymous.chatme.link" type="im"/>
+		<component available="yes" category="pubsub" jid="chatme.link" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.chatme.link" type="pep"/>
+		<component available="yes" category="conference" jid="conference.chatme.link" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.chatme.link" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.chatme.link" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.chatme.link" type="user"/>
+	</server>
+	<server jid="chatme.sexy" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chatme.sexy" type="service"/>
+		<component available="yes" category="server" jid="chatme.sexy" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.chatme.sexy" type="directory"/>
+		<component available="yes" category="server" jid="chatme.sexy" type="im"/>
+		<component available="yes" category="server" jid="anonymous.chatme.sexy" type="im"/>
+		<component available="yes" category="pubsub" jid="chatme.sexy" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.chatme.sexy" type="pep"/>
+		<component available="yes" category="conference" jid="conference.chatme.sexy" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.chatme.sexy" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.chatme.sexy" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.chatme.sexy" type="user"/>
+	</server>
+	<server jid="chatme.singles" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chatme.singles" type="service"/>
+		<component available="yes" category="server" jid="chatme.singles" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.chatme.singles" type="directory"/>
+		<component available="yes" category="server" jid="chatme.singles" type="im"/>
+		<component available="yes" category="server" jid="anonymous.chatme.singles" type="im"/>
+		<component available="yes" category="pubsub" jid="chatme.singles" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.chatme.singles" type="pep"/>
+		<component available="yes" category="conference" jid="conference.chatme.singles" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.chatme.singles" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.chatme.singles" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.chatme.singles" type="user"/>
+	</server>
+	<server jid="chatme.social" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chatme.social" type="service"/>
+		<component available="yes" category="server" jid="chatme.social" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.chatme.social" type="directory"/>
+		<component available="yes" category="server" jid="chatme.social" type="im"/>
+		<component available="yes" category="server" jid="anonymous.chatme.social" type="im"/>
+		<component available="yes" category="pubsub" jid="chatme.social" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.chatme.social" type="pep"/>
+		<component available="yes" category="conference" jid="conference.chatme.social" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.chatme.social" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.chatme.social" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.chatme.social" type="user"/>
+	</server>
+	<server jid="chatme.xyz" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chatme.xyz" type="service"/>
+		<component available="yes" category="server" jid="chatme.xyz" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.chatme.xyz" type="directory"/>
+		<component available="yes" category="server" jid="chatme.xyz" type="im"/>
+		<component available="yes" category="server" jid="anonymous.chatme.xyz" type="im"/>
+		<component available="yes" category="pubsub" jid="chatme.xyz" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.chatme.xyz" type="pep"/>
+		<component available="yes" category="conference" jid="conference.chatme.xyz" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.chatme.xyz" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.chatme.xyz" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.chatme.xyz" type="user"/>
+	</server>
+	<server jid="chinwag.im" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.chinwag.im" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.chinwag.im" type="bytestreams"/>
+		<component available="yes" category="server" jid="chinwag.im" type="im"/>
+		<component available="yes" category="pubsub" jid="chinwag.im" type="pep"/>
+		<component available="yes" category="conference" jid="rooms.chinwag.im" type="x-muc"/>
+		<component available="yes" category="conference" jid="rooms.chinwag.im" type="text"/>
+		<component available="yes" category="directory" jid="search.chinwag.im" type="user"/>
+	</server>
+	<server jid="chirimoyas.es" offline="yes">
+		<component available="no" category="conference" jid="irc.chirimoyas.es" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.chirimoyas.es" type="bytestreams"/>
+		<component available="yes" category="server" jid="chirimoyas.es" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.chirimoyas.es" type="service"/>
+		<component available="yes" category="pubsub" jid="chirimoyas.es" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabber.chirimoyas.es" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.chirimoyas.es" type="text"/>
+		<component available="no" category="directory" jid="vjud.chirimoyas.es" type="user"/>
+	</server>
+	<server jid="chrome.pl" offline="no">
+		<component available="yes" category="conference" jid="freenode.chrome.pl" type="irc"/>
+		<component available="yes" category="server" jid="chrome.pl" type="im"/>
+		<component available="yes" category="gateway" jid="facebook.chrome.pl" type="facebook"/>
+		<component available="yes" category="gateway" jid="skype.chrome.pl" type="skype"/>
+		<component available="yes" category="gateway" jid="gg.chrome.pl" type="gadu-gadu"/>
+		<component available="yes" category="conference" jid="chat.chrome.pl" type="x-muc"/>
+		<component available="yes" category="conference" jid="chat.chrome.pl" type="text"/>
+	</server>
+	<server jid="climm.org" offline="no">
+		<component available="yes" category="pubsub" jid="climm.org" type="pep"/>
+		<component available="yes" category="server" jid="climm.org" type="im"/>
+	</server>
+	<server jid="coderollers.com" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.coderollers.com" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.coderollers.com" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.coderollers.com" type="x-muc"/>
+		<component available="yes" category="server" jid="coderollers.com" type="im"/>
+		<component available="yes" category="pubsub" jid="coderollers.com" type="pep"/>
+		<component available="yes" category="directory" jid="conference.coderollers.com" type="chatroom"/>
+		<component available="yes" category="conference" jid="conference.coderollers.com" type="text"/>
+		<component available="yes" category="directory" jid="directory.coderollers.com" type="user"/>
+	</server>
+	<server jid="codingteam.net" offline="no">
+		<component available="yes" category="pubsub" jid="codingteam.net" type="pep"/>
+		<component available="yes" category="server" jid="codingteam.net" type="im"/>
+		<component available="yes" category="conference" jid="conference.codingteam.net" type="text"/>
+		<component available="yes" category="conference" jid="conference.codingteam.net" type="x-muc"/>
+	</server>
+	<server jid="core.mx" offline="no">
+		<component available="yes" category="conference" jid="irc.core.mx" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.core.mx" type="bytestreams"/>
+		<component available="yes" category="server" jid="core.mx" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.core.mx" type="service"/>
+		<component available="yes" category="pubsub" jid="core.mx" type="pep"/>
+		<component available="yes" category="conference" jid="conference.core.mx" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.core.mx" type="text"/>
+		<component available="yes" category="directory" jid="vjud.core.mx" type="user"/>
+	</server>
+	<server jid="crab.im" offline="no">
+		<component available="yes" category="pubsub" jid="crab.im" type="pep"/>
+		<component available="yes" category="server" jid="crab.im" type="im"/>
+	</server>
+	<server jid="creep.im" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.creep.im" type="service"/>
+		<component available="yes" category="server" jid="creep.im" type="im"/>
+		<component available="no" category="conference" jid="irc.creep.im" type="irc"/>
+		<component available="yes" category="pubsub" jid="creep.im" type="pep"/>
+		<component available="yes" category="conference" jid="muc.creep.im" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.creep.im" type="text"/>
+	</server>
+	<server jid="crypt.am" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.crypt.am" type="service"/>
+		<component available="no" category="proxy" jid="proxy.crypt.am" type="bytestreams"/>
+		<component available="yes" category="server" jid="crypt.am" type="im"/>
+		<component available="yes" category="pubsub" jid="crypt.am" type="pep"/>
+		<component available="no" category="conference" jid="conference.crypt.am" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.crypt.am" type="text"/>
+		<component available="no" category="directory" jid="vjud.crypt.am" type="user"/>
+	</server>
+	<server jid="crypt.mn" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.crypt.mn" type="service"/>
+		<component available="no" category="proxy" jid="proxy.crypt.mn" type="bytestreams"/>
+		<component available="yes" category="server" jid="crypt.mn" type="im"/>
+		<component available="yes" category="pubsub" jid="crypt.mn" type="pep"/>
+		<component available="no" category="conference" jid="conference.crypt.mn" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.crypt.mn" type="text"/>
+		<component available="no" category="directory" jid="vjud.crypt.mn" type="user"/>
+	</server>
+	<server jid="cypherpunks.it" offline="no">
+		<component available="yes" category="server" jid="cypherpunks.it" type="im"/>
+		<component available="yes" category="pubsub" jid="cypherpunks.it" type="pep"/>
+		<component available="no" category="conference" jid="conference.cypherpunks.it" type="text"/>
+		<component available="no" category="conference" jid="conference.cypherpunks.it" type="x-muc"/>
+	</server>
+	<server jid="darkdna.net" offline="no">
+		<component available="yes" category="pubsub" jid="darkdna.net" type="pep"/>
+		<component available="yes" category="server" jid="darkdna.net" type="im"/>
+		<component available="yes" category="conference" jid="chat.darkdna.net" type="text"/>
+		<component available="yes" category="proxy" jid="darkdna.net" type="bytestreams"/>
+		<component available="yes" category="conference" jid="chat.darkdna.net" type="x-muc"/>
+	</server>
+	<server jid="default.rs" offline="no">
+		<component available="yes" category="pubsub" jid="default.rs" type="pep"/>
+		<component available="yes" category="server" jid="default.rs" type="im"/>
+		<component available="no" category="conference" jid="conference.default.rs" type="text"/>
+		<component available="no" category="conference" jid="conference.default.rs" type="x-muc"/>
+	</server>
+	<server jid="deshalbfrei.org" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.deshalbfrei.org" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.deshalbfrei.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="deshalbfrei.org" type="im"/>
+		<component available="yes" category="pubsub" jid="deshalbfrei.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.deshalbfrei.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.deshalbfrei.org" type="text"/>
+	</server>
+	<server jid="draugr.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.draugr.de" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.draugr.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="draugr.de" type="im"/>
+		<component available="yes" category="pubsub" jid="draugr.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.draugr.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.draugr.de" type="text"/>
+	</server>
+	<server jid="egbers.info" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.egbers.info" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.egbers.info" type="bytestreams"/>
+		<component available="yes" category="server" jid="egbers.info" type="im"/>
+		<component available="yes" category="pubsub" jid="egbers.info" type="pep"/>
+		<component available="yes" category="conference" jid="conference.egbers.info" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.egbers.info" type="text"/>
+	</server>
+	<server jid="einfachjabber.de" offline="no">
+		<component available="yes" category="pubsub" jid="einfachjabber.de" type="pep"/>
+		<component available="yes" category="server" jid="einfachjabber.de" type="im"/>
+		<component available="yes" category="conference" jid="conference.einfachjabber.de" type="text"/>
+		<component available="no" category="pubsub" jid="pubsub.einfachjabber.de" type="service"/>
+		<component available="yes" category="conference" jid="conference.einfachjabber.de" type="x-muc"/>
+	</server>
+	<server jid="el-tramo.be" offline="no">
+		<component available="yes" category="pubsub" jid="el-tramo.be" type="pep"/>
+		<component available="yes" category="server" jid="el-tramo.be" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.el-tramo.be" type="service"/>
+		<component available="yes" category="conference" jid="rooms.el-tramo.be" type="x-muc"/>
+		<component available="yes" category="conference" jid="rooms.el-tramo.be" type="text"/>
+	</server>
+	<server jid="ezvan.fr" offline="yes">
+		<component available="yes" category="pubsub" jid="pubsub.ezvan.fr" type="service"/>
+		<component available="no" category="proxy" jid="proxy.ezvan.fr" type="bytestreams"/>
+		<component available="yes" category="server" jid="ezvan.fr" type="im"/>
+		<component available="yes" category="conference" jid="irc.ezvan.fr" type="irc"/>
+		<component available="yes" category="pubsub" jid="ezvan.fr" type="pep"/>
+		<component available="yes" category="conference" jid="conference.ezvan.fr" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.ezvan.fr" type="text"/>
+		<component available="yes" category="directory" jid="vjud.ezvan.fr" type="user"/>
+	</server>
+	<server jid="fnord.im" offline="no">
+		<component available="yes" category="server" jid="fnord.im" type="im"/>
+		<component available="yes" category="pubsub" jid="fnord.im" type="pep"/>
+		<component available="yes" category="conference" jid="chat.fnord.im" type="text"/>
+		<component available="yes" category="conference" jid="chat.fnord.im" type="x-muc"/>
+	</server>
+	<server jid="freamware.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.freamware.net" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.freamware.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="freamware.net" type="im"/>
+		<component available="yes" category="pubsub" jid="freamware.net" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.freamware.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.freamware.net" type="text"/>
+		<component available="yes" category="directory" jid="users.jabber.freamware.net" type="user"/>
+	</server>
+	<server jid="freifunk.im" offline="no">
+		<component available="yes" category="server" jid="freifunk.im" type="im"/>
+		<component available="yes" category="pubsub" jid="freifunk.im" type="pep"/>
+		<component available="yes" category="conference" jid="conference.freifunk.im" type="text"/>
+		<component available="yes" category="conference" jid="conference.freifunk.im" type="x-muc"/>
+	</server>
+	<server jid="freize.org" offline="no">
+		<component available="yes" category="conference" jid="irc.freize.org" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.freize.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="freize.org" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.freize.org" type="service"/>
+		<component available="yes" category="pubsub" jid="freize.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.freize.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.freize.org" type="text"/>
+		<component available="yes" category="directory" jid="vjud.freize.org" type="user"/>
+	</server>
+	<server jid="fritz-elfert.de" offline="no">
+		<component available="no" category="gateway" jid="msn.fritz-elfert.de" type="msn"/>
+		<component available="no" category="pubsub" jid="pubsub.fritz-elfert.de" type="service"/>
+		<component available="no" category="directory" jid="search.fritz-elfert.de" type="user"/>
+		<component available="no" category="proxy" jid="proxy.fritz-elfert.de" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.fritz-elfert.de" type="x-muc"/>
+		<component available="yes" category="server" jid="fritz-elfert.de" type="im"/>
+		<component available="no" category="gateway" jid="xmpp.fritz-elfert.de" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="fritz-elfert.de" type="pep"/>
+		<component available="no" category="gateway" jid="gadugadu.fritz-elfert.de" type="gadu-gadu"/>
+		<component available="no" category="gateway" jid="gtalk.fritz-elfert.de" type="gtalk"/>
+		<component available="yes" category="directory" jid="conference.fritz-elfert.de" type="chatroom"/>
+		<component available="yes" category="conference" jid="conference.fritz-elfert.de" type="text"/>
+		<component available="no" category="gateway" jid="icq.fritz-elfert.de" type="icq"/>
+		<component available="no" category="gateway" jid="aim.fritz-elfert.de" type="aim"/>
+		<component available="no" category="gateway" jid="yahoo.fritz-elfert.de" type="yahoo"/>
+	</server>
+	<server jid="fysh.in" offline="no">
+		<component available="yes" category="pubsub" jid="fysh.in" type="pep"/>
+		<component available="yes" category="server" jid="fysh.in" type="im"/>
+		<component available="yes" category="conference" jid="conference.fysh.in" type="text"/>
+		<component available="yes" category="conference" jid="conference.fysh.in" type="x-muc"/>
+	</server>
+	<server jid="gabbler.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.gabbler.de" type="service"/>
+		<component available="no" category="proxy" jid="proxy.gabbler.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="gabbler.de" type="im"/>
+		<component available="no" category="conference" jid="irc.gabbler.de" type="irc"/>
+		<component available="yes" category="pubsub" jid="gabbler.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.gabbler.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.gabbler.de" type="text"/>
+		<component available="yes" category="directory" jid="vjud.gabbler.de" type="user"/>
+	</server>
+	<server jid="gabbler.eu" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.gabbler.eu" type="service"/>
+		<component available="no" category="proxy" jid="proxy.gabbler.eu" type="bytestreams"/>
+		<component available="yes" category="server" jid="gabbler.eu" type="im"/>
+		<component available="no" category="conference" jid="irc.gabbler.eu" type="irc"/>
+		<component available="yes" category="pubsub" jid="gabbler.eu" type="pep"/>
+		<component available="yes" category="directory" jid="vjud.gabbler.eu" type="user"/>
+	</server>
+	<server jid="gabbler.net" offline="yes">
+		<component available="yes" category="server" jid="gabbler.net" type="im"/>
+		<component available="no" category="conference" jid="irc.gabbler.net" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.gabbler.net" type="bytestreams"/>
+	</server>
+	<server jid="gabbler.org" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.gabbler.org" type="service"/>
+		<component available="no" category="proxy" jid="proxy.gabbler.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="gabbler.org" type="im"/>
+		<component available="no" category="conference" jid="irc.gabbler.org" type="irc"/>
+		<component available="yes" category="pubsub" jid="gabbler.org" type="pep"/>
+		<component available="yes" category="directory" jid="vjud.gabbler.org" type="user"/>
+	</server>
+	<server jid="gajim.org" offline="no">
+		<component available="yes" category="pubsub" jid="gajim.org" type="pep"/>
+		<component available="yes" category="server" jid="gajim.org" type="im"/>
+		<component available="yes" category="conference" jid="conference.gajim.org" type="text"/>
+		<component available="no" category="proxy" jid="proxy.gajim.org" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.gajim.org" type="x-muc"/>
+	</server>
+	<server jid="getchat.link" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.getchat.link" type="service"/>
+		<component available="yes" category="server" jid="getchat.link" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.getchat.link" type="directory"/>
+		<component available="yes" category="server" jid="getchat.link" type="im"/>
+		<component available="yes" category="server" jid="anonymous.getchat.link" type="im"/>
+		<component available="yes" category="pubsub" jid="getchat.link" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.getchat.link" type="pep"/>
+		<component available="yes" category="conference" jid="conference.getchat.link" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.getchat.link" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.getchat.link" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.getchat.link" type="user"/>
+	</server>
+	<server jid="getchatme.link" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.getchatme.link" type="service"/>
+		<component available="yes" category="server" jid="getchatme.link" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.getchatme.link" type="directory"/>
+		<component available="yes" category="server" jid="getchatme.link" type="im"/>
+		<component available="yes" category="server" jid="anonymous.getchatme.link" type="im"/>
+		<component available="yes" category="pubsub" jid="getchatme.link" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.getchatme.link" type="pep"/>
+		<component available="yes" category="conference" jid="conference.getchatme.link" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.getchatme.link" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.getchatme.link" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.getchatme.link" type="user"/>
+	</server>
+	<server jid="gmx.net" offline="yes">
+		<component available="yes" category="server" jid="gmx.net" type="im"/>
+		<component available="no" category="proxy" jid="proxy.gmx.net" type="bytestreams"/>
+		<component available="no" category="gateway" jid="icq.jabber.gmx.net" type="icq"/>
+		<component available="no" category="gateway" jid="yahoo.jabber.gmx.net" type="yahoo"/>
+		<component available="no" category="gateway" jid="aim.jabber.gmx.net" type="aim"/>
+	</server>
+	<server jid="groar.com" offline="yes">
+		<component available="yes" category="conference" jid="irc.groar.com" type="irc"/>
+		<component available="yes" category="server" jid="groar.com" type="im"/>
+		<component available="yes" category="directory" jid="vjud.groar.com" type="user"/>
+		<component available="yes" category="pubsub" jid="pubsub.groar.com" type="service"/>
+		<component available="yes" category="pubsub" jid="groar.com" type="pep"/>
+		<component available="yes" category="gateway" jid="icq.groar.com" type="icq"/>
+		<component available="yes" category="gateway" jid="icq2.groar.com" type="icq"/>
+	</server>
+	<server jid="headcounter.org" offline="no">
+		<component available="yes" category="server" jid="headcounter.org" type="im"/>
+		<component available="no" category="conference" jid="conference.headcounter.org" type="text"/>
+		<component available="no" category="conference" jid="conference.headcounter.org" type="x-muc"/>
+	</server>
+	<server jid="helheim.net" offline="yes">
+		<component available="no" category="server" jid="helheim.net" type="im"/>
+	</server>
+	<server jid="hot-chilli.eu" offline="no">
+		<component available="yes" category="pubsub" jid="hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="jabber.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="server" jid="hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="jabber.hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.eu" type="im"/>
+	</server>
+	<server jid="hot-chilli.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.hot-chilli.net" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.jabber.hot-chilli.net" type="x-muc"/>
+		<component available="yes" category="server" jid="hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="gateway" jid="gg.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="gateway" jid="j2j.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="gateway" jid="xmpp.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="jabber.hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.net" type="pep"/>
+		<component available="yes" category="gateway" jid="aim.jabber.hot-chilli.net" type="aim"/>
+		<component available="yes" category="gateway" jid="novell.jabber.hot-chilli.net" type="novell"/>
+		<component available="yes" category="conference" jid="conference.jabber.hot-chilli.net" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="gateway" jid="sipe.jabber.hot-chilli.net" type="lcs"/>
+		<component available="yes" category="gateway" jid="icq.jabber.hot-chilli.net" type="icq"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.hot-chilli.net" type="yahoo"/>
+	</server>
+	<server jid="igniterealtime.org" offline="no">
+		<component available="yes" category="pubsub" jid="igniterealtime.org" type="pep"/>
+		<component available="yes" category="account" jid="igniterealtime.org" type="registered"/>
+	</server>
+	<server jid="im.apinc.org" offline="yes">
+		<component available="yes" category="server" jid="im.apinc.org" type="im"/>
+	</server>
+	<server jid="im.drazzib.com" offline="yes">
+		<component available="no" category="conference" jid="irc.im.drazzib.com" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.im.drazzib.com" type="bytestreams"/>
+		<component available="yes" category="server" jid="im.drazzib.com" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.im.drazzib.com" type="service"/>
+		<component available="yes" category="pubsub" jid="im.drazzib.com" type="pep"/>
+		<component available="no" category="conference" jid="conference.im.drazzib.com" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.im.drazzib.com" type="text"/>
+		<component available="no" category="directory" jid="vjud.im.drazzib.com" type="user"/>
+	</server>
+	<server jid="im.flosoft.biz" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.im.flosoft.biz" type="service"/>
+		<component available="yes" category="component" jid="im.flosoft.biz" type="im"/>
+		<component available="yes" category="server" jid="im.flosoft.biz" type="im"/>
+		<component available="yes" category="pubsub" jid="im.flosoft.biz" type="pep"/>
+		<component available="no" category="conference" jid="muc.im.flosoft.biz" type="x-muc"/>
+		<component available="no" category="conference" jid="muc.im.flosoft.biz" type="text"/>
+	</server>
+	<server jid="im.hot-chilli.eu" offline="no">
+		<component available="yes" category="pubsub" jid="im.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="jabber.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.eu" type="pep"/>
+		<component available="yes" category="server" jid="im.hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="jabber.hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="hot-chilli.eu" type="im"/>
+	</server>
+	<server jid="im.hot-chilli.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.hot-chilli.net" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.jabber.hot-chilli.net" type="x-muc"/>
+		<component available="yes" category="server" jid="im.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="gateway" jid="gg.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="gateway" jid="j2j.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="gateway" jid="xmpp.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="jabber.hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.net" type="pep"/>
+		<component available="yes" category="gateway" jid="aim.jabber.hot-chilli.net" type="aim"/>
+		<component available="yes" category="gateway" jid="novell.jabber.hot-chilli.net" type="novell"/>
+		<component available="yes" category="conference" jid="conference.jabber.hot-chilli.net" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="gateway" jid="sipe.jabber.hot-chilli.net" type="lcs"/>
+		<component available="yes" category="gateway" jid="icq.jabber.hot-chilli.net" type="icq"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.hot-chilli.net" type="yahoo"/>
+	</server>
+	<server jid="im.it-native.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.im.it-native.de" type="service"/>
+		<component available="yes" category="proxy" jid="im.it-native.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="im.it-native.de" type="im"/>
+		<component available="yes" category="server" jid="vjud.im.it-native.de" type="im"/>
+		<component available="yes" category="pubsub" jid="im.it-native.de" type="pep"/>
+		<component available="yes" category="conference" jid="muc.im.it-native.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.im.it-native.de" type="text"/>
+		<component available="yes" category="directory" jid="vjud.im.it-native.de" type="user"/>
+	</server>
+	<server jid="im.koderoot.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.im.koderoot.net" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.im.koderoot.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="im.koderoot.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.im.koderoot.net" type="im"/>
+		<component available="yes" category="pubsub" jid="im.koderoot.net" type="pep"/>
+		<component available="yes" category="conference" jid="muc.im.koderoot.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.im.koderoot.net" type="text"/>
+	</server>
+	<server jid="im.thiessen.it" offline="no">
+		<component available="yes" category="server" jid="im.thiessen.it" type="im"/>
+		<component available="yes" category="pubsub" jid="im.thiessen.it" type="pep"/>
+	</server>
+	<server jid="inbox.im" offline="no">
+		<component available="yes" category="server" jid="inbox.im" type="im"/>
+		<component available="yes" category="conference" jid="conference.inbox.im" type="text"/>
+		<component available="yes" category="conference" jid="irc.inbox.im" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.inbox.im" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.inbox.im" type="x-muc"/>
+	</server>
+	<server jid="internet-exception.de" offline="yes">
+		<component available="no" category="pubsub" jid="pubsub.internet-exception.de" type="service"/>
+		<component available="yes" category="server" jid="internet-exception.de" type="im"/>
+		<component available="yes" category="pubsub" jid="internet-exception.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.internet-exception.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.internet-exception.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.internet-exception.de" type="user"/>
+	</server>
+	<server jid="isgeek.info" offline="no">
+		<component available="no" category="gateway" jid="msn.isgeek.info" type="msn"/>
+		<component available="yes" category="pubsub" jid="pubsub.isgeek.info" type="service"/>
+		<component available="yes" category="proxy" jid="proxy2.isgeek.info" type="bytestreams"/>
+		<component available="no" category="proxy" jid="proxy.isgeek.info" type="bytestreams"/>
+		<component available="yes" category="server" jid="isgeek.info" type="im"/>
+		<component available="no" category="gateway" jid="xmpp.isgeek.info" type="xmpp"/>
+		<component available="no" category="conference" jid="irc.isgeek.info" type="irc"/>
+		<component available="no" category="store" jid="disk.isgeek.info" type="file"/>
+		<component available="yes" category="pubsub" jid="isgeek.info" type="pep"/>
+		<component available="no" category="gateway" jid="gg.isgeek.info" type="gadu-gadu"/>
+		<component available="no" category="gateway" jid="yahoo.isgeek.info" type="yahoo"/>
+		<component available="yes" category="conference" jid="conf.isgeek.info" type="x-muc"/>
+		<component available="yes" category="conference" jid="conf.isgeek.info" type="text"/>
+		<component available="yes" category="directory" jid="users.isgeek.info" type="user"/>
+		<component available="no" category="gateway" jid="icq.isgeek.info" type="icq"/>
+		<component available="no" category="gateway" jid="icq2.isgeek.info" type="icq"/>
+	</server>
+	<server jid="itunix.eu" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.itunix.eu" type="service"/>
+		<component available="yes" category="server" jid="itunix.eu" type="im"/>
+		<component available="yes" category="conference" jid="irc.itunix.eu" type="irc"/>
+		<component available="yes" category="pubsub" jid="itunix.eu" type="pep"/>
+		<component available="yes" category="conference" jid="conference.itunix.eu" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.itunix.eu" type="text"/>
+		<component available="yes" category="directory" jid="vjud.itunix.eu" type="user"/>
+	</server>
+	<server jid="jab.undernet.cz" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.jab.undernet.cz" type="service"/>
+		<component available="yes" category="server" jid="jab.undernet.cz" type="im"/>
+		<component available="no" category="gateway" jid="icq.localhost" type="icq"/>
+		<component available="yes" category="pubsub" jid="jab.undernet.cz" type="pep"/>
+		<component available="yes" category="conference" jid="conf.undernet.cz" type="x-muc"/>
+		<component available="yes" category="conference" jid="conf.undernet.cz" type="text"/>
+		<component available="no" category="directory" jid="vjud.jab.undernet.cz" type="user"/>
+	</server>
+	<server jid="jabb3r.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabb3r.de" type="pep"/>
+		<component available="yes" category="server" jid="jabb3r.de" type="im"/>
+	</server>
+	<server jid="jabb3r.net" offline="no">
+		<component available="yes" category="pubsub" jid="jabb3r.net" type="pep"/>
+		<component available="yes" category="server" jid="jabb3r.net" type="im"/>
+	</server>
+	<server jid="jabb3r.org" offline="no">
+		<component available="yes" category="pubsub" jid="jabb3r.org" type="pep"/>
+		<component available="yes" category="server" jid="jabb3r.org" type="im"/>
+	</server>
+	<server jid="jabbeng.in" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabbeng.in" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabbeng.in" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabbeng.in" type="im"/>
+		<component available="yes" category="pubsub" jid="jabbeng.in" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabbeng.in" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabbeng.in" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabbeng.in" type="user"/>
+	</server>
+	<server jid="jabber-br.org" offline="yes">
+		<component available="yes" category="pubsub" jid="jabber-br.org" type="pep"/>
+		<component available="yes" category="server" jid="jabber-br.org" type="im"/>
+		<component available="yes" category="conference" jid="conference.jabber-br.org" type="text"/>
+		<component available="yes" category="conference" jid="conference.jabber-br.org" type="x-muc"/>
+	</server>
+	<server jid="jabber-hispano.org" offline="yes">
+		<component available="no" category="server" jid="jabber-hispano.org" type="im"/>
+	</server>
+	<server jid="jabber-hosting.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber-hosting.de" type="pep"/>
+		<component available="yes" category="pubsub" jid="xmpp-hosting.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber-hosting.de" type="im"/>
+		<component available="yes" category="server" jid="xmpp-hosting.de" type="im"/>
+	</server>
+	<server jid="jabber.anywise.com" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.anywise.com" type="service"/>
+		<component available="yes" category="server" jid="jabber.anywise.com" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.anywise.com" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.anywise.com" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.anywise.com" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.anywise.com" type="user"/>
+	</server>
+	<server jid="jabber.at" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.at" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.at" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.at" type="im"/>
+		<component available="no" category="component" jid="webpresence.jabber.at" type="presence"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.at" type="service"/>
+		<component available="yes" category="store" jid="upload.jabber.at" type="file"/>
+		<component available="yes" category="pubsub" jid="jabber.at" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.at" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.at" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.at" type="icq"/>
+		<component available="no" category="gateway" jid="aim.jabber.at" type="aim"/>
+	</server>
+	<server jid="jabber.bluendo.com" offline="yes">
+		<component available="yes" category="pubsub" jid="jabber.bluendo.com" type="pep"/>
+		<component available="yes" category="server" jid="jabber.bluendo.com" type="im"/>
+		<component available="no" category="conference" jid="irc.jabber.bluendo.com" type="irc"/>
+		<component available="no" category="directory" jid="vjud.jabber.bluendo.com" type="user"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.bluendo.com" type="service"/>
+	</server>
+	<server jid="jabber.cc" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.cc" type="pep"/>
+		<component available="yes" category="server" jid="jabber.cc" type="im"/>
+	</server>
+	<server jid="jabber.ccc.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.ccc.de" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.ccc.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.ccc.de" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.ccc.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.ccc.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.ccc.de" type="text"/>
+	</server>
+	<server jid="jabber.chaotic.de" offline="no">
+		<component available="yes" category="server" jid="jabber.chaotic.de" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.chaotic.de" type="pep"/>
+	</server>
+	<server jid="jabber.cn" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.cn" type="service"/>
+		<component available="yes" category="server" jid="jabber.cn" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.cn" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.cn" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.cn" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.cn" type="user"/>
+	</server>
+	<server jid="jabber.co.nz" offline="yes">
+		<component available="yes" category="server" jid="jabber.co.nz" type="im"/>
+		<component available="yes" category="directory" jid="vjud.jabber.co.nz" type="user"/>
+		<component available="yes" category="conference" jid="irc.jabber.co.nz" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.co.nz" type="bytestreams"/>
+	</server>
+	<server jid="jabber.crimea.ua" offline="yes">
+		<component available="no" category="server" jid="jabber.crimea.ua" type="im"/>
+	</server>
+	<server jid="jabber.cz" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.cz" type="pep"/>
+		<component available="yes" category="server" jid="jabber.cz" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.cz" type="service"/>
+		<component available="yes" category="gateway" jid="icq.jabber.cz" type="icq"/>
+	</server>
+	<server jid="jabber.de" offline="no">
+		<component available="yes" category="gateway" jid="msn.jabber.de" type="msn"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.de" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.de" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.de" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.de" type="icq"/>
+	</server>
+	<server jid="jabber.dk" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.dk" type="pep"/>
+		<component available="yes" category="server" jid="jabber.dk" type="im"/>
+		<component available="yes" category="conference" jid="conference.jabber.dk" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.dk" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.jabber.dk" type="x-muc"/>
+	</server>
+	<server jid="jabber.dn.ua" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.dn.ua" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.jabber.dn.ua" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.dn.ua" type="im"/>
+		<component available="no" category="directory" jid="vjud.jabber.dn.ua" type="user"/>
+		<component available="yes" category="conference" jid="conference.jabber.dn.ua" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.dn.ua" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.dn.ua" type="icq"/>
+	</server>
+	<server jid="jabber.dol.ru" offline="no">
+		<component available="no" category="conference" jid="irc.jabber.dol.ru" type="irc"/>
+		<component available="yes" category="server" jid="jabber.dol.ru" type="im"/>
+		<component available="no" category="gateway" jid="icq.jabber.dol.ru" type="icq"/>
+		<component available="no" category="conference" jid="conference.jabber.dol.ru" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.dol.ru" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabber.dol.ru" type="user"/>
+	</server>
+	<server jid="jabber.earth.li" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.jabber.earth.li" type="service"/>
+		<component available="yes" category="server" jid="jabber.earth.li" type="im"/>
+		<component available="yes" category="conference" jid="irc.jabber.earth.li" type="irc"/>
+		<component available="yes" category="pubsub" jid="jabber.earth.li" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.earth.li" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.earth.li" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabber.earth.li" type="user"/>
+	</server>
+	<server jid="jabber.eban-meban.com" offline="yes">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.eban-meban.com" type="service"/>
+		<component available="yes" category="server" jid="jabber.eban-meban.com" type="im"/>
+		<component available="no" category="conference" jid="irc.jabber.eban-meban.com" type="irc"/>
+		<component available="yes" category="pubsub" jid="jabber.eban-meban.com" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.eban-meban.com" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.eban-meban.com" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.eban-meban.com" type="user"/>
+	</server>
+	<server jid="jabber.fourecks.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.fourecks.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber.fourecks.de" type="im"/>
+	</server>
+	<server jid="jabber.freenet.de" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.freenet.de" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.freenet.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.freenet.de" type="im"/>
+		<component available="yes" category="conference" jid="muc.jabber.freenet.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.jabber.freenet.de" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.freenet.de" type="user"/>
+	</server>
+	<server jid="jabber.fsinf.at" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.fsinf.at" type="pep"/>
+		<component available="yes" category="server" jid="jabber.fsinf.at" type="im"/>
+		<component available="no" category="conference" jid="irc.jabber.fsinf.at" type="irc"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.fsinf.at" type="service"/>
+		<component available="no" category="component" jid="webpresence.jabber.fsinf.at" type="presence"/>
+	</server>
+	<server jid="jabber.gathered-geeks.org" offline="no">
+		<component available="yes" category="server" jid="jabber.gathered-geeks.org" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.gathered-geeks.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.gathered-geeks.org" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.gathered-geeks.org" type="icq"/>
+		<component available="yes" category="conference" jid="conference.jabber.gathered-geeks.org" type="x-muc"/>
+	</server>
+	<server jid="jabber.gnubox.net" offline="no">
+		<component available="no" category="conference" jid="irc.jabber.gnubox.net" type="irc"/>
+		<component available="yes" category="server" jid="jabber.gnubox.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.gnubox.net" type="service"/>
+		<component available="yes" category="conference" jid="conference.jabber.gnubox.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.gnubox.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabber.gnubox.net" type="user"/>
+	</server>
+	<server jid="jabber.hellercom.de" offline="yes">
+		<component available="no" category="server" jid="jabber.hellercom.de" type="im"/>
+	</server>
+	<server jid="jabber.hot-chilli.eu" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.eu" type="pep"/>
+		<component available="yes" category="server" jid="jabber.hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.eu" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.eu" type="im"/>
+	</server>
+	<server jid="jabber.hot-chilli.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.hot-chilli.net" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.hot-chilli.net" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.jabber.hot-chilli.net" type="x-muc"/>
+		<component available="yes" category="server" jid="jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="im.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="proxy.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="server" jid="vjud.jabber.hot-chilli.net" type="im"/>
+		<component available="yes" category="gateway" jid="gg.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="gateway" jid="j2j.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="gateway" jid="xmpp.jabber.hot-chilli.net" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="jabber.hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.net" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.hot-chilli.net" type="pep"/>
+		<component available="yes" category="gateway" jid="aim.jabber.hot-chilli.net" type="aim"/>
+		<component available="yes" category="gateway" jid="novell.jabber.hot-chilli.net" type="novell"/>
+		<component available="yes" category="conference" jid="conference.jabber.hot-chilli.net" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="directory" jid="vjud.jabber.hot-chilli.net" type="user"/>
+		<component available="yes" category="gateway" jid="sipe.jabber.hot-chilli.net" type="lcs"/>
+		<component available="yes" category="gateway" jid="icq.jabber.hot-chilli.net" type="icq"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.hot-chilli.net" type="yahoo"/>
+	</server>
+	<server jid="jabber.i-pobox.net" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.i-pobox.net" type="pep"/>
+		<component available="yes" category="server" jid="jabber.i-pobox.net" type="im"/>
+		<component available="yes" category="server" jid="users.i-pobox.net" type="im"/>
+		<component available="yes" category="conference" jid="conference.i-pobox.net" type="text"/>
+		<component available="yes" category="directory" jid="users.i-pobox.net" type="user"/>
+		<component available="yes" category="conference" jid="conference.i-pobox.net" type="x-muc"/>
+	</server>
+	<server jid="jabber.iitsp.com" offline="no">
+		<component available="no" category="gateway" jid="msn.jabber.iitsp.com" type="msn"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.iitsp.com" type="service"/>
+		<component available="no" category="proxy" jid="proxy.jabber.iitsp.com" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.iitsp.com" type="im"/>
+		<component available="no" category="gateway" jid="gtalk.jabber.iitsp.com" type="gtalk"/>
+		<component available="yes" category="pubsub" jid="jabber.iitsp.com" type="pep"/>
+		<component available="no" category="gateway" jid="yahoo.jabber.iitsp.com" type="yahoo"/>
+		<component available="no" category="conference" jid="conference.jabber.iitsp.com" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.iitsp.com" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.iitsp.com" type="icq"/>
+		<component available="no" category="gateway" jid="aim.jabber.iitsp.com" type="aim"/>
+	</server>
+	<server jid="jabber.linux.it" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.linux.it" type="service"/>
+		<component available="yes" category="server" jid="jabber.linux.it" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.linux.it" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.linux.it" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.linux.it" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.linux.it" type="user"/>
+	</server>
+	<server jid="jabber.linuxlovers.at" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.linuxlovers.at" type="service"/>
+		<component available="yes" category="server" jid="jabber.linuxlovers.at" type="im"/>
+		<component available="yes" category="conference" jid="irc.jabber.linuxlovers.at" type="irc"/>
+		<component available="yes" category="pubsub" jid="jabber.linuxlovers.at" type="pep"/>
+		<component available="no" category="gateway" jid="yahoo.jabber.linuxlovers.at" type="yahoo"/>
+		<component available="yes" category="conference" jid="conference.jabber.linuxlovers.at" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.linuxlovers.at" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.linuxlovers.at" type="icq"/>
+		<component available="no" category="gateway" jid="aim.jabber.linuxlovers.at" type="aim"/>
+	</server>
+	<server jid="jabber.loudas.com" offline="yes">
+		<component available="yes" category="server" jid="jabber.loudas.com" type="im"/>
+		<component available="yes" category="directory" jid="vjud.jabber.loudas.com" type="user"/>
+		<component available="yes" category="conference" jid="irc.jabber.loudas.com" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.loudas.com" type="bytestreams"/>
+	</server>
+	<server jid="jabber.mbod.net" offline="yes">
+		<component available="no" category="conference" jid="irc.jabber.mbod.net" type="irc"/>
+		<component available="yes" category="server" jid="jabber.mbod.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.mbod.net" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.mbod.net" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabber.mbod.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.mbod.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabber.mbod.net" type="user"/>
+	</server>
+	<server jid="jabber.me" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.jabber.me" type="service"/>
+		<component available="yes" category="component" jid="jabber.me" type="im"/>
+		<component available="yes" category="server" jid="jabber.me" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.me" type="pep"/>
+		<component available="yes" category="conference" jid="muc.jabber.me" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.jabber.me" type="text"/>
+	</server>
+	<server jid="jabber.me.uk" offline="yes">
+		<component available="yes" category="server" jid="jabber.me.uk" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.me.uk" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.me.uk" type="text"/>
+		<component available="yes" category="conference" jid="conference.jabber.me.uk" type="x-muc"/>
+	</server>
+	<server jid="jabber.meta.net.nz" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.meta.net.nz" type="service"/>
+		<component available="yes" category="server" jid="jabber.meta.net.nz" type="im"/>
+		<component available="yes" category="gateway" jid="icq.jabber.meta.net.nz" type="icq"/>
+		<component available="no" category="component" jid="webpresence.jabber.meta.net.nz" type="presence"/>
+		<component available="yes" category="pubsub" jid="jabber.meta.net.nz" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.meta.net.nz" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.meta.net.nz" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.meta.net.nz" type="user"/>
+		<component available="yes" category="gateway" jid="aim.jabber.meta.net.nz" type="aim"/>
+	</server>
+	<server jid="jabber.minus273.org" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.minus273.org" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.minus273.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.minus273.org" type="im"/>
+		<component available="no" category="gateway" jid="icq.jabber.minus273.org" type="icq"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.minus273.org" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.minus273.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.minus273.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.minus273.org" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabber.minus273.org" type="user"/>
+	</server>
+	<server jid="jabber.no" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.no" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.no" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.no" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.no" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.no" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.no" type="text"/>
+	</server>
+	<server jid="jabber.no-sense.net" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.no-sense.net" type="irc"/>
+		<component available="no" category="headline" jid="mail.jabber.no-sense.net" type="newmail"/>
+		<component available="yes" category="server" jid="jabber.no-sense.net" type="im"/>
+		<component available="yes" category="gateway" jid="facebook.jabber.no-sense.net" type="facebook"/>
+		<component available="no" category="gateway" jid="smtp.jabber.no-sense.net" type="smtp"/>
+		<component available="yes" category="conference" jid="conference.jabber.no-sense.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.no-sense.net" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.no-sense.net" type="icq"/>
+	</server>
+	<server jid="jabber.od.ua" offline="yes">
+		<component available="no" category="gateway" jid="msn.jabber.od.ua" type="msn"/>
+		<component available="yes" category="conference" jid="irc.jabber.od.ua" type="irc"/>
+		<component available="yes" category="server" jid="jabber.od.ua" type="im"/>
+		<component available="no" category="gateway" jid="icq.jabber.od.ua" type="icq"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.od.ua" type="service"/>
+		<component available="yes" category="conference" jid="conference.jabber.od.ua" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.od.ua" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.od.ua" type="user"/>
+		<component available="no" category="gateway" jid="aim.jabber.od.ua" type="aim"/>
+	</server>
+	<server jid="jabber.openchaos.org" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.openchaos.org" type="pep"/>
+		<component available="yes" category="server" jid="jabber.openchaos.org" type="im"/>
+	</server>
+	<server jid="jabber.org" offline="no">
+		<component available="yes" category="server" jid="jabber.org" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.org" type="text"/>
+		<component available="yes" category="directory" jid="jabber.org" type="user"/>
+		<component available="yes" category="conference" jid="conference.jabber.org" type="x-muc"/>
+	</server>
+	<server jid="jabber.org.au" offline="no">
+		<component available="no" category="conference" jid="irc.jabber.org.au" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.org.au" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.org.au" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.org.au" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.org.au" type="pep"/>
+		<component available="yes" category="conference" jid="rooms.jabber.org.au" type="x-muc"/>
+		<component available="yes" category="conference" jid="rooms.jabber.org.au" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabber.org.au" type="user"/>
+	</server>
+	<server jid="jabber.org.by" offline="no">
+		<component available="no" category="gateway" jid="msn.jabber.org.by" type="msn"/>
+		<component available="yes" category="conference" jid="irc2.jabber.org.by" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.org.by" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.org.by" type="im"/>
+		<component available="yes" category="gateway" jid="xmpp.jabber.org.by" type="xmpp"/>
+		<component available="yes" category="gateway" jid="vkontakte.jabber.org.by" type="xmpp"/>
+		<component available="yes" category="gateway" jid="facebook.jabber.org.by" type="xmpp"/>
+		<component available="yes" category="gateway" jid="j2j.jabber.org.by" type="xmpp"/>
+		<component available="yes" category="gateway" jid="twitter.jabber.org.by" type="twitter"/>
+		<component available="yes" category="pubsub" jid="jabber.org.by" type="pep"/>
+		<component available="yes" category="gateway" jid="skype.jabber.org.by" type="skype"/>
+		<component available="no" category="gateway" jid="yahoo.jabber.org.by" type="yahoo"/>
+		<component available="yes" category="conference" jid="conference.jabber.org.by" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.org.by" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.org.by" type="icq"/>
+		<component available="yes" category="gateway" jid="aim.jabber.org.by" type="aim"/>
+	</server>
+	<server jid="jabber.org.lv" offline="yes">
+		<component available="yes" category="conference" jid="irc.jabber.org.lv" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.org.lv" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.org.lv" type="im"/>
+		<component available="yes" category="directory" jid="vjud.jabber.org.lv" type="user"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.org.lv" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.org.lv" type="pep"/>
+		<component available="no" category="gateway" jid="sms.jabber.org.lv" type="sms"/>
+		<component available="yes" category="conference" jid="conference.jabber.org.lv" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.org.lv" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.org.lv" type="icq"/>
+	</server>
+	<server jid="jabber.pilgerer.de" offline="yes">
+		<component available="yes" category="server" jid="jabber.pilgerer.de" type="im"/>
+		<component available="no" category="proxy" jid="proxy.jabber.pilgerer.de" type="bytestreams"/>
+		<component available="no" category="directory" jid="vjud.jabber.pilgerer.de" type="user"/>
+	</server>
+	<server jid="jabber.planetteamspeak.com" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.jabber.planetteamspeak.com" type="service"/>
+		<component available="no" category="proxy" jid="proxy.jabber.planetteamspeak.com" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.planetteamspeak.com" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.planetteamspeak.com" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabber.planetteamspeak.com" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.planetteamspeak.com" type="text"/>
+		<component available="no" category="directory" jid="search.jabber.planetteamspeak.com" type="user"/>
+	</server>
+	<server jid="jabber.rootbash.com" offline="no">
+		<component available="no" category="gateway" jid="msn.jabber.rootbash.com" type="msn"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.rootbash.com" type="service"/>
+		<component available="yes" category="server" jid="jabber.rootbash.com" type="im"/>
+		<component available="no" category="gateway" jid="icq.jabber.rootbash.com" type="icq"/>
+		<component available="no" category="gateway" jid="gtalk.jabber.rootbash.com" type="gtalk"/>
+		<component available="yes" category="pubsub" jid="jabber.rootbash.com" type="pep"/>
+		<component available="no" category="gateway" jid="gadugadu.jabber.rootbash.com" type="gadu-gadu"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.rootbash.com" type="yahoo"/>
+		<component available="no" category="conference" jid="conference.jabber.rootbash.com" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.rootbash.com" type="text"/>
+		<component available="no" category="directory" jid="search.jabber.rootbash.com" type="user"/>
+		<component available="no" category="gateway" jid="aim.jabber.rootbash.com" type="aim"/>
+	</server>
+	<server jid="jabber.rueckgr.at" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.rueckgr.at" type="irc"/>
+		<component available="yes" category="gateway" jid="aim.jabber.rueckgr.at" type="aim"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.rueckgr.at" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.rueckgr.at" type="im"/>
+		<component available="yes" category="gateway" jid="xmpp.jabber.rueckgr.at" type="xmpp"/>
+		<component available="yes" category="gateway" jid="gg.jabber.rueckgr.at" type="gadu-gadu"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.rueckgr.at" type="yahoo"/>
+		<component available="yes" category="conference" jid="conference.jabber.rueckgr.at" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.rueckgr.at" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.rueckgr.at" type="user"/>
+		<component available="yes" category="gateway" jid="icq.jabber.rueckgr.at" type="icq"/>
+	</server>
+	<server jid="jabber.scha.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.scha.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber.scha.de" type="im"/>
+	</server>
+	<server jid="jabber.schnied.net" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.schnied.net" type="pep"/>
+		<component available="yes" category="server" jid="jabber.schnied.net" type="im"/>
+		<component available="no" category="gateway" jid="icq.jabber.schnied.net" type="icq"/>
+		<component available="no" category="gateway" jid="aim.jabber.schnied.net" type="aim"/>
+	</server>
+	<server jid="jabber.schwarzvogel.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.schwarzvogel.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber.schwarzvogel.de" type="im"/>
+		<component available="yes" category="conference" jid="conferences.jabber.schwarzvogel.de" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.schwarzvogel.de" type="icq"/>
+		<component available="yes" category="conference" jid="conferences.jabber.schwarzvogel.de" type="x-muc"/>
+	</server>
+	<server jid="jabber.scunc.net" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.scunc.net" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.jabber.scunc.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.scunc.net" type="im"/>
+		<component available="no" category="directory" jid="vjud.jabber.scunc.net" type="user"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.scunc.net" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.scunc.net" type="pep"/>
+		<component available="no" category="gateway" jid="sms.jabber.scunc.net" type="sms"/>
+		<component available="yes" category="conference" jid="conference.jabber.scunc.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.scunc.net" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.scunc.net" type="icq"/>
+		<component available="yes" category="gateway" jid="aim.jabber.scunc.net" type="aim"/>
+	</server>
+	<server jid="jabber.se" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.se" type="service"/>
+		<component available="yes" category="server" jid="jabber.se" type="im"/>
+		<component available="yes" category="conference" jid="irc.jabber.se" type="irc"/>
+		<component available="yes" category="pubsub" jid="jabber.se" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.se" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.se" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.se" type="user"/>
+	</server>
+	<server jid="jabber.second-home.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.second-home.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber.second-home.de" type="im"/>
+	</server>
+	<server jid="jabber.sk" offline="no">
+		<component available="yes" category="conference" jid="irc.jabber.sk" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.sk" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.sk" type="im"/>
+		<component available="no" category="component" jid="webpresence.jabber.sk" type="presence"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.sk" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.sk" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.sk" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.sk" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.sk" type="user"/>
+	</server>
+	<server jid="jabber.snc.ru" offline="yes">
+		<component available="yes" category="gateway" jid="msn.jabber.snc.ru" type="msn"/>
+		<component available="yes" category="conference" jid="irc.jabber.snc.ru" type="irc"/>
+		<component available="yes" category="server" jid="jabber.snc.ru" type="im"/>
+		<component available="no" category="directory" jid="vjud.jabber.snc.ru" type="user"/>
+		<component available="yes" category="conference" jid="conference.jabber.snc.ru" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.snc.ru" type="text"/>
+		<component available="yes" category="conference" jid="msn.jabber.snc.ru" type="text"/>
+		<component available="yes" category="gateway" jid="icq.jabber.snc.ru" type="icq"/>
+	</server>
+	<server jid="jabber.sow.as" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.sow.as" type="pep"/>
+		<component available="yes" category="server" jid="jabber.sow.as" type="im"/>
+	</server>
+	<server jid="jabber.stammtisch.it" offline="yes">
+		<component available="yes" category="server" jid="jabber.stammtisch.it" type="im"/>
+		<component available="no" category="conference" jid="conference.jabber.stammtisch.it" type="text"/>
+		<component available="no" category="directory" jid="jud.jabber.stammtisch.it" type="user"/>
+		<component available="no" category="conference" jid="conference.jabber.stammtisch.it" type="x-muc"/>
+	</server>
+	<server jid="jabber.tcweb.org" offline="yes">
+		<component available="yes" category="gateway" jid="msn.tcweb.org" type="msn"/>
+		<component available="yes" category="conference" jid="irc.jabber.tcweb.org" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.tcweb.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.tcweb.org" type="im"/>
+		<component available="no" category="gateway" jid="icq.tcweb.org" type="icq"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.tcweb.org" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.tcweb.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.tcweb.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.tcweb.org" type="text"/>
+		<component available="yes" category="conference" jid="msn.tcweb.org" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabber.tcweb.org" type="user"/>
+		<component available="no" category="gateway" jid="aim.tcweb.org" type="aim"/>
+	</server>
+	<server jid="jabber.tf-network.de" offline="no">
+		<component available="yes" category="gateway" jid="gtalk.jabber.tf-network.de" type="gtalk"/>
+		<component available="yes" category="conference" jid="irc.jabber.tf-network.de" type="irc"/>
+		<component available="no" category="conference" jid="conference.irc.jabber.tf-network.de" type="irc"/>
+		<component available="yes" category="server" jid="jabber.tf-network.de" type="im"/>
+		<component available="yes" category="gateway" jid="xmpp.jabber.tf-network.de" type="xmpp"/>
+		<component available="yes" category="gateway" jid="livejournal.jabber.tf-network.de" type="xmpp"/>
+		<component available="yes" category="gateway" jid="renren.jabber.tf-network.de" type="xmpp"/>
+		<component available="yes" category="gateway" jid="facebook.jabber.tf-network.de" type="facebook"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabber.tf-network.de" type="service"/>
+		<component available="yes" category="gateway" jid="qq.jabber.tf-network.de" type="qq"/>
+		<component available="yes" category="gateway" jid="sametime.jabber.tf-network.de" type="sametime"/>
+		<component available="yes" category="pubsub" jid="jabber.tf-network.de" type="pep"/>
+		<component available="yes" category="gateway" jid="gadugadu.jabber.tf-network.de" type="gadu-gadu"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.tf-network.de" type="yahoo"/>
+		<component available="yes" category="gateway" jid="myspaceim.jabber.tf-network.de" type="myspaceim"/>
+		<component available="yes" category="gateway" jid="icq.jabber.tf-network.de" type="icq"/>
+		<component available="yes" category="directory" jid="search.jabber.tf-network.de" type="user"/>
+		<component available="yes" category="gateway" jid="aim.jabber.tf-network.de" type="aim"/>
+		<component available="yes" category="component" jid="broadcast.jabber.tf-network.de" type="generic"/>
+	</server>
+	<server jid="jabber.theforest.us" offline="yes">
+		<component available="no" category="gateway" jid="msn.jabber.theforest.us" type="msn"/>
+		<component available="no" category="conference" jid="irc.jabber.theforest.us" type="irc"/>
+		<component available="yes" category="server" jid="jabber.theforest.us" type="im"/>
+		<component available="no" category="gateway" jid="xmpp.jabber.theforest.us" type="xmpp"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.theforest.us" type="service"/>
+		<component available="yes" category="pubsub" jid="jabber.theforest.us" type="pep"/>
+		<component available="no" category="gateway" jid="yahoo.jabber.theforest.us" type="yahoo"/>
+		<component available="no" category="conference" jid="conference.jabber.theforest.us" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.theforest.us" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.theforest.us" type="icq"/>
+		<component available="no" category="directory" jid="vjud.jabber.theforest.us" type="user"/>
+		<component available="no" category="gateway" jid="aim.jabber.theforest.us" type="aim"/>
+	</server>
+	<server jid="jabber.tmkis.com" offline="yes">
+		<component available="no" category="server" jid="jabber.tmkis.com" type="im"/>
+	</server>
+	<server jid="jabber.tutnot.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.tutnot.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber.tutnot.de" type="im"/>
+	</server>
+	<server jid="jabber.ukrwest.net" offline="yes">
+		<component available="no" category="conference" jid="irc.jabber.ukrwest.net" type="irc"/>
+		<component available="yes" category="server" jid="jabber.ukrwest.net" type="im"/>
+		<component available="no" category="directory" jid="vjud.jabber.ukrwest.net" type="user"/>
+		<component available="no" category="pubsub" jid="pubsub.jabber.ukrwest.net" type="service"/>
+		<component available="no" category="conference" jid="conference.jabber.ukrwest.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabber.ukrwest.net" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.ukrwest.net" type="icq"/>
+	</server>
+	<server jid="jabber.ulm.ccc.de" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.ulm.ccc.de" type="pep"/>
+		<component available="yes" category="server" jid="jabber.ulm.ccc.de" type="im"/>
+		<component available="yes" category="conference" jid="conference.jabber.ulm.ccc.de" type="text"/>
+		<component available="yes" category="conference" jid="conference.jabber.ulm.ccc.de" type="x-muc"/>
+	</server>
+	<server jid="jabber.verbrennung.org" offline="no">
+		<component available="yes" category="pubsub" jid="jabber.verbrennung.org" type="pep"/>
+		<component available="yes" category="server" jid="jabber.verbrennung.org" type="im"/>
+	</server>
+	<server jid="jabber.wien" offline="yes">
+		<component available="yes" category="pubsub" jid="pubsub.jabber.wien" type="service"/>
+		<component available="yes" category="server" jid="jabber.wien" type="im"/>
+		<component available="no" category="component" jid="webpresence.jabber.wien" type="presence"/>
+		<component available="yes" category="conference" jid="irc.jabber.wien" type="irc"/>
+		<component available="yes" category="store" jid="upload.jabber.wien" type="file"/>
+		<component available="yes" category="pubsub" jid="jabber.wien" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.wien" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.wien" type="text"/>
+	</server>
+	<server jid="jabber.workaround.org" offline="no">
+		<component available="yes" category="server" jid="jabber.workaround.org" type="im"/>
+		<component available="yes" category="pubsub" jid="jabber.workaround.org" type="pep"/>
+		<component available="no" category="conference" jid="conf.jabber.workaround.org" type="text"/>
+		<component available="no" category="conference" jid="conf.jabber.workaround.org" type="x-muc"/>
+	</server>
+	<server jid="jabber.yeahnah.co.nz" offline="yes">
+		<component available="yes" category="gateway" jid="msn.jabber.yeahnah.co.nz" type="msn"/>
+		<component available="yes" category="conference" jid="irc.jabber.yeahnah.co.nz" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabber.yeahnah.co.nz" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabber.yeahnah.co.nz" type="im"/>
+		<component available="yes" category="gateway" jid="facebook.jabber.yeahnah.co.nz" type="xmpp"/>
+		<component available="yes" category="gateway" jid="j2j.jabber.yeahnah.co.nz" type="xmpp"/>
+		<component available="yes" category="gateway" jid="icq.jabber.yeahnah.co.nz" type="icq"/>
+		<component available="yes" category="directory" jid="vjud.jabber.yeahnah.co.nz" type="user"/>
+		<component available="yes" category="gateway" jid="aim.jabber.yeahnah.co.nz" type="aim"/>
+		<component available="yes" category="gateway" jid="yahoo.jabber.yeahnah.co.nz" type="yahoo"/>
+	</server>
+	<server jid="jabber.zone" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.jabber.zone" type="service"/>
+		<component available="yes" category="server" jid="jabber.zone" type="im"/>
+		<component available="no" category="component" jid="webpresence.jabber.zone" type="presence"/>
+		<component available="no" category="conference" jid="irc.jabber.zone" type="irc"/>
+		<component available="yes" category="pubsub" jid="jabber.zone" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.zone" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.zone" type="text"/>
+	</server>
+	<server jid="jabberafrica.org" offline="no">
+		<component available="yes" category="server" jid="jabberafrica.org" type="im"/>
+		<component available="no" category="conference" jid="conference.jabberafrica.org" type="text"/>
+		<component available="no" category="conference" jid="conference.jabberafrica.org" type="x-muc"/>
+	</server>
+	<server jid="jabberbr.com" offline="yes">
+		<component available="no" category="server" jid="jabberbr.com" type="im"/>
+	</server>
+	<server jid="jabbercn.org" offline="yes">
+		<component available="yes" category="server" jid="jabbercn.org" type="im"/>
+		<component available="no" category="directory" jid="vjud.jabbercn.org" type="user"/>
+	</server>
+	<server jid="jabberd.eu" offline="yes">
+		<component available="no" category="conference" jid="irc.jabberd.eu" type="irc"/>
+		<component available="yes" category="server" jid="jabberd.eu" type="im"/>
+		<component available="yes" category="directory" jid="vjud.jabberd.eu" type="user"/>
+		<component available="no" category="pubsub" jid="pubsub.jabberd.eu" type="service"/>
+		<component available="yes" category="pubsub" jid="jabberd.eu" type="pep"/>
+		<component available="yes" category="gateway" jid="icq2.jabberd.eu" type="icq"/>
+	</server>
+	<server jid="jabberes.org" offline="no">
+		<component available="yes" category="server" jid="jabberes.org" type="im"/>
+		<component available="yes" category="conference" jid="conf.jabberes.org" type="text"/>
+		<component available="no" category="conference" jid="irc.jabberes.org" type="irc"/>
+		<component available="no" category="component" jid="webpresence.jabberes.org" type="presence"/>
+		<component available="yes" category="conference" jid="conf.jabberes.org" type="x-muc"/>
+	</server>
+	<server jid="jabberforum.de" offline="no">
+		<component available="no" category="conference" jid="irc.jabberforum.de" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.jabberforum.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabberforum.de" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jabberforum.de" type="service"/>
+		<component available="yes" category="pubsub" jid="jabberforum.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabberforum.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabberforum.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabberforum.de" type="user"/>
+	</server>
+	<server jid="jabberheaven.com" offline="yes">
+		<component available="yes" category="pubsub" jid="jabberheaven.com" type="pep"/>
+		<component available="yes" category="server" jid="jabberheaven.com" type="im"/>
+		<component available="no" category="conference" jid="conference.jabberheaven.com" type="text"/>
+		<component available="no" category="conference" jid="conference.jabberheaven.com" type="x-muc"/>
+	</server>
+	<server jid="jabberim.de" offline="yes">
+		<component available="no" category="server" jid="jabberim.de" type="im"/>
+	</server>
+	<server jid="jabberon.net" offline="no">
+		<component available="no" category="conference" jid="irc.jabberon.net" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabberon.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabberon.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jabberon.net" type="service"/>
+		<component available="yes" category="pubsub" jid="jabberon.net" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabberon.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabberon.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabberon.net" type="user"/>
+	</server>
+	<server jid="jabberon.ru" offline="no">
+		<component available="yes" category="conference" jid="irc.jabberon.ru" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabberon.ru" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabberon.ru" type="im"/>
+		<component available="no" category="gateway" jid="j2j.jabberon.ru" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabberon.ru" type="service"/>
+		<component available="yes" category="store" jid="upload.jabberon.ru" type="file"/>
+		<component available="yes" category="pubsub" jid="jabberon.ru" type="pep"/>
+		<component available="no" category="gateway" jid="smtp.jabberon.ru" type="smtp"/>
+		<component available="yes" category="conference" jid="conference.jabberon.ru" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabberon.ru" type="text"/>
+		<component available="yes" category="gateway" jid="vkontakte.jabberon.ru" type="vk"/>
+		<component available="yes" category="gateway" jid="vktest.jabberon.ru" type="vk"/>
+		<component available="no" category="gateway" jid="icq.jabberon.ru" type="icq"/>
+		<component available="no" category="directory" jid="vjud.jabberon.ru" type="user"/>
+	</server>
+	<server jid="jabberpl.org" offline="no">
+		<component available="yes" category="conference" jid="irc.jabberpl.org" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabberpl.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabberpl.org" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabberpl.org" type="service"/>
+		<component available="yes" category="pubsub" jid="jabberpl.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabberpl.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabberpl.org" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabberpl.org" type="user"/>
+	</server>
+	<server jid="jabberwiki.de" offline="no">
+		<component available="no" category="conference" jid="irc.jabberwiki.de" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.jabberwiki.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabberwiki.de" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jabberwiki.de" type="service"/>
+		<component available="yes" category="pubsub" jid="jabberwiki.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabberwiki.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabberwiki.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.jabberwiki.de" type="user"/>
+	</server>
+	<server jid="jabberzac.org" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabberzac.org" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabberzac.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabberzac.org" type="im"/>
+		<component available="yes" category="pubsub" jid="jabberzac.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabberzac.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabberzac.org" type="text"/>
+		<component available="yes" category="directory" jid="search.jabberzac.org" type="user"/>
+	</server>
+	<server jid="jabbim.com" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabbim.com" type="service"/>
+		<component available="yes" category="server" jid="jabbim.com" type="im"/>
+		<component available="yes" category="gateway" jid="j2j-vip.jabbim.com" type="xmpp"/>
+		<component available="yes" category="gateway" jid="j2j.jabbim.com" type="xmpp"/>
+		<component available="yes" category="gateway" jid="facebook.jabbim.com" type="facebook"/>
+		<component available="yes" category="gateway" jid="twitter.jabbim.com" type="twitter"/>
+		<component available="yes" category="pubsub" jid="jabbim.com" type="pep"/>
+		<component available="no" category="headline" jid="weather.jabbim.com" type="weather"/>
+		<component available="yes" category="gateway" jid="skype.jabbim.com" type="skype"/>
+	</server>
+	<server jid="jabbim.cz" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jabbim.cz" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jabbim.cz" type="bytestreams"/>
+		<component available="yes" category="gateway" jid="tv.jabbim.cz" type="tv"/>
+		<component available="yes" category="server" jid="jabbim.cz" type="im"/>
+		<component available="yes" category="store" jid="disk.jabbim.cz" type="file"/>
+		<component available="yes" category="pubsub" jid="jabbim.cz" type="pep"/>
+		<component available="yes" category="gateway" jid="sms.jabbim.cz" type="sms"/>
+		<component available="yes" category="gateway" jid="icq.jabbim.cz" type="icq"/>
+	</server>
+	<server jid="jabbim.pl" offline="no">
+		<component available="yes" category="pubsub" jid="jabbim.pl" type="pep"/>
+		<component available="yes" category="server" jid="jabbim.pl" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabbim.pl" type="service"/>
+		<component available="yes" category="gateway" jid="gg.jabbim.pl" type="gadu-gadu"/>
+		<component available="no" category="gateway" jid="sms.jabbim.pl" type="sms"/>
+	</server>
+	<server jid="jabbim.sk" offline="no">
+		<component available="yes" category="pubsub" jid="jabbim.sk" type="pep"/>
+		<component available="yes" category="server" jid="jabbim.sk" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabbim.sk" type="service"/>
+	</server>
+	<server jid="jabjab.de" offline="no">
+		<component available="yes" category="conference" jid="irc.jabjab.de" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.jabjab.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabjab.de" type="im"/>
+		<component available="yes" category="gateway" jid="telegram.jabjab.de" type="telegram"/>
+		<component available="yes" category="gateway" jid="facebook.jabjab.de" type="facebook"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabjab.de" type="service"/>
+		<component available="yes" category="pubsub" jid="jabjab.de" type="pep"/>
+		<component available="yes" category="gateway" jid="gadugadu.jabjab.de" type="gadu-gadu"/>
+		<component available="yes" category="gateway" jid="aim.jabjab.de" type="aim"/>
+		<component available="yes" category="conference" jid="conference.jabjab.de" type="x-muc"/>
+		<component available="yes" category="gateway" jid="whatsapp.jabjab.de" type="xmpp"/>
+		<component available="yes" category="conference" jid="conference.jabjab.de" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jabjab.de" type="user"/>
+		<component available="yes" category="gateway" jid="icq.jabjab.de" type="icq"/>
+		<component available="yes" category="gateway" jid="yahoo.jabjab.de" type="yahoo"/>
+	</server>
+	<server jid="jabme.de" offline="no">
+		<component available="no" category="proxy" jid="proxy.jabme.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="jabme.de" type="im"/>
+		<component available="yes" category="gateway" jid="facebook2.jabme.de" type="xmpp"/>
+		<component available="yes" category="gateway" jid="xmpp2.jabme.de" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="jabme.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.jabme.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jabme.de" type="text"/>
+		<component available="no" category="gateway" jid="icq2.jabme.de" type="icq"/>
+		<component available="yes" category="gateway" jid="aim2.jabme.de" type="aim"/>
+	</server>
+	<server jid="jabster.pl" offline="no">
+		<component available="yes" category="pubsub" jid="jabster.pl" type="pep"/>
+		<component available="yes" category="server" jid="jabster.pl" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.jabster.pl" type="service"/>
+		<component available="yes" category="gateway" jid="gadu-gadu.jabster.pl" type="gadu-gadu"/>
+	</server>
+	<server jid="jacquin.eu" offline="yes">
+		<component available="yes" category="server" jid="jacquin.eu" type="im"/>
+	</server>
+	<server jid="jaim.at" offline="no">
+		<component available="no" category="conference" jid="irc.jaim.at" type="irc"/>
+		<component available="yes" category="server" jid="jaim.at" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.jaim.at" type="service"/>
+		<component available="yes" category="pubsub" jid="jaim.at" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jaim.at" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jaim.at" type="text"/>
+		<component available="no" category="directory" jid="vjud.jaim.at" type="user"/>
+	</server>
+	<server jid="jappix.com" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jappix.com" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jappix.com" type="bytestreams"/>
+		<component available="yes" category="server" jid="jappix.com" type="im"/>
+		<component available="yes" category="pubsub" jid="jappix.com" type="pep"/>
+		<component available="yes" category="conference" jid="muc.jappix.com" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.jappix.com" type="text"/>
+		<component available="yes" category="directory" jid="vjud.jappix.com" type="user"/>
+	</server>
+	<server jid="jid.pl" offline="no">
+		<component available="yes" category="pubsub" jid="jid.pl" type="pep"/>
+		<component available="yes" category="server" jid="jid.pl" type="im"/>
+		<component available="yes" category="conference" jid="conference.jid.pl" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.jid.pl" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.jid.pl" type="x-muc"/>
+	</server>
+	<server jid="jid.su" offline="no">
+		<component available="yes" category="gateway" jid="msn.jid.su" type="msn"/>
+		<component available="yes" category="conference" jid="irc.jid.su" type="irc"/>
+		<component available="yes" category="server" jid="jid.su" type="im"/>
+		<component available="yes" category="gateway" jid="icq.jid.su" type="icq"/>
+		<component available="yes" category="gateway" jid="jit.jid.su" type="icq"/>
+		<component available="yes" category="pubsub" jid="pubsub.jid.su" type="service"/>
+		<component available="yes" category="gateway" jid="mrim.jid.su" type="mrim"/>
+		<component available="yes" category="pubsub" jid="jid.su" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jid.su" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jid.su" type="text"/>
+		<component available="yes" category="conference" jid="msn.jid.su" type="text"/>
+		<component available="yes" category="gateway" jid="vk.jid.su" type="vk"/>
+		<component available="yes" category="directory" jid="vjud.jid.su" type="user"/>
+		<component available="yes" category="gateway" jid="aim.jid.su" type="aim"/>
+	</server>
+	<server jid="jis.mit.edu" offline="no">
+		<component available="no" category="conference" jid="irc.jis.mit.edu" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.jis.mit.edu" type="bytestreams"/>
+		<component available="yes" category="server" jid="jis.mit.edu" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.jis.mit.edu" type="service"/>
+		<component available="yes" category="pubsub" jid="jis.mit.edu" type="pep"/>
+		<component available="no" category="conference" jid="conference.jis.mit.edu" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.jis.mit.edu" type="text"/>
+		<component available="no" category="directory" jid="vjud.jis.mit.edu" type="user"/>
+	</server>
+	<server jid="jix.im" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.jix.im" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.jix.im" type="bytestreams"/>
+		<component available="yes" category="server" jid="jix.im" type="im"/>
+		<component available="no" category="gateway" jid="j2j.jix.im" type="xmpp"/>
+		<component available="no" category="component" jid="webpresence.jix.im" type="presence"/>
+		<component available="no" category="conference" jid="irc.jix.im" type="irc"/>
+		<component available="yes" category="pubsub" jid="jix.im" type="pep"/>
+		<component available="no" category="gateway" jid="gg.jix.im" type="gadu-gadu"/>
+		<component available="no" category="gateway" jid="gtalk.jix.im" type="gtalk"/>
+		<component available="yes" category="conference" jid="muc.jix.im" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.jix.im" type="text"/>
+		<component available="no" category="gateway" jid="icq.jix.im" type="icq"/>
+		<component available="no" category="gateway" jid="aim.jix.im" type="aim"/>
+		<component available="no" category="gateway" jid="yahoo.jix.im" type="yahoo"/>
+	</server>
+	<server jid="jodo.im" offline="no">
+		<component available="yes" category="server" jid="jodo.im" type="im"/>
+		<component available="no" category="directory" jid="vjud.jodo.im" type="user"/>
+	</server>
+	<server jid="jsmart.web.id" offline="no">
+		<component available="yes" category="server" jid="jsmart.web.id" type="im"/>
+		<component available="yes" category="conference" jid="conference.jsmart.web.id" type="text"/>
+		<component available="yes" category="conference" jid="conference.jsmart.web.id" type="x-muc"/>
+	</server>
+	<server jid="jwchat.org" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.jwchat.org" type="service"/>
+		<component available="no" category="proxy" jid="proxy.jwchat.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="jwchat.org" type="im"/>
+		<component available="yes" category="pubsub" jid="jwchat.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jwchat.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jwchat.org" type="text"/>
+	</server>
+	<server jid="kode.im" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.kode.im" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.kode.im" type="bytestreams"/>
+		<component available="yes" category="server" jid="kode.im" type="im"/>
+		<component available="yes" category="server" jid="vjud.kode.im" type="im"/>
+		<component available="yes" category="pubsub" jid="kode.im" type="pep"/>
+		<component available="yes" category="conference" jid="muc.kode.im" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.kode.im" type="text"/>
+	</server>
+	<server jid="lethyro.net" offline="no">
+		<component available="no" category="conference" jid="irc.lethyro.net" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.lethyro.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="lethyro.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.lethyro.net" type="service"/>
+		<component available="yes" category="pubsub" jid="lethyro.net" type="pep"/>
+		<component available="no" category="conference" jid="conference.lethyro.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.lethyro.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.lethyro.net" type="user"/>
+	</server>
+	<server jid="lightwitch.org" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.lightwitch.org" type="service"/>
+		<component available="yes" category="server" jid="lightwitch.org" type="im"/>
+		<component available="yes" category="pubsub" jid="lightwitch.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.lightwitch.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.lightwitch.org" type="text"/>
+		<component available="yes" category="directory" jid="users.lightwitch.org" type="user"/>
+	</server>
+	<server jid="limun.org" offline="no">
+		<component available="yes" category="pubsub" jid="limun.org" type="pep"/>
+		<component available="yes" category="server" jid="limun.org" type="im"/>
+	</server>
+	<server jid="linuxlovers.at" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.linuxlovers.at" type="service"/>
+		<component available="yes" category="server" jid="linuxlovers.at" type="im"/>
+		<component available="yes" category="conference" jid="irc.jabber.linuxlovers.at" type="irc"/>
+		<component available="yes" category="pubsub" jid="linuxlovers.at" type="pep"/>
+		<component available="no" category="gateway" jid="yahoo.jabber.linuxlovers.at" type="yahoo"/>
+		<component available="yes" category="conference" jid="conference.jabber.linuxlovers.at" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.linuxlovers.at" type="text"/>
+		<component available="no" category="gateway" jid="icq.jabber.linuxlovers.at" type="icq"/>
+		<component available="no" category="gateway" jid="aim.jabber.linuxlovers.at" type="aim"/>
+	</server>
+	<server jid="lsd-25.ru" offline="no">
+		<component available="no" category="conference" jid="irc.lsd-25.ru" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.lsd-25.ru" type="bytestreams"/>
+		<component available="yes" category="server" jid="lsd-25.ru" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.lsd-25.ru" type="service"/>
+		<component available="yes" category="pubsub" jid="lsd-25.ru" type="pep"/>
+		<component available="no" category="conference" jid="conference.lsd-25.ru" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.lsd-25.ru" type="text"/>
+		<component available="no" category="directory" jid="vjud.lsd-25.ru" type="user"/>
+	</server>
+	<server jid="macjabber.de" offline="yes">
+		<component available="no" category="pubsub" jid="pubsub.macjabber.de" type="service"/>
+		<component available="no" category="proxy" jid="proxy.macjabber.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="macjabber.de" type="im"/>
+		<component available="yes" category="pubsub" jid="macjabber.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.macjabber.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.macjabber.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.macjabber.de" type="user"/>
+	</server>
+	<server jid="mayplaces.com" offline="yes">
+		<component available="yes" category="server" jid="mayplaces.com" type="im"/>
+		<component available="yes" category="pubsub" jid="mayplaces.com" type="pep"/>
+		<component available="no" category="pubsub" jid="pubsub.mayplaces.com" type="service"/>
+		<component available="no" category="directory" jid="search.mayplaces.com" type="user"/>
+		<component available="no" category="proxy" jid="proxy.mayplaces.com" type="bytestreams"/>
+	</server>
+	<server jid="meleeweb.net" offline="yes">
+		<component available="yes" category="server" jid="meleeweb.net" type="im"/>
+	</server>
+	<server jid="myjabber.ru" offline="yes">
+		<component available="yes" category="server" jid="myjabber.ru" type="im"/>
+		<component available="no" category="conference" jid="conference.myjabber.ru" type="text"/>
+		<component available="no" category="proxy" jid="proxy.myjabber.ru" type="bytestreams"/>
+		<component available="no" category="conference" jid="conference.myjabber.ru" type="x-muc"/>
+		<component available="no" category="directory" jid="vjud.myjabber.ru" type="user"/>
+	</server>
+	<server jid="mytlt.ru" offline="yes">
+		<component available="yes" category="server" jid="mytlt.ru" type="im"/>
+		<component available="yes" category="conference" jid="conference.mytlt.ru" type="text"/>
+		<component available="yes" category="conference" jid="conference.mytlt.ru" type="x-muc"/>
+	</server>
+	<server jid="na-di.de" offline="yes">
+		<component available="yes" category="gateway" jid="msn.na-di.de" type="msn"/>
+		<component available="yes" category="conference" jid="irc.na-di.de" type="irc"/>
+		<component available="no" category="conference" jid="conference.irc.na-di.de" type="irc"/>
+		<component available="yes" category="directory" jid="search.na-di.de" type="user"/>
+		<component available="yes" category="proxy" jid="proxy.na-di.de" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.na-di.de" type="x-muc"/>
+		<component available="yes" category="server" jid="na-di.de" type="im"/>
+		<component available="yes" category="gateway" jid="xmpp.na-di.de" type="xmpp"/>
+		<component available="yes" category="gateway" jid="gtalk.na-di.de" type="gtalk"/>
+		<component available="yes" category="51200|0,5|20|8|rtmp:/oflaDemo|7070|red5" jid="red5.na-di.de" type="phone"/>
+		<component available="yes" category="proxy" jid="rtpbridge.na-di.de" type="rtpbridge"/>
+		<component available="yes" category="pubsub" jid="na-di.de" type="pep"/>
+		<component available="yes" category="pubsub" jid="pubsub.na-di.de" type="service"/>
+		<component available="yes" category="gateway" jid="yahoo.na-di.de" type="yahoo"/>
+		<component available="yes" category="directory" jid="conference.na-di.de" type="chatroom"/>
+		<component available="yes" category="conference" jid="conference.na-di.de" type="text"/>
+		<component available="yes" category="gateway" jid="icq.na-di.de" type="icq"/>
+		<component available="yes" category="gateway" jid="aim.na-di.de" type="aim"/>
+		<component available="yes" category="component" jid="broadcast.na-di.de" type="generic"/>
+	</server>
+	<server jid="neko.im" offline="no">
+		<component available="yes" category="pubsub" jid="neko.im" type="pep"/>
+		<component available="yes" category="server" jid="neko.im" type="im"/>
+		<component available="yes" category="conference" jid="conference.neko.im" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.neko.im" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.neko.im" type="x-muc"/>
+	</server>
+	<server jid="netcube.pl" offline="yes">
+		<component available="no" category="conference" jid="irc.netcube.pl" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.netcube.pl" type="bytestreams"/>
+		<component available="yes" category="server" jid="netcube.pl" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.netcube.pl" type="service"/>
+		<component available="yes" category="pubsub" jid="netcube.pl" type="pep"/>
+		<component available="no" category="conference" jid="conference.netcube.pl" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.netcube.pl" type="text"/>
+		<component available="no" category="directory" jid="vjud.netcube.pl" type="user"/>
+	</server>
+	<server jid="netmindz.net" offline="yes">
+		<component available="no" category="server" jid="netmindz.net" type="im"/>
+	</server>
+	<server jid="njs.netlab.cz" offline="no">
+		<component available="yes" category="conference" jid="irc.netlab.cz" type="irc"/>
+		<component available="yes" category="headline" jid="smtp-t.netlab.cz" type="smtp"/>
+		<component available="yes" category="server" jid="njs.netlab.cz" type="im"/>
+		<component available="yes" category="gateway" jid="icq.netlab.cz" type="icq"/>
+		<component available="yes" category="pubsub" jid="pubsub.njs.netlab.cz" type="service"/>
+		<component available="yes" category="pubsub" jid="njs.netlab.cz" type="pep"/>
+		<component available="yes" category="gateway" jid="sms.netlab.cz" type="sms"/>
+		<component available="yes" category="gateway" jid="yahoo.netlab.cz" type="yahoo"/>
+		<component available="yes" category="conference" jid="conf.netlab.cz" type="x-muc"/>
+		<component available="yes" category="conference" jid="conf.netlab.cz" type="text"/>
+		<component available="yes" category="directory" jid="users.netlab.cz" type="user"/>
+		<component available="no" category="gateway" jid="aim.netlab.cz" type="aim"/>
+	</server>
+	<server jid="noicq.org" offline="no">
+		<component available="yes" category="server" jid="noicq.org" type="im"/>
+	</server>
+	<server jid="null.pm" offline="no">
+		<component available="yes" category="server" jid="null.pm" type="im"/>
+		<component available="yes" category="pubsub" jid="null.pm" type="pep"/>
+	</server>
+	<server jid="openjabber.de" offline="yes">
+		<component available="yes" category="pubsub" jid="openjabber.de" type="pep"/>
+		<component available="yes" category="server" jid="openjabber.de" type="im"/>
+	</server>
+	<server jid="orcalab.net" offline="no">
+		<component available="no" category="gateway" jid="msn.orcalab.net" type="msn"/>
+		<component available="no" category="conference" jid="irc.orcalab.net" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.orcalab.net" type="bytestreams"/>
+		<component available="yes" category="directory" jid="conference.orcalab.net" type="chatroom"/>
+		<component available="yes" category="gateway" jid="simple.orcalab.net" type="simple"/>
+		<component available="yes" category="server" jid="orcalab.net" type="im"/>
+		<component available="no" category="gateway" jid="xmpp.orcalab.net" type="xmpp"/>
+		<component available="no" category="gateway" jid="yahoo.orcalab.net" type="yahoo"/>
+		<component available="no" category="gateway" jid="gtalk.orcalab.net" type="gtalk"/>
+		<component available="no" category="pubsub" jid="pubsub.orcalab.net" type="service"/>
+		<component available="no" category="gateway" jid="qq.orcalab.net" type="qq"/>
+		<component available="yes" category="pubsub" jid="orcalab.net" type="pep"/>
+		<component available="no" category="gateway" jid="gadugadu.orcalab.net" type="gadu-gadu"/>
+		<component available="no" category="gateway" jid="icq.orcalab.net" type="icq"/>
+		<component available="yes" category="conference" jid="conference.orcalab.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.orcalab.net" type="text"/>
+		<component available="yes" category="directory" jid="search.orcalab.net" type="user"/>
+		<component available="no" category="gateway" jid="aim.orcalab.net" type="aim"/>
+		<component available="yes" category="component" jid="sipark.orcalab.net" type="generic"/>
+		<component available="yes" category="component" jid="logger.orcalab.net" type="generic"/>
+	</server>
+	<server jid="p-h.im" offline="no">
+		<component available="yes" category="pubsub" jid="p-h.im" type="pep"/>
+		<component available="yes" category="server" jid="p-h.im" type="im"/>
+		<component available="yes" category="conference" jid="conference.p-h.im" type="text"/>
+		<component available="yes" category="pubsub" jid="pubsub.p-h.im" type="service"/>
+		<component available="yes" category="conference" jid="conference.p-h.im" type="x-muc"/>
+	</server>
+	<server jid="pad7.de" offline="no">
+		<component available="no" category="conference" jid="irc.pad7.de" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.pad7.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="pad7.de" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.pad7.de" type="service"/>
+		<component available="yes" category="pubsub" jid="pad7.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.pad7.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.pad7.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.pad7.de" type="user"/>
+	</server>
+	<server jid="pad7.net" offline="no">
+		<component available="no" category="conference" jid="irc.pad7.net" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.pad7.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="pad7.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.pad7.net" type="service"/>
+		<component available="yes" category="pubsub" jid="pad7.net" type="pep"/>
+		<component available="no" category="conference" jid="conference.pad7.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.pad7.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.pad7.net" type="user"/>
+	</server>
+	<server jid="pandion.im" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.pandion.im" type="service"/>
+		<component available="yes" category="component" jid="pandion.im" type="im"/>
+		<component available="yes" category="server" jid="pandion.im" type="im"/>
+		<component available="yes" category="pubsub" jid="pandion.im" type="pep"/>
+		<component available="no" category="conference" jid="muc.pandion.im" type="x-muc"/>
+		<component available="no" category="conference" jid="muc.pandion.im" type="text"/>
+	</server>
+	<server jid="parliamone.club" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.parliamone.club" type="service"/>
+		<component available="yes" category="server" jid="parliamone.club" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.parliamone.club" type="directory"/>
+		<component available="yes" category="server" jid="parliamone.club" type="im"/>
+		<component available="yes" category="server" jid="anonymous.parliamone.club" type="im"/>
+		<component available="yes" category="pubsub" jid="parliamone.club" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.parliamone.club" type="pep"/>
+		<component available="yes" category="conference" jid="conference.parliamone.club" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.parliamone.club" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.parliamone.club" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.parliamone.club" type="user"/>
+	</server>
+	<server jid="patchcord.be" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.patchcord.be" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.patchcord.be" type="bytestreams"/>
+		<component available="yes" category="server" jid="patchcord.be" type="im"/>
+		<component available="yes" category="pubsub" jid="patchcord.be" type="pep"/>
+		<component available="yes" category="conference" jid="conference.patchcord.be" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.patchcord.be" type="text"/>
+		<component available="yes" category="directory" jid="vjud.patchcord.be" type="user"/>
+	</server>
+	<server jid="phcn.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.phcn.de" type="service"/>
+		<component available="yes" category="component" jid="ofmeet-jitsi-videobridge.phcn.de" type="conference"/>
+		<component available="yes" category="server" jid="phcn.de" type="im"/>
+		<component available="yes" category="pubsub" jid="phcn.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.phcn.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.phcn.de" type="text"/>
+		<component available="yes" category="component" jid="ofmeet-focus.phcn.de" type="generic"/>
+		<component available="yes" category="component" jid="ofmeet-call-control.phcn.de" type="generic"/>
+	</server>
+	<server jid="pimux.de" offline="no">
+		<component available="yes" category="pubsub" jid="pimux.de" type="pep"/>
+		<component available="yes" category="server" jid="pimux.de" type="im"/>
+		<component available="yes" category="conference" jid="muc.pimux.de" type="text"/>
+		<component available="yes" category="conference" jid="muc.pimux.de" type="x-muc"/>
+	</server>
+	<server jid="planetjabber.de" offline="no">
+		<component available="no" category="conference" jid="irc.planetjabber.de" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.planetjabber.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="planetjabber.de" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.planetjabber.de" type="service"/>
+		<component available="yes" category="pubsub" jid="planetjabber.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.planetjabber.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.planetjabber.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.planetjabber.de" type="user"/>
+	</server>
+	<server jid="pluser.ru" offline="yes">
+		<component available="no" category="server" jid="pluser.ru" type="im"/>
+	</server>
+	<server jid="pomm.es" offline="yes">
+		<component available="no" category="server" jid="pomm.es" type="im"/>
+	</server>
+	<server jid="portal-on.ru" offline="no">
+		<component available="yes" category="server" jid="portal-on.ru" type="im"/>
+		<component available="yes" category="conference" jid="conference.portal-on.ru" type="text"/>
+		<component available="yes" category="conference" jid="conference.portal-on.ru" type="x-muc"/>
+	</server>
+	<server jid="programmer-art.org" offline="yes">
+		<component available="no" category="server" jid="programmer-art.org" type="im"/>
+	</server>
+	<server jid="qip.ru" offline="no">
+		<component available="yes" category="server" jid="qip.ru" type="im"/>
+		<component available="yes" category="conference" jid="conference.qip.ru" type="text"/>
+		<component available="no" category="directory" jid="vjud.qip.ru" type="user"/>
+		<component available="no" category="proxy" jid="proxy.qip.ru" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.qip.ru" type="x-muc"/>
+	</server>
+	<server jid="richim.org" offline="no">
+		<component available="no" category="conference" jid="irc.richim.org" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.richim.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="richim.org" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.richim.org" type="service"/>
+		<component available="yes" category="pubsub" jid="richim.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.richim.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.richim.org" type="text"/>
+		<component available="yes" category="gateway" jid="icq.richim.org" type="icq"/>
+	</server>
+	<server jid="rkquery.de" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.rkquery.de" type="service"/>
+		<component available="no" category="proxy" jid="proxy.rkquery.de" type="bytestreams"/>
+		<component available="no" category="conference" jid="conference.rkquery.de" type="x-muc"/>
+		<component available="yes" category="server" jid="rkquery.de" type="im"/>
+		<component available="no" category="gateway" jid="icq.rkquery.de" type="icq"/>
+		<component available="yes" category="pubsub" jid="rkquery.de" type="pep"/>
+		<component available="yes" category="manager" jid="manager.rkquery.de" type="text"/>
+		<component available="no" category="conference" jid="conference.rkquery.de" type="text"/>
+		<component available="no" category="directory" jid="search.rkquery.de" type="user"/>
+	</server>
+	<server jid="rows.io" offline="yes">
+		<component available="yes" category="proxy" jid="rows.io" type="bytestreams"/>
+	</server>
+	<server jid="schokokeks.org" offline="no">
+		<component available="yes" category="conference" jid="irc.schokokeks.org" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy65.schokokeks.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="schokokeks.org" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.schokokeks.org" type="service"/>
+		<component available="yes" category="pubsub" jid="schokokeks.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.schokokeks.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.schokokeks.org" type="text"/>
+		<component available="yes" category="gateway" jid="icq.schokokeks.org" type="icq"/>
+		<component available="yes" category="gateway" jid="aim.schokokeks.org" type="aim"/>
+	</server>
+	<server jid="securejabber.me" offline="no">
+		<component available="yes" category="conference" jid="irc.securejabber.me" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.securejabber.me" type="bytestreams"/>
+		<component available="yes" category="server" jid="securejabber.me" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.securejabber.me" type="service"/>
+		<component available="yes" category="pubsub" jid="securejabber.me" type="pep"/>
+		<component available="yes" category="conference" jid="conference.securejabber.me" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.securejabber.me" type="text"/>
+		<component available="yes" category="directory" jid="vjud.securejabber.me" type="user"/>
+	</server>
+	<server jid="silper.cz" offline="yes">
+		<component available="yes" category="conference" jid="irc.silper.cz" type="irc"/>
+		<component available="no" category="headline" jid="jmc.silper.cz" type="newmail"/>
+		<component available="no" category="headline" jid="mail.silper.cz" type="newmail"/>
+		<component available="yes" category="proxy" jid="proxy.silper.cz" type="bytestreams"/>
+		<component available="yes" category="server" jid="silper.cz" type="im"/>
+		<component available="yes" category="directory" jid="vjud.silper.cz" type="user"/>
+		<component available="yes" category="pubsub" jid="pubsub.silper.cz" type="service"/>
+		<component available="no" category="headline" jid="rss.silper.cz" type="rss"/>
+		<component available="yes" category="pubsub" jid="silper.cz" type="pep"/>
+		<component available="no" category="gateway" jid="gg.silper.cz" type="gadu-gadu"/>
+		<component available="no" category="gateway" jid="qq.silper.cz" type="qq"/>
+		<component available="yes" category="conference" jid="conference.silper.cz" type="x-muc"/>
+		<component available="no" category="gateway" jid="xmpp.silper.cz" type="xmpp"/>
+		<component available="yes" category="conference" jid="conference.silper.cz" type="text"/>
+		<component available="yes" category="gateway" jid="icq3.silper.cz" type="icq"/>
+		<component available="no" category="gateway" jid="icq.silper.cz" type="icq"/>
+		<component available="no" category="gateway" jid="icq2.silper.cz" type="icq"/>
+		<component available="no" category="gateway" jid="aim.silper.cz" type="aim"/>
+		<component available="no" category="gateway" jid="yahoo.silper.cz" type="yahoo"/>
+	</server>
+	<server jid="slang.cool" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.slang.cool" type="service"/>
+		<component available="yes" category="server" jid="slang.cool" type="directory"/>
+		<component available="yes" category="server" jid="anonymous.slang.cool" type="directory"/>
+		<component available="yes" category="server" jid="slang.cool" type="im"/>
+		<component available="yes" category="server" jid="anonymous.slang.cool" type="im"/>
+		<component available="yes" category="pubsub" jid="slang.cool" type="pep"/>
+		<component available="yes" category="pubsub" jid="anonymous.slang.cool" type="pep"/>
+		<component available="yes" category="conference" jid="conference.slang.cool" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.slang.cool" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.slang.cool" type="bytestreams"/>
+		<component available="yes" category="directory" jid="search.slang.cool" type="user"/>
+	</server>
+	<server jid="slothkrew.com" offline="no">
+		<component available="yes" category="pubsub" jid="slothkrew.com" type="pep"/>
+		<component available="yes" category="server" jid="slothkrew.com" type="im"/>
+		<component available="yes" category="conference" jid="conference.slothkrew.com" type="text"/>
+		<component available="yes" category="conference" jid="conference.slothkrew.com" type="x-muc"/>
+	</server>
+	<server jid="smoula.net" offline="no">
+		<component available="yes" category="conference" jid="irc.smoula.net" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.smoula.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="smoula.net" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.smoula.net" type="service"/>
+		<component available="yes" category="pubsub" jid="smoula.net" type="pep"/>
+		<component available="yes" category="conference" jid="conference.smoula.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.smoula.net" type="text"/>
+		<component available="yes" category="directory" jid="vjud.smoula.net" type="user"/>
+	</server>
+	<server jid="startcom.org" offline="yes">
+		<component available="no" category="conference" jid="irc.startcom.org" type="irc"/>
+		<component available="yes" category="server" jid="startcom.org" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.startcom.org" type="service"/>
+		<component available="yes" category="pubsub" jid="startcom.org" type="pep"/>
+		<component available="no" category="conference" jid="conference.startcom.org" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.startcom.org" type="text"/>
+		<component available="no" category="directory" jid="vjud.startcom.org" type="user"/>
+	</server>
+	<server jid="sternenschweif.de" offline="no">
+		<component available="yes" category="pubsub" jid="sternenschweif.de" type="pep"/>
+		<component available="yes" category="server" jid="sternenschweif.de" type="im"/>
+	</server>
+	<server jid="suchat.org" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.suchat.org" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.suchat.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="suchat.org" type="im"/>
+		<component available="no" category="conference" jid="irc.suchat.org" type="irc"/>
+		<component available="yes" category="store" jid="upload.suchat.org" type="file"/>
+		<component available="yes" category="pubsub" jid="suchat.org" type="pep"/>
+		<component available="yes" category="conference" jid="salas.suchat.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="mix.suchat.org" type="text"/>
+		<component available="yes" category="conference" jid="salas.suchat.org" type="text"/>
+	</server>
+	<server jid="swissjabber.ch" offline="no">
+		<component available="yes" category="server" jid="swissjabber.ch" type="im"/>
+		<component available="yes" category="pubsub" jid="swissjabber.ch" type="pep"/>
+		<component available="yes" category="conference" jid="conference.swissjabber.ch" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.swissjabber.ch" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.swissjabber.ch" type="x-muc"/>
+	</server>
+	<server jid="swissjabber.de" offline="no">
+		<component available="yes" category="server" jid="swissjabber.de" type="im"/>
+		<component available="yes" category="pubsub" jid="swissjabber.de" type="pep"/>
+	</server>
+	<server jid="swissjabber.eu" offline="no">
+		<component available="yes" category="server" jid="swissjabber.eu" type="im"/>
+		<component available="yes" category="pubsub" jid="swissjabber.eu" type="pep"/>
+	</server>
+	<server jid="swissjabber.li" offline="no">
+		<component available="yes" category="server" jid="swissjabber.li" type="im"/>
+		<component available="yes" category="pubsub" jid="swissjabber.li" type="pep"/>
+	</server>
+	<server jid="swissjabber.org" offline="no">
+		<component available="yes" category="server" jid="swissjabber.org" type="im"/>
+		<component available="yes" category="pubsub" jid="swissjabber.org" type="pep"/>
+	</server>
+	<server jid="system.im" offline="no">
+		<component available="yes" category="pubsub" jid="system.im" type="pep"/>
+		<component available="yes" category="server" jid="system.im" type="im"/>
+		<component available="yes" category="conference" jid="conference.system.im" type="text"/>
+		<component available="yes" category="conference" jid="conference.system.im" type="x-muc"/>
+	</server>
+	<server jid="talkr.im" offline="no">
+		<component available="no" category="gateway" jid="msn.talkr.im" type="msn"/>
+		<component available="yes" category="conference" jid="irc.talkr.im" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.talkr.im" type="bytestreams"/>
+		<component available="yes" category="server" jid="talkr.im" type="im"/>
+		<component available="no" category="gateway" jid="icq.talkr.im" type="icq"/>
+		<component available="yes" category="pubsub" jid="pubsub.talkr.im" type="service"/>
+		<component available="yes" category="pubsub" jid="talkr.im" type="pep"/>
+		<component available="no" category="gateway" jid="yahoo.talkr.im" type="yahoo"/>
+		<component available="no" category="gateway" jid="xmpp.talkr.im" type="xmpp"/>
+		<component available="yes" category="directory" jid="vjud.talkr.im" type="user"/>
+		<component available="no" category="gateway" jid="aim.talkr.im" type="aim"/>
+	</server>
+	<server jid="thiessen.im" offline="no">
+		<component available="yes" category="server" jid="thiessen.im" type="im"/>
+		<component available="yes" category="server" jid="anon.thiessen.im" type="im"/>
+		<component available="yes" category="pubsub" jid="thiessen.im" type="pep"/>
+		<component available="yes" category="pubsub" jid="anon.thiessen.im" type="pep"/>
+		<component available="yes" category="conference" jid="rooms.thiessen.im" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.thiessen.im" type="bytestreams"/>
+		<component available="yes" category="proxy" jid="proxy.thiessen.im" type="bytestreams"/>
+		<component available="yes" category="conference" jid="rooms.thiessen.im" type="x-muc"/>
+	</server>
+	<server jid="thiessen.it" offline="no">
+		<component available="yes" category="server" jid="thiessen.it" type="im"/>
+		<component available="yes" category="server" jid="im.thiessen.it" type="im"/>
+		<component available="yes" category="server" jid="jabber.thiessen.it" type="im"/>
+		<component available="yes" category="pubsub" jid="thiessen.it" type="pep"/>
+		<component available="yes" category="pubsub" jid="im.thiessen.it" type="pep"/>
+		<component available="yes" category="pubsub" jid="jabber.thiessen.it" type="pep"/>
+	</server>
+	<server jid="thiessen.org" offline="no">
+		<component available="yes" category="server" jid="thiessen.org" type="im"/>
+		<component available="yes" category="pubsub" jid="thiessen.org" type="pep"/>
+	</server>
+	<server jid="tidesofwar.net" offline="no">
+		<component available="yes" category="pubsub" jid="tidesofwar.net" type="pep"/>
+		<component available="yes" category="server" jid="tidesofwar.net" type="im"/>
+		<component available="yes" category="conference" jid="conference.tidesofwar.net" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.tidesofwar.net" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.tidesofwar.net" type="x-muc"/>
+	</server>
+	<server jid="tigase.im" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.tigase.im" type="service"/>
+		<component available="yes" category="component" jid="tigase.im" type="im"/>
+		<component available="yes" category="server" jid="tigase.im" type="im"/>
+		<component available="yes" category="pubsub" jid="tigase.im" type="pep"/>
+		<component available="yes" category="conference" jid="muc.tigase.im" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.tigase.im" type="text"/>
+	</server>
+	<server jid="tigase.org" offline="yes">
+		<component available="no" category="pubsub" jid="pubsub.tigase.org" type="service"/>
+		<component available="yes" category="component" jid="tigase.org" type="im"/>
+		<component available="yes" category="server" jid="tigase.org" type="im"/>
+		<component available="yes" category="pubsub" jid="tigase.org" type="pep"/>
+		<component available="no" category="conference" jid="muc.tigase.org" type="x-muc"/>
+		<component available="no" category="conference" jid="muc.tigase.org" type="text"/>
+	</server>
+	<server jid="tiggerswelt.net" offline="no">
+		<component available="yes" category="server" jid="tiggerswelt.net" type="im"/>
+	</server>
+	<server jid="tpansky.us" offline="yes">
+		<component available="no" category="server" jid="tpansky.us" type="im"/>
+	</server>
+	<server jid="tronet.ru" offline="yes">
+		<component available="no" category="conference" jid="irc.tronet.ru" type="irc"/>
+		<component available="yes" category="server" jid="tronet.ru" type="im"/>
+		<component available="no" category="gateway" jid="icq.jabber.tronet.ru" type="icq"/>
+		<component available="no" category="pubsub" jid="pubsub.tronet.ru" type="service"/>
+		<component available="yes" category="conference" jid="conference.tronet.ru" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.tronet.ru" type="text"/>
+		<component available="no" category="directory" jid="vjud.tronet.ru" type="user"/>
+	</server>
+	<server jid="uaznia.net" offline="yes">
+		<component available="yes" category="conference" jid="irc.uaznia.net" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.uaznia.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="uaznia.net" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.uaznia.net" type="service"/>
+		<component available="yes" category="pubsub" jid="uaznia.net" type="pep"/>
+		<component available="yes" category="directory" jid="vjud.uaznia.net" type="user"/>
+	</server>
+	<server jid="ubuntu-jabber.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.ubuntu-jabber.de" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.ubuntu-jabber.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="ubuntu-jabber.de" type="im"/>
+		<component available="yes" category="pubsub" jid="ubuntu-jabber.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.ubuntu-jabber.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.ubuntu-jabber.de" type="text"/>
+	</server>
+	<server jid="ubuntu-jabber.net" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.ubuntu-jabber.net" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.ubuntu-jabber.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="ubuntu-jabber.net" type="im"/>
+		<component available="yes" category="pubsub" jid="ubuntu-jabber.net" type="pep"/>
+		<component available="yes" category="conference" jid="conference.ubuntu-jabber.net" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.ubuntu-jabber.net" type="text"/>
+	</server>
+	<server jid="udaff.com" offline="no">
+		<component available="yes" category="server" jid="udaff.com" type="im"/>
+		<component available="yes" category="conference" jid="conference.udaff.com" type="text"/>
+		<component available="no" category="pubsub" jid="pubsub.udaff.com" type="service"/>
+		<component available="yes" category="directory" jid="vjud.udaff.com" type="user"/>
+		<component available="yes" category="conference" jid="conference.udaff.com" type="x-muc"/>
+	</server>
+	<server jid="univers-libre.net" offline="no">
+		<component available="no" category="conference" jid="irc.univers-libre.net" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.univers-libre.net" type="bytestreams"/>
+		<component available="yes" category="server" jid="univers-libre.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.univers-libre.net" type="service"/>
+		<component available="yes" category="pubsub" jid="univers-libre.net" type="pep"/>
+		<component available="no" category="conference" jid="chat.univers-libre.net" type="x-muc"/>
+		<component available="no" category="conference" jid="chat.univers-libre.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.univers-libre.net" type="user"/>
+	</server>
+	<server jid="unstable.nl" offline="no">
+		<component available="yes" category="conference" jid="irc.unstable.nl" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy65.unstable.nl" type="bytestreams"/>
+		<component available="yes" category="server" jid="unstable.nl" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.unstable.nl" type="service"/>
+		<component available="yes" category="pubsub" jid="unstable.nl" type="pep"/>
+		<component available="yes" category="conference" jid="muc.unstable.nl" type="x-muc"/>
+		<component available="yes" category="conference" jid="muc.unstable.nl" type="text"/>
+		<component available="no" category="directory" jid="vjud.unstable.nl" type="user"/>
+	</server>
+	<server jid="vayusphere.com" offline="yes">
+		<component available="no" category="pubsub" jid="pubsub.vayusphere.com" type="service"/>
+		<component available="yes" category="server" jid="vayusphere.com" type="im"/>
+		<component available="yes" category="pubsub" jid="vayusphere.com" type="pep"/>
+		<component available="no" category="conference" jid="conference.vayusphere.com" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.vayusphere.com" type="text"/>
+		<component available="no" category="directory" jid="search.vayusphere.com" type="user"/>
+	</server>
+	<server jid="verdammung.org" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.verdammung.org" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.verdammung.org" type="bytestreams"/>
+		<component available="yes" category="server" jid="verdammung.org" type="im"/>
+		<component available="yes" category="pubsub" jid="verdammung.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.verdammung.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.verdammung.org" type="text"/>
+	</server>
+	<server jid="vke.ru" offline="no">
+		<component available="yes" category="pubsub" jid="vke.ru" type="pep"/>
+		<component available="yes" category="server" jid="vke.ru" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.vke.ru" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.vke.ru" type="bytestreams"/>
+	</server>
+	<server jid="vodka-pomme.net" offline="yes">
+		<component available="no" category="conference" jid="irc.vodka-pomme.net" type="irc"/>
+		<component available="yes" category="server" jid="vodka-pomme.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.vodka-pomme.net" type="service"/>
+		<component available="yes" category="pubsub" jid="vodka-pomme.net" type="pep"/>
+		<component available="no" category="conference" jid="conference.vodka-pomme.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.vodka-pomme.net" type="text"/>
+		<component available="no" category="directory" jid="vjud.vodka-pomme.net" type="user"/>
+	</server>
+	<server jid="volgograd.ru" offline="yes">
+		<component available="yes" category="pubsub" jid="pubsub.volgograd.ru" type="service"/>
+		<component available="yes" category="server" jid="volgograd.ru" type="im"/>
+		<component available="no" category="conference" jid="irc.jabber.volgograd.ru" type="irc"/>
+		<component available="yes" category="pubsub" jid="volgograd.ru" type="pep"/>
+		<component available="yes" category="conference" jid="conference.jabber.volgograd.ru" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.jabber.volgograd.ru" type="text"/>
+		<component available="yes" category="directory" jid="vjud.volgograd.ru" type="user"/>
+	</server>
+	<server jid="wtfismyip.com" offline="no">
+		<component available="yes" category="pubsub" jid="wtfismyip.com" type="pep"/>
+		<component available="yes" category="server" jid="wtfismyip.com" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.wtfismyip.com" type="service"/>
+		<component available="no" category="directory" jid="vjud.wtfismyip.com" type="user"/>
+		<component available="no" category="proxy" jid="proxy.wtfismyip.com" type="bytestreams"/>
+	</server>
+	<server jid="wusz.org" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.wusz.org" type="service"/>
+		<component available="yes" category="server" jid="wusz.org" type="im"/>
+		<component available="yes" category="conference" jid="irc.wusz.org" type="irc"/>
+		<component available="yes" category="pubsub" jid="wusz.org" type="pep"/>
+		<component available="yes" category="conference" jid="conference.wusz.org" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.wusz.org" type="text"/>
+		<component available="no" category="directory" jid="vjud.wusz.org" type="user"/>
+	</server>
+	<server jid="xabber.de" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.xabber.de" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.xabber.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="xabber.de" type="im"/>
+		<component available="yes" category="pubsub" jid="xabber.de" type="pep"/>
+		<component available="yes" category="conference" jid="conference.xabber.de" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.xabber.de" type="text"/>
+	</server>
+	<server jid="xmpp-hosting.de" offline="no">
+		<component available="yes" category="pubsub" jid="xmpp-hosting.de" type="pep"/>
+		<component available="yes" category="pubsub" jid="jabber-hosting.de" type="pep"/>
+		<component available="yes" category="server" jid="xmpp-hosting.de" type="im"/>
+		<component available="yes" category="server" jid="jabber-hosting.de" type="im"/>
+	</server>
+	<server jid="xmpp.cm" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.xmpp.cm" type="service"/>
+		<component available="no" category="proxy" jid="proxy.xmpp.cm" type="bytestreams"/>
+		<component available="yes" category="server" jid="xmpp.cm" type="im"/>
+		<component available="yes" category="pubsub" jid="xmpp.cm" type="pep"/>
+		<component available="no" category="conference" jid="conference.xmpp.cm" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.xmpp.cm" type="text"/>
+		<component available="no" category="directory" jid="vjud.xmpp.cm" type="user"/>
+	</server>
+	<server jid="xmpp.is" offline="no">
+		<component available="yes" category="pubsub" jid="xmpp.is" type="pep"/>
+		<component available="yes" category="server" jid="xmpp.is" type="im"/>
+	</server>
+	<server jid="xmpp.jp" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.xmpp.jp" type="service"/>
+		<component available="yes" category="proxy" jid="proxy.xmpp.jp" type="bytestreams"/>
+		<component available="yes" category="server" jid="xmpp.jp" type="im"/>
+		<component available="yes" category="pubsub" jid="xmpp.jp" type="pep"/>
+		<component available="yes" category="conference" jid="conference.xmpp.jp" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.xmpp.jp" type="text"/>
+	</server>
+	<server jid="xmpp.kz" offline="no">
+		<component available="no" category="conference" jid="irc.xmpp.kz" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.xmpp.kz" type="bytestreams"/>
+		<component available="yes" category="server" jid="xmpp.kz" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.xmpp.kz" type="service"/>
+		<component available="yes" category="pubsub" jid="xmpp.kz" type="pep"/>
+		<component available="yes" category="conference" jid="conference.xmpp.kz" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.xmpp.kz" type="text"/>
+		<component available="no" category="directory" jid="vjud.xmpp.kz" type="user"/>
+	</server>
+	<server jid="xmpp.org.ru" offline="no">
+		<component available="yes" category="server" jid="xmpp.org.ru" type="im"/>
+		<component available="yes" category="pubsub" jid="pubsub.xmpp.org.ru" type="service"/>
+		<component available="yes" category="directory" jid="jud.xmpp.org.ru" type="user"/>
+		<component available="no" category="conference" jid="irc.xmpp.org.ru" type="irc"/>
+	</server>
+	<server jid="xmpp.pro" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.xmpp.pro" type="service"/>
+		<component available="no" category="proxy" jid="proxy.xmpp.pro" type="bytestreams"/>
+		<component available="yes" category="server" jid="xmpp.pro" type="im"/>
+		<component available="yes" category="pubsub" jid="xmpp.pro" type="pep"/>
+		<component available="no" category="conference" jid="conference.xmpp.pro" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.xmpp.pro" type="text"/>
+		<component available="no" category="directory" jid="vjud.xmpp.pro" type="user"/>
+	</server>
+	<server jid="xmpp.ru.net" offline="no">
+		<component available="yes" category="server" jid="xmpp.ru.net" type="im"/>
+	</server>
+	<server jid="xmpp.us" offline="no">
+		<component available="yes" category="pubsub" jid="pubsub.xmpp.us" type="service"/>
+		<component available="yes" category="server" jid="xmpp.us" type="im"/>
+		<component available="yes" category="pubsub" jid="xmpp.us" type="pep"/>
+		<component available="yes" category="conference" jid="conference.xmpp.us" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.xmpp.us" type="text"/>
+		<component available="yes" category="directory" jid="vjud.xmpp.us" type="user"/>
+	</server>
+	<server jid="xmpp.zone" offline="no">
+		<component available="no" category="pubsub" jid="pubsub.xmpp.zone" type="service"/>
+		<component available="yes" category="server" jid="xmpp.zone" type="im"/>
+		<component available="no" category="component" jid="webpresence.xmpp.zone" type="presence"/>
+		<component available="no" category="conference" jid="irc.xmpp.zone" type="irc"/>
+		<component available="yes" category="pubsub" jid="xmpp.zone" type="pep"/>
+		<component available="yes" category="conference" jid="conference.xmpp.zone" type="x-muc"/>
+		<component available="yes" category="conference" jid="conference.xmpp.zone" type="text"/>
+	</server>
+	<server jid="xmppcomm.com" offline="no">
+		<component available="no" category="conference" jid="irc.xmppcomm.com" type="irc"/>
+		<component available="yes" category="proxy" jid="proxy.xmppcomm.com" type="bytestreams"/>
+		<component available="yes" category="server" jid="xmppcomm.com" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.xmppcomm.com" type="service"/>
+		<component available="yes" category="pubsub" jid="xmppcomm.com" type="pep"/>
+		<component available="no" category="conference" jid="conference.xmppcomm.com" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.xmppcomm.com" type="text"/>
+		<component available="yes" category="directory" jid="vjud.xmppcomm.com" type="user"/>
+	</server>
+	<server jid="xmppcomm.net" offline="no">
+		<component available="no" category="conference" jid="irc.xmppcomm.net" type="irc"/>
+		<component available="yes" category="server" jid="xmppcomm.net" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.xmppcomm.net" type="service"/>
+		<component available="yes" category="pubsub" jid="xmppcomm.net" type="pep"/>
+		<component available="no" category="conference" jid="conference.xmppcomm.net" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.xmppcomm.net" type="text"/>
+	</server>
+	<server jid="xmppnet.de" offline="no">
+		<component available="yes" category="gateway" jid="msn.xmppnet.de" type="msn"/>
+		<component available="yes" category="pubsub" jid="pubsub.xmppnet.de" type="service"/>
+		<component available="yes" category="server" jid="xmppnet.de" type="im"/>
+		<component available="no" category="gateway" jid="j2j.xmppnet.de" type="xmpp"/>
+		<component available="yes" category="pubsub" jid="xmppnet.de" type="pep"/>
+		<component available="yes" category="gateway" jid="yahoo.xmppnet.de" type="yahoo"/>
+		<component available="yes" category="gateway" jid="icq.xmppnet.de" type="icq"/>
+	</server>
+	<server jid="ybgood.de" offline="no">
+		<component available="no" category="conference" jid="irc.ybgood.de" type="irc"/>
+		<component available="no" category="proxy" jid="proxy.ybgood.de" type="bytestreams"/>
+		<component available="yes" category="server" jid="ybgood.de" type="im"/>
+		<component available="no" category="pubsub" jid="pubsub.ybgood.de" type="service"/>
+		<component available="yes" category="pubsub" jid="ybgood.de" type="pep"/>
+		<component available="no" category="conference" jid="conference.ybgood.de" type="x-muc"/>
+		<component available="no" category="conference" jid="conference.ybgood.de" type="text"/>
+		<component available="no" category="directory" jid="vjud.ybgood.de" type="user"/>
+	</server>
+	<server jid="yeahnah.co.nz" offline="yes">
+		<component available="no" category="server" jid="yeahnah.co.nz" type="im"/>
+	</server>
+	<server jid="zsim.de" offline="no">
+		<component available="yes" category="server" jid="zsim.de" type="im"/>
+		<component available="yes" category="conference" jid="conference.zsim.de" type="text"/>
+		<component available="yes" category="proxy" jid="proxy.zsim.de" type="bytestreams"/>
+		<component available="yes" category="conference" jid="conference.zsim.de" type="x-muc"/>
+	</server>
+</servers>

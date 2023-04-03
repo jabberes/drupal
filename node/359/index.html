@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/359 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:30:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Instalar el transporte PyMSNt y Ejabberd en Windows | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-359" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../forum/">Foros</a> :: <a href="../../forum/21/">Administración</a></div>        <h2 class="page-title">Instalar el transporte PyMSNt y Ejabberd en Windows</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-359" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por Anónimo el 5 October, 2004 - 20:45.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_21 first last"><a href="../../taxonomy/term/21/" rel="tag" title="Cuestiones relacionadas con la instalación y configuración de un servidor Jabber o similar. También tienes la lista de correo (enlace en la parte superior de la página).">Administración</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>
+Después de muchos días de prueba y error deseo compartir mi experiencia al usar el servidor Ejabberd con el transporte PyMSNt bajo ambiente Windows, al haber logrado que funcionaran adecuadamente, y sin tener experiencia alguna en Linux, Erlanguaje, Python y otras sutilezas.
+</p>
+<p>
+Mi plataforma: Windows 2003 Server Standard; Open Source Erlang/OTP R9C-2; Ejabberd 0.7; PyMSNt 0.7.4
+</p>
+<ol>
+<li>
+<p>
+Bajar e instalar <a href="http://www.erlang.org/download.html">Open Source Erlang/OTP</a> (es un entorno de ejecución para programas escritos en Erlang, el lenguaje usado por Ejabberd).
+</p>
+<p>Bajar e instalar el <a href="http://www.jabberstudio.org/projects/ejabberd/releases/">instalador de Ejabberd</a> para Windows. Para configurarlo, en el archivo <em>ejabberd.cfg</em> de <em>C:\Archivos de programa\Ejabberd</em> hice los siguientes cambios:</p>
+<pre>override_global.
+override_local.
+override_acls.
+
+{acl, admin, {user, "tu-usuario"}}.
+
+{host, "tuservidor.tudominio.com"}.</pre>
+<p>
+Eso por el momento.<br />
+Luego se inicia el servidor con el enlace instalado en el grupo de programas 'Start Ejabberd' y se prueba el servidor. Recuerda que Ejabberd está instalado como servicio de sistema, por lo que se iniciará automáticamente cuando reinicies la máquina.
+</p>
+<p>
+En mi caso encontré que la última versión del cliente Exodus daba varios problemas, así que instalé el Psi con mejores resultados. Pude crear usuarios, y enviar mensajes entre ellos.
+</p>
+</li>
+<li>
+<p>
+Para que corra el transporte hay que bajar e instalar el Python 2.3, y tener cuidado de agregar al PATH el directorio donde está Python.exe (esto evitará muchos dolores de cabeza)
+</p>
+<p>
+Luego bajar e instalar las librerías <a href="http://www.twistedmatrix.com/products/download">Twisted</a> y <a href="http://pyopenssl.sourceforge.net/">PyOpenSSL</a>. La instalación es sencilla si se instaló adecuadamente el Python.
+</p>
+</li>
+<li>
+<p>
+Bajar e instalar el transporte PyMSNt. Esto resultó mucho más complicado, pero sólo es cosa de seguir las instrucciones al pie de la letra sugeridas en <a href="http://msn-transport.jabberstudio.org/">http://msn-transport.jabberstudio.org/</a>  y en especial la instalación descrita en <a href="http://jabbermanual.jabberstudio.org/docs/pymsnt">http://jabbermanual.jabberstudio.org/docs/pymsnt</a>.  </p>
+<p>
+Hay que recordar en qué directorio se descomprime PyMSNt, porque hay que hacerle algunas modificaciones más adelante, y desde allí se inicia manualmente.
+</p>
+</li>
+<li>
+<p>
+Bajar y descomprimir de TAR la librería parcheada <a href="http://msn-transport.jabberstudio.org/tarballs/twisted-patched-2.tar.bz2">Twisted-p2</a> (el Winrar para Windows funciona bien, quizá también sirva el <a href="http://www.7-zip.org/">7-zip</a>). Finalmente, copiar el directorio resultante en el subdirectorio <em>/src</em> de la localización donde se instaló PyMSNt (paso 2) y algo IMPORTANTE: renombrar ese directorio a <em>twisted</em>.
+</p>
+</li>
+<li>
+<p>
+Si todo va bien ahora configuramos PyMSNt editando el archivo <em>config.py</em> que también se encuentra en el directorio <em>/src</em> donde lo instalamos y la librería Twisted parcheada (paso 2).
+</p>
+<p>
+Las modificaciones que hice a este archivo son:</p>
+<pre># The JabberID of the transport.
+jid = "msn.tuservidor.tudominio.com"
+# The IP address of the main Jabber server to connect to
+mainServer = "127.0.0.1"
+# The TCP port to connect to the Jabber server on 
+port = "5235"
+# The authentication token to use when connecting to the Jabber server
+secret = "secret"</pre><p>
+En este caso la IP es 127.0.0.1 por que el servidor Jabber y el transporte están en la misma máquina.
+</p>
+</li>
+<li>
+<p>
+El transporte almacenará toda su información en un directorio que has de crear manualmente en donde lo hayas instalado. El nombre del directorio ha de ser 'msn.tudominio.tuservidor.com' o el que te corresponda, y tienes que darle los permisos necesarios para que el transporte pueda crear ficheros en él.
+</p>
+</li>
+<li>
+<p>
+Ahora regresamos al archivo de configuración <em>ejabberd.cfg</em> de <em>C:\Archivos de programa\Ejabberd</em> y agregamos en la sección "Listened ports" lo siquiente:</p>
+<pre>{5235, ejabberd_service, &#91;{access, all}, 
+     {host, "msn.tudominio.tuservidor.com", &#91;{password, "secret"}&#93;}&#93;},</pre><p>
+Donde notarán que el puerto (5235), el nombre de host (msn.tudominio.tuservidor.com) y la contraseña (secret) son los mismos que en el archivo <em>config.py</em> del directorio de instalación del PyMSNt.
+</p>
+</li>
+<li>
+<p>
+Una vez hecho esto ya se puede ejecutar el transporte. Recuerda que el transporte se conecta al servidor Jabber, por tanto este debe estar funcionando antes.</p>
+<pre>cd /src
+c:\python23\Python.exe main.py</pre><p>
+Sabrás que todo ha ido bien (el servidor está bien configurado, el transporte también y que ambos pueden comunicarse) si al descubrir tu servidor Jabber (con un cliente que soporte esta funcionalidad, claro) aparece una entrada nueva: MSN Transport, y al abrirla aparecen varias entradas: Registrar cuenta, Salas de charla de MSNt, convertir cuenta, etc.
+</p>
+</li>
+</ol>
+<p>
+Ahora los usuarios de tu servidor Jabber pueden registrarse en tu transporte según las instrucciones descritas en la <a href="http://jabbermanual.jabberstudio.org/docs/pymsnt-users">guía de usuario de PyMSNt</a> y dependiendo del cliente que usemos (a mi me sirvió el Psi; el Exodus dió algunos problemas). Solo es importante recordar que el nombre del servicio es msn.tuservidor.tudominio.com en el ejemplo.
+</p>
+<p>
+Puedo contestar dudas sobre este imperfecto tutorial en abel_vicencio (arroba) hotmail.com tomando en cuenta que mi experiencia de instalación fue sobre Windows, y que no tengo experiencia alguna en Linux.
+</p>
+<p>
+Saludos.
+</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../693/" class="topic-previous" title="Ir al tema anterior del foro">‹ Instalar cualquier transporte en Wildfire</a>
+              <a href="../593/" class="topic-next" title="Ir al tema siguiente del foro">Conexion via internet entre dos servidores de intranet? ›</a>
+      </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/359"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-9wZx6B6tu9_xuBGkXbrKelxExFQGg7fzHPLCP0U2SCU" value="form-9wZx6B6tu9_xuBGkXbrKelxExFQGg7fzHPLCP0U2SCU"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-1748"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1748" class="active">Duda</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por alguien (no verificado) el  27 January, 2006 - 20:39.  </div>
+
+  <div class="content">
+    <p>Para empezar, tenia instalado el python y despues instale todos los paketes ke mencionas no me funciona me marca errores el jabberd, creo ke eres una porkeria aciendo manuales</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-849"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-849" class="active">PyMSN-T  Versión 0.8</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  21 December, 2004 - 23:24.  </div>
+
+  <div class="content">
+    <p>James anunció hace unos días la nueva versión de su transporte. Funciona igual que la 0.7.xx  y entre otras cosillas, te muestra en el cliente jabber cuando el contacto MSN está escribiendo. Nice.. ¿Alguna experiencia sobre el transporte? Por que yo tengo algunos problemas a la hora de importar el rooster de ciertas cuentas passport.  !Aporten!</p>
+<p>PD.. Badlop.. et.al.. felices fiestas! Muchas gracias por la cuenta Gmail.. es sensacional.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-797"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-797" class="active">luis</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  29 November, 2004 - 02:52.  </div>
+
+  <div class="content">
+    <p>Hola, intento instalarlo en mi windowx xp el pyopenssl y no puedo, se ejecuta la instalacion pero no le puedo dar click al boton siguiente, no sale nada de texto ni nada, q puedo hacer?</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-811"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-811" class="active">Qué versión de Ptyhon usast</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  1 December, 2004 - 17:04.  </div>
+
+  <div class="content">
+    <p>Qué versión de Ptyhon usaste? Yo confirmé que la nueva versión de Python 2.4 no es compatible con el instalador de pyopenssl y crypto. De ser así desinstala la versión 2.4 e instala la versión 2.3.4 Los instaladores de estas librerías reconocerán la versión y cargarán sin problemas. Espero ayude.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-800"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-800" class="active">No lo he probado en Windows,</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  29 November, 2004 - 08:55.  </div>
+
+  <div class="content">
+    <p>No lo he probado en Windows, pero según pone en el manual (esta parte está traducida del manual original en inglés) es que: </p>
+<p>' tener cuidado de agregar al PATH el directorio donde está Python.exe (esto evitará muchos dolores de cabeza)</p>
+<p>Luego bajar e instalar las librerías Twisted y PyOpenSSL. La instalación es sencilla si se instaló adecuadamente el Python.' </p>
+<p>¿Podría ser que no te aparezca el botón de Seguir porque Python no lo tienes bien instalado, o no lo has agregado al PATH? </p>
+<p>¿Podría ser que el instalador que te has bajado está corrupto, o algo así?</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-803"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-803" class="active">al path?</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  29 November, 2004 - 20:07.  </div>
+
+  <div class="content">
+    <p>como lo agrego al path?<br />
+gracias</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-812"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-812" class="active">PATH</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  1 December, 2004 - 17:09.  </div>
+
+  <div class="content">
+    <p>PATH es un viejísimo parámetro o variable de entorno que proviene del DOS y ha persistido hasta WIndows 2003. Es una serie de directorios separados por punto y coma (;) donde el sistema operativo buscará por default los ejecutables y comandos de los cuales no se especifique directorio completo. La forma más sencilla de editarlo es en las propiedades de Mi PC - Opciones Avanzadas - Variables de entorno. Ahí estará listada la variable PATH. Edítala teniendo cuidado de separar con ; cada directorio. La mía quedó así: %SystemRoot%\system32;%SystemRoot%;C:\Python23</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div><a id="comment-631"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-631" class="active">algunos arreglos</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  5 October, 2004 - 09:57.  </div>
+
+  <div class="content">
+    <p>Abel, me he tomado la libertad de añadir varios enlaces a tu texto, corregir un par de faltas y añadir un poco de código HTML para que quede más bonito.</p>
+<p>Si encuentras (o cualquier otro lector) algún error en el texto, lo más rápido es poner un comentario aqui para que todos lo veamos, y quien pueda lo corregirá.</p>
+<p>Por cierto, ¿aún usas el correo de Hotmail? Esta hazaña te hace merecedor de una invitación para una cuenta <a href="https://gmail.google.com/">Gmail</a>, el primer correo de un giga de capacidad.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1675"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1675" class="active">msn.miservidor.com ???</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por <a href="http://rubioq.275mb.com/" rel="nofollow">rubioq</a> (no verificado) el  12 January, 2006 - 00:00.  </div>
+
+  <div class="content">
+    <p>Una duda, hay que agregar la direccion a algun dns?<br />
+es decir hay que agregar msn.miservidor.com a algun dns o al hacerlo de este modo buscara automaticamente en miservidor.com pues mi lgica me dice que si no existe el dominio registrado en algun dns este no funcionara.</p>
+<p>En caso de que sea si, funciona poner solo miservidor.com en lugar de msn.miservidor.com ???</p>
+<p>Estoy teniendo algunos problemas y pienso que es por eso.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1676"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1676" class="active">Creo que sí, has de poner DNS</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  12 January, 2006 - 10:18.  </div>
+
+  <div class="content">
+    <p>Creo que sí, msn.servidor.com o al menos *.servidor.com deben apuntar a la máquina donde está instalado el servidor Jabber (que puede ser distinta a donde está el transporte).</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/359 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:30:56 GMT -->
+</html>

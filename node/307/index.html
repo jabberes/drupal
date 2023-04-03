@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/307 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:31:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Los servidores Jabber fallan bastante | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-307" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../forum/">Foros</a> :: <a href="../../forum/14/">El foro de JabberES</a></div>        <h2 class="page-title">Los servidores Jabber fallan bastante</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-307" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por Anónimo el 23 July, 2004 - 02:25.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_14 first last"><a href="../../taxonomy/term/14/" rel="tag" title="Discusiones y conversaciones generales sobre Jabber">El foro de JabberES</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>Buenas, uso Jabber desde hace algo más de un año y el principal problema que he encontrado es que los servidores fallan bastante. Al menos los que he usado.</p>
+<p>Empecé sacándome una cuenta en Jabber.at, que según decían iba muy bien y tenía transportes para todo. Aparte que se solía caer bastante, un buen día quitaron el transporte de MSN, lo cual me jodió bastante porque la mayoría de mis contactos usan MSN (sic). Me tuve que sacar otra cuenta nueva en Amessage.de, que también decían que iba muy bien y tiene transportes para todo. Pero se cae un día si, otro también. Es raro el día que no se cae y está un buen rato sin conectar. Así que me busqué otro servidor. Esta vez al boleo, ya no me dejé llevar por comentarios de "éste vá bien". Elegí una cuenta de Nureality.ca, que de momento funciona bastante bien. </p>
+<p>El caso es que he tenido que pasar por tres cuentas diferentes (y otras muchas que probé), con el consiguiente lio para mis contactos, a los que tengo que volver a añadir cada vez. Creo que a Jabber le falta bastante para competir con MSN en el tema de las chorradas, los juegos, la videoconferencia, etc. Pero creo que todo eso llegará. Sin embargo lo de los servidores me parece más urgente de solucionar. Es dificil convencer a alguien para que use Jabber si la mitad de las veces no va a poder conectar, o si tiene que ir de un servidor a otro sacándose cuentas hasta que encuentre uno fiable.</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../320/" class="topic-previous" title="Ir al tema anterior del foro">‹ servidor jabber wh2001.sindominio.net, error 502</a>
+              <a href="../299/" class="topic-next" title="Ir al tema siguiente del foro">Hola, no tengo contactos jabber ›</a>
+      </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/307"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-tECX0GooR81-iDvOk8xX0-REZZm3xfRThsP1Me00c5M" value="form-tECX0GooR81-iDvOk8xX0-REZZm3xfRThsP1Me00c5M"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-478"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-478" class="active">Análisis de una noche de verano: servicios gratuitos</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  23 July, 2004 - 16:32.  </div>
+
+  <div class="content">
+    <p>Antes de empezar, me gustaría comentar que el título 'Los servidores Jabber fallan bastante' me parece tremendamente amarillista, falto de concreción, inexacto y muy probablemente conducirá a error a quien lo lea.</p>
+<p>En su lugar propondría un titular que me parece más realista, por ejemplo: 'Muchos servidores Jabber gratuitos públicos fallan bastante'</p>
+<p></p>
+<h1>Los síntomas</h1>
+<p>
+Caso 1: Jabber.at, </p>
+<ul>
+<li>que según decían iba muy bien
+</li><li>tenía transportes para todo
+</li></ul>
+
+<p>
+Resultados:</p>
+<ul>
+<li>se solía caer bastante,
+</li><li>un buen día quitaron el transporte de MSN
+</li></ul>
+
+<p>
+Caso 2: Amessage.de, </p>
+<ul>
+<li>que también decían que iba muy bien
+</li><li>y tiene transportes para todo.
+</li></ul>
+
+<p>
+Resultados:</p>
+<ul>
+<li>Pero se cae un día si, otro también. Es raro el día que no se cae y está un buen rato sin conectar.
+</li></ul>
+
+<p>
+Caso 3 (este es de mi propia cosecha): njs.netlab.cz</p>
+<ul>
+<li>me iba muy bien cuando lo empezé a usar hace ahora dos años
+</li><li>Ya entonces tenia transportes para el resto de sistemas de mensajeria
+</li></ul>
+
+<p>
+Resultados (que llevo observando desde los últimos meses, en los que el número de usuarios ha aumentado del centenar escaso hasta 600 usuarios simultáneos):</p>
+<ul>
+<li>han aumentado mis desconexiones. El servidor no se cae, pero me echa, alguna vez a la semana.
+</li></ul>
+
+<p>
+Caso 3: Nureality.ca<br />
+<br />
+No lo dices tu, pero lo digo yo:</p>
+<ul>
+<li>Tiene transportes para otras redes de mensajería
+</li></ul>
+
+<p>
+Resultado más que probable:</p>
+<ul>
+<li>Tarde o temprano tendrá dificultades
+</li></ul>
+
+<p>
+Supongo que habrás captado lo que quiero decir: propongo que hay relación directa entre el número de transportes instalados en un servidor y el tráfico que ha de soportar. Y hay relación inversa entre esto y la calidad del servicio que puede proporcionar. Creo que resulta evidente, por tanto no debería sorprenderte.
+</p>
+<p>
+Ahora que hemos visto los síntomas, intentemos descubrir las razones.
+</p>
+<p></p>
+<p><h1>Problema número 1: de donde no hay no se puede sacar</h1>
+</p>
+<p>
+Jabber es un protocolo de mensajería instantánea. Como AIM, MSN Messenger, Yahoo IM, ICQ y otros.
+</p>
+<p>
+Cada uno usa su red, sus servidores. Jabber es libre, abierto y estándar, a diferencia de los otros. Los servidores privados de uso público que hay instalados para Jabber NO tienen ningun tipo de publicidad, ni subvención, ni apoyo económico, al contrario que los servidores de AIM, MSN, etc.
+</p>
+<p>
+Es decir, los servidores que hoy dia hay para Jabber los mantiene gente de forma altruista, sin pedir nada a cambio, pagando las facturas de su bolsillo. Evidentemente, cuando la máquina se estropea, o hay que actualizarla, o suben las tarifas, o el administrador tiene un mes apretadito, ese servidor Jabber va a tener problemas.
+</p>
+<p>
+También hay un tiempo limitado que el administrador pueda dedicar a su servidor: tiene que trabajar 8 horas al dia en otra cosa para poder mantenerlo, mientras que en los servidores de AIM, etc se pueden permintir contratar admins a tiempo completo si hiciera falta.
+</p>
+<p>
+Resumiendo: si un servidor concreto muy conocido es capaz de manejar 500 usuarios simultáneos y ya hay 400, es de suponer que empezará a ofrecer una calidad de servicio cada vez más pobre: de donde no hay no se puede sacar.
+</p>
+<p></p>
+<p><h1>Problema número 2: cada uno a lo suyo</h1>
+</p>
+<p>
+Por si eso no fuera suficiente, luego está el tema de los transportes. Un servidor Jabber, como parece lógico, debería dedicarse a servir Jabber. Pero aquellos que incluyan uno o varios transportes, además de servir Jabber tendrán que servir de intermediarios para otras redes. Esto evidentemente consume unos recursos del servidor Jabber que deberían haberse dedicado a servir Jabber, no otros protocolos privativos. Así, en vez de servir a 200 usuarios de Jabber, sólo puede servir a 150 pues los transportes le mantienen ocupado.
+</p>
+<p>
+Cuando te conectas a AIM, estás conectado a un servidor AIM, consumiendo sus recursos. En cambio, cuando te conectas a tu servidor Jabber y a un transporte de AIM estas consumiendo de tu servidor Jabber, del transporte (que probablemente esté en ese mismo servidor Jabber) y del servidor AIM. De estos tres elementos, solo uno de ellos obtiene alguna compensación económica por el servicio prestado: AIM. No creo que te sorprenda que los servidores de AIM sigan como si nada donde otro de Jabber naufraga.
+</p>
+<p></p>
+<p><h1>Soluciones</h1>
+</p>
+<p>
+1. <b>individuales</b>: Si te gusta Jabber, ¿porqué no usas Jabber? Usar Jabber+transportes devalúa el servicio triplemente:
+</p>
+<p><ul>
+<li>no puedes acceder a todos los servicios de Jabber para contactos del transporte, por ejemplo los mensajes diferidos
+</li><li>no puedes acceder a todos los servicios de la otra red, por ejemplo esos exclusivísimos y maravillosos juegos a los que tantísima gente juega a todas horas
+</li><li>estás generando trabajo adicional para el servidor Jabber, que en vez de dedicarse a Jabber se dedica al transporte a protocolos privativos
+</li></ul>
+</p>
+<p>
+Por tanto, te propongo que si usas Jabber, uses Jabber. No otras redes a través de Jabber, aunque es sin duda un logro tecnológico que ninguna otra red ha logrado aún, que yo sepa.
+</p>
+<p><ul>
+<li>Un cliente Jabber para Jabber, y el de AIM para conectarte a AIM.
+</li><li>Un cliente multiprotocolo, con el que accedas directamente a cada red.
+</li></ul>
+</p>
+<p>
+2. <b>colectivas</b>. Administrar un servidor Jabber es bastante sencillo, pero no trivial. Administrar un servidor con transportes seguro, seguro que añade más trabajo, más tráfico y más consumo de recursos.
+</p>
+<p>
+Mucha gente usa Jabber exclusivamente para tener centralizadas sus cuentas de otras redes de mensajería. Esa gente está consumiendo recursos de Jabber en beneficio de empresas comerciales privadas que son 'competencia' de Jabber. Esa gente haría bien en usar clientes multiprotocolo.
+</p>
+<p>
+A medida que los servidores más ambiciosos que incluyen transportes a otras redes privativas vayan cayendo, quizá decidan eliminar esos transportes. El admin de Amessage.de ya está empezando a tomar medidas. Progresivamente, los recursos de los servidores Jabber se usarán para servir Jabber en vez de para seguirle el juego a multinacionales que de altruistas tienen poco, y de respeto al usuario menos.
+</p>
+<p>
+3. <b>comerciales</b>. Que Jabber sea un protocolo libre, abierto y estándar no impide montar una empresa, digamos Liicos.com, montar en ella varios servidores Jabber y :
+</p>
+<p><ul>
+<li>cobrar por acceder a uno de ellos, que tendrá correo POP3 y transportes de todo tipo
+</li><li>ofrecer acceso gratuito, pero con banners publicitarios en el cliente (como ahora hace MSN Messenger)
+</li><li>ofrecer acceso gratuito, pero requiriendo una donación mínima para empezar a usarlo
+</li></ul>
+</p>
+<p></p>
+<h1>La cita del dia</h1>
+<p>
+--- 'Creo que a Jabber le falta bastante para competir con MSN en el tema de las chorradas, los juegos, la videoconferencia, etc. Pero creo que todo eso llegará.'
+</p>
+<p>
+Replico: Creo que a la mensajería instantánea de Microsoft, llamada MSN Messenger, le falta bastante para competir con Jabber en el tema de seguridad de las comunicaciones, mensajes diferidos, transferencia de ficheros, listas de privacidad, conexiones múltiples, variedad y variabilidad de clientes, esquema de licenciamiento para investigación y uso empresarial, competitividad de precios, variedad de productos disponibles, extensibilidad del protocolo para ofrecer soluciones particulares y libertad para aplicarlo para los más variados propósitos.
+</p>
+<p>
+Pero creo que nada de eso llegará.
+</p>
+<p>
+Ah, y cuando quieras jugar me avisas y nos echamos unas partidas al <a href="http://www.zdaemon.org/">Doom 2</a>.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-490"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-490" class="active">Hola, el caso es que tambien</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  16 August, 2004 - 13:49.  </div>
+
+  <div class="content">
+    <p>Hola, el caso es que tambien la gente como yo(por ejemplo), utiliza el jabber para conectarse con otras personas que tambien utilizan el jabber pero con servidores de sus paises, y yo no me puedo crear una cuenta en tales servidores para conectarme, es por eso que ando buscando unas BUENAS direcciones de SERVIDORES para poderme conectar a traves de esta direccion y añadir al amigo mio, pero ademas.., este usa tambien su JABBER como transporte para su cuenta en YAHOO!, por tanto necesito saber que direcciones hay del JABBER que no se caigan tanto y que tengan transportes para el Yahoo!    ????.</p>
+<p>Me pueden ayudar con eso??</p>
+<p>mi correo es:  hrodriguez231@hotmail.com</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-479"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-479" class="active">Badlop, creo que no me has en</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  26 July, 2004 - 00:41.  </div>
+
+  <div class="content">
+    <p>Badlop, creo que no me has entendido lo que quería plantear, o lo más probable, que no he sabido explicarme.</p>
+<p>No pretendo exigir nada a los servidores, ni mucho menos. Bastante es que dan el servicio gratuita y desinteresadamente. Simplemente quería constatar mi periplo con las cuentas de Jabber. Es dificil que alguien empiece a usar Jabber si va a tener que cambiar de cuenta cada x tiempo porque el servidor empieze a ir mal.</p>
+<p>Sobre el tema de los tansportes, no tengo interés en usar ninguno, pero que le vamos a hacer si la mayoría de mis contactos usan MSN. Lo mejor que se me ocurre para atraerlos al Jabber es contarles que desde Jabber pueden seguir con sus contactos de MSN. Si no fuera por eso, la mayoría nunca lo usarían. Y de esos pocos que se meten en Jabber, la mayoría terminan por abandonarlo cuando ven que el servidor se cae cada dos por tres. Y por eso planteo ese tema.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/307 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:31:41 GMT -->
+</html>

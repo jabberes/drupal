@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/341 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:30:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>el servidor ejabberd se corrompe con Win 2000 pro | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-341" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../forum/">Foros</a> :: <a href="../../forum/21/">Administración</a></div>        <h2 class="page-title">el servidor ejabberd se corrompe con Win 2000 pro</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-341" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por Anónimo el 19 September, 2004 - 14:18.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_21 first last"><a href="../../taxonomy/term/21/" rel="tag" title="Cuestiones relacionadas con la instalación y configuración de un servidor Jabber o similar. También tienes la lista de correo (enlace en la parte superior de la página).">Administración</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>He instalado en mi PC (con Win 2000 Pro, s.p.4) el servidor ejabberd para hacer pruebas.</p>
+<p>Lo mas curioso es que, en varias ocasiones que lo he cerrado, al volverlo a reiniciar se corrompen no se que datos del server y no hay forma de volver a hacerlo funcionar.</p>
+<p>La unica manera de ponerlo en marcha que me ha funcionado, ha sido volviendo a reinstalarlo todo (no recuerdo ahora si he necesitado reinstalar el runtime del Erlang, pero creo que no).<br />
+Por lo demas, mientras no se corrompe, funciona bien la cosa.</p>
+<p>¿A alguien se le ocurre alguna solucion al respecto?</p>
+<p>Gracias.<br />
+Perezoso</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../342/" class="topic-previous" title="Ir al tema anterior del foro">‹ Ayuda configuracion ejabberd y proposicion (decente)</a>
+              <a href="../338/" class="topic-next" title="Ir al tema siguiente del foro">estado de los contactos ›</a>
+      </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/341"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-EEGQMyHwYdlCGBF2QnvUcMDC5FKwNF71j84-lNex65U" value="form-EEGQMyHwYdlCGBF2QnvUcMDC5FKwNF71j84-lNex65U"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-549"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-549" class="active">Detener el servidor de forma abrupta</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  19 September, 2004 - 17:36.  </div>
+
+  <div class="content">
+    <p>
+--- Lo mas curioso es que, en varias ocasiones que lo he cerrado
+</p>
+<p>
+He probado Ejabberd en Windows XP varias veces, pero ahora mismo no recuerdo cómo lo cerraba. Se que se puede iniciar de dos formas: por defecto se instala como servicio de Windows, por tanto se arranca él solo junto con el sistema operativo. También hay un acceso directo para iniciarlo, pero no recuerdo que instalara un acceso directo para cerrarlo. ¿Tu cómo lo cierras?
+</p>
+<p>
+--- al volverlo a reiniciar se corrompen no se que datos del server y no hay forma de volver a hacerlo funcionar.
+</p>
+<p>
+Supongo que la base de datos no se corrompe al iniciarlo, sino al cerrarlo de forma abrupta. Dicho esto, yo lo he cerrado en Linux de varias formas distintas (pasando un mensaje por RPC para que se cierre, con kill, apagando la máquina directamente), y creo que nunca me ha dado tal mensaje, claro que puede ser que esas formas de cerrarlo le avisaran antes para que pudiera guardar la base de datos.
+</p>
+<p>
+--- ¿A alguien se le ocurre alguna solucion al respecto?
+</p>
+<p>
+Diría que el problema está en cómo cierras el servidor, no en que sea en Windows 2000.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-554"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-554" class="active">Concretando</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  20 September, 2004 - 13:52.  </div>
+
+  <div class="content">
+    <p>Bueno ... ya te puedo decir algo mas concreto.</p>
+<p>El ejabberd, lo cierro desde la ventana Erlang que aparece al abrir el server ... ahi tienes la opcion de cerrarlo  (o eso creo que es lo que hace).<br />
+Ayer, lo he abierto y cerrado un monton de veces sin problemas.<br />
+Hoy, despues de tener apagado el PC toda la noche, al ponerlo en marcha ha vuelto a aparecer el problema.  Algo se ha estropeado y ya no funciona el ejabbred.</p>
+<p>Te pego la primera parte de los "pecados" que me ha dicho para ver si puedes descubrir alguna pista en todo eso:<br />
+*********************************************************<br />
+{error_logger,{{2004,9,20},{15,37,48}},'Protocol: ~p: register error: ~p~n',[ine<br />
+t_tcp,{{badmatch,{error,duplicate_name}},[{inet_tcp_dist,listen,1},{net_kernel,s<br />
+tart_protos,4},{net_kernel,start_protos,3},{net_kernel,init_node,2},{net_kernel,<br />
+init,1},{gen_server,init_it,6},{proc_lib,init_p,5}]}]}<br />
+*********************************************************<br />
+yo no se por donde empezar a meterle mano, parece que le falla todo.</p>
+<p>Gracias por la ayuda.<br />
+Perezoso.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-556"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-556" class="active">Nombre duplicado, dos ejabberds</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  20 September, 2004 - 20:55.  </div>
+
+  <div class="content">
+    <p>
+--- El ejabberd, lo cierro desde la ventana Erlang que aparece al abrir el server ... ahi tienes la opcion de cerrarlo (o eso creo que es lo que hace).
+</p>
+<p>
+Ah, al iniciar el Ejabberd con el acceso directo, te deja la ventana de werl abierta. Si va bien, te salen un montón de PROGRESS REPORT y al final dejan de salir mensajes. Si eso es lo que te sale, entonces sí, cerrar esa ventana cierra Erlang, y por tanto Ejabberd.
+</p>
+<p>
+Como curiosidad, si pulsas Enter en esa ventana te sale la línea de comandos de Erlang, y puedes teclear cosas como:</p>
+<pre>toolbar:start().</pre><p>
+que si te funciona, muestra una barra de herramientas con: visor de tablas Mnesia, visor de procesos, depurador, etc.
+</p>
+<p>
+Si cerrar la ventana es malo para la base de datos, siempre puedes cerrar el nodo Erlang con la orden</p>
+<pre>q().</pre>
+<p>
+--- {badmatch,{error,duplicate_name}
+</p>
+<p>
+Ejabberd funciona en un nodo Erlang (una ventana esas de werl, por ejemplo). Cada nodo Erlang ha de tener un nombre distinto. Si quieres tener varios nodos Erlang en la misma máquina (por ejemplo para tener Ejabberd y Yaws), el nodo de cada programa debe tener nombres distintos.
+</p>
+<p>
+Pues bien, sabiendo esto el error que te da ya es más entendible: Erlang no puede arrancar porque ya hay otro nodo con ese nombre. En tu caso, debe ser que cuando arrancas Ejabberd ya hay otro Ejabberd funcionando en esa máquina. Es posible que Windows te lo arranque como servicio de sistema, para ahorrarte trabajo ;) . Este error no tiene nada que ver con la base de datos.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-557"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-557" class="active">2 ejabberds</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  20 September, 2004 - 21:44.  </div>
+
+  <div class="content">
+    <p>Efectivamente, sin ejecutar nada, veo que siguen cargados "erl.exe", "erlsrv.exe", "werl.exe", etc.</p>
+<p>Tengo puesta mi IP publica en la configuracion del ejabberd y, al probar a conectarme con los clientes desde mi lan, solo permite la conexion al cliente que esta en el mismo PC donde vive el server, los clientes de los demas PCs no pueden conectarse ni con la IP publica ni con la privada... ????</p>
+<p>Si no puedo reabrir el programa (porque falla) y no puedo conectarme desde otros PCs .... ¿que puedo hacer sin tener que reinstalar de nuevo el ejabberd?</p>
+<p>Me parece recordar que, en otra ocasion, cuando le habia mandado finalizar esos procesos, de repente se me reseteaba el PC y, creo que no solucionaba nada porque (supongo) se vuelven a cargar de nuevo al reiniciar el Windows.</p>
+<p>¿Necesito una bendicion?  (jeje)</p>
+<p>Un afectuoso saludo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-558"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-558" class="active">Bendicion</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  21 September, 2004 - 02:44.  </div>
+
+  <div class="content">
+    <p>Ok ... parece que llegó esa bendicion... :-)</p>
+<p>La solucion está en desactivar el ejabberd como un servicio automatico del propio Windows y listo.</p>
+<p>Despues de eso, al no arrancar junto al S.O., la cosa funciona perfectamente porque no hay otro ejabberd cargado por abajo.</p>
+<p>Aunque me ha dado bastante trabajo resolverlo, me ha servido de gran ayuda tu indicacion de donde estaba el problema, porque no sabia por donde empezar ...  muchas gracias, Badlop.</p>
+<p>Aun hay algunas otras cosas que necesitan currarse, pero bueno, aunque sea lentamente, parece que se va avanzando  :-)</p>
+<p>A proposito, eso que has dicho de:<br />
+"Como curiosidad, si pulsas Enter en esa ventana te sale la línea de comandos de Erlang, y puedes teclear cosas como: ... "<br />
+no he conseguido que funcione  :-(  ... lo que sí me da acceso a algunas funciones es cuando pulso "Ctrl + C"  dentro de la ventana.</p>
+<p>Seguimos en contacto ... reitero eso de las muchas gracias.<br />
+Saludos.<br />
+Perezoso</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div><a id="comment-552"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-552" class="active">server ejabberd y asuntos de IP&#039;s</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  19 September, 2004 - 23:34.  </div>
+
+  <div class="content">
+    <p>Gracias por las respuestas.</p>
+<p>Me habia cansado de pelear con eso (entre otras cosas, por la poca info que encontrada) pero, voy a reinstalarlo de nuevo y te cuento luego con mas detalle, no recuerdo ahora como hacia para cerrarlo.</p>
+<p>Hay una cosa que no entiendo como puede funcionar.<br />
+Si, en el fichero de configuracion, le pones la IP de acceso al server y esa es la IP publica  (para que puedan entrar desde afuera) ... como se consigue entrar desde dentro de la red LAN en la que esta el server  (o desde el propio PC en el que esta instalado) con un cliente?<br />
+Que yo sepa, no es posible entrar a tu propia red utilizando la IP publica... ??????</p>
+<p>Gracias por tu atencion ... un saludo.<br />
+Perezoso.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-559"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-559" class="active">otra bendicion  :-)</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  21 September, 2004 - 03:06.  </div>
+
+  <div class="content">
+    <p>Configurando el host con la IP publica, los accesos de los clientes (desde la Lan) deben de realizarse por la IP privada para que funcione correctamente todo.   Las cuentas creadas tanto desde fuera (Internet) como desde dentro (Lan) deben de ir con la IP publica.</p>
+<p>Un ejemplo para los que, como yo, necesitamos empezar desde muy abajo:</p>
+<p>IP publica: 180.38.34.124<br />
+IP privada: 192.168.0.3</p>
+<p>Para crear una cuenta (desde Internet o Lan), usar este modelo:  minick@180.38.34.124<br />
+Para acceder con el cliente a esa cuanta desde la Lan, este: minick@192.168.0.3<br />
+Para acceder con el cliente a esa cuanta desde Internet, este otro: minick@180.38.34.124</p>
+<p>("minick" ... es el nick que elija cada cual)</p>
+<p>Supongo que es muy basico todo esto, pero os aseguro que me ha tenido liado unas cuantas horas hasta encontrar la solucion para que funcionara bien.</p>
+<p>Seguimos currando ... Saludos.<br />
+Perezoso.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/341 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:30:43 GMT -->
+</html>

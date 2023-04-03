@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/980 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:30:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Comunicacion entre dos servidores ejabberd privados | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-980" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../forum/">Foros</a> :: <a href="../../forum/21/">Administración</a></div>        <h2 class="page-title">Comunicacion entre dos servidores ejabberd privados</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-980" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por scott el 26 September, 2007 - 09:26.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_21 first last"><a href="../../taxonomy/term/21/" rel="tag" title="Cuestiones relacionadas con la instalación y configuración de un servidor Jabber o similar. También tienes la lista de correo (enlace en la parte superior de la página).">Administración</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>Hola,<br />
+soy novato en este tema y necesito un poco de ayuda. Tengo dos servidores ejabberd cada uno en una oficina funcionando en local, y necesito que entre los servidores haya comunicación ya que al añadir en mi cliente nuevos clientes del otro servidor me dice "remote server not found". No tengo dominio ni nada de eso, lo estoy haciendo a partir de direcciones ip para ver si funciona.<br />
+Mi cliente es Coccinella. En principio es el que tengo que utilizar ya que es el que le ha gustado a todo el mundo.<br />
+Un saludo y gracias de antemano.</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../983/" class="topic-previous" title="Ir al tema anterior del foro">‹ Restringir Nuevas Cuentas desde soft cliente</a>
+              <a href="../981/" class="topic-next" title="Ir al tema siguiente del foro">COMO PUEDO EVITAR EL SERVICIO DE REGISTRO DE CUENTAS ATRAVEZ DEL CLIENTE, NEOS ›</a>
+      </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/980"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-ixF8Qs9qQZUebwDpEMPQknhw2j6FbXjQxxj7q0zWc3I" value="form-ixF8Qs9qQZUebwDpEMPQknhw2j6FbXjQxxj7q0zWc3I"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-2998"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-2998" class="active">La comunicación entre</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  26 September, 2007 - 10:20.  </div>
+
+  <div class="content">
+    <p>La comunicación entre servidores Jabber se llama S2S, utiliza el puerto 5269 y ambos servidores deben tener direcciones accesibles en internet (nada de direcciones locales  como jabber.localhost).</p>
+<p>Quieres tener conexiones S2S entre unos pocos servidores bien conocidos, pero impedir el resto de conexiones S2S. </p>
+<p>En ejabberd aún no es posible restringir conexiones S2S en base al servidor. O se permiten todas, o no se permite ninguna.</p>
+<p>Aunque quizá con el módulo <a href="#">mod_filter</a> convenientemente instalado y configurado en ambos servidores se pueda restringir el tráfico a solo tus dos servidores. Pero recuerda que esto sirve para restringir: tus servidores deben estar conectados entre sí previamente, y para eso han de usar nombres de internet, no locales.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-2999"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-2999" class="active">Gracias por contestar tan</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  26 September, 2007 - 12:15.  </div>
+
+  <div class="content">
+    <p>Gracias por contestar tan rapido.<br />
+Lo que quiero es que se comuniquen los dos servidores, da igual si se permiten todas las conexiones s2s, lo que quiero es que por lo menos funcione dicha comunicación.<br />
+El puerto 5269 lo tengo abierto en los dos routers (el de mi oficina y el de la otra), y lo que me falta es saber como se pueden configurar mediante direcciones ip publicas los dos servidores.<br />
+Supongo que a lo mejor no se puede hacer porque según me dices tengo que poner un nombre de dominio de internet, pero si se pudiese hacer sin hacer esto me evitaría todo el problema de dns de servidores.<br />
+Pero bueno, si no se puede asi, entonces me gustaria saber como hacer para poder poner un nombre en internet, y si tendría que poner dos, uno para cada servidor ejabberd.<br />
+Un saludo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3000"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3000" class="active">Si las direcciones IP de los</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  26 September, 2007 - 20:40.  </div>
+
+  <div class="content">
+    <p>Si las direcciones IP de los servidores son fijas, y a tus usuarios no les importa tener cuentas tan horribles como pepe@82.200.81.120, pues puedes usar las direcciones IP de los servidores como nombre de los servidores Jabber (y así no tienes que configurar nada de DNS):</p>
+<p>Si la IP del servidor es 1.2.3.4, en ejabberd.cfg puedes poner:<br />
+{hosts, ["1.2.3.4"]}.</p>
+<p>Pero claro, si hasta ahora el servidor Jabber se llamaba "localhost", tus usuarios tendrán que crearse las cuentas de nuevo, y añadirse entre ellos de nuevo...</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3003"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3003" class="active">Si, el nombre de las cuentas</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  28 September, 2007 - 09:21.  </div>
+
+  <div class="content">
+    <p>Si, el nombre de las cuentas sería horrible, por lo que mi pregunta era si se podría establecer la comunicacion de los servidores sin tener que cambiar el nombre de las cuentas ni su dominio.<br />
+Pienso que eso se debe de establecer en el archivo ejabberd.cfg, diciendole de alguna manera que cuando se quiera añadir un contacto del otro servidor, le dijese la ip publica que tiene y asi se podrían comunicar. Lo que pasa es que el archivo este no vienen muchos ejemplos para que supiese con exactitud como se tendría que hacer.<br />
+Ya te digo, si es imposible hacerlo asi, pues tendré que preguntarte haber como se hace con dominios de internet.<br />
+Un saludo y gracias de antemano.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3006"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3006" class="active">Supongamos que los</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  28 September, 2007 - 13:28.  </div>
+
+  <div class="content">
+    <p>Supongamos que los servidores se llaman "serv1" y "serv2", y las cuentas Jabber son del estilo pepe@serv1. Quizá una solución sea decirle al sistema operativo de la máquina que hospeda serv1 dónde puede encontrar al servidor serv2. Por ejemplo editando el fichero /etc/hosts o algo similar. Así no tendrías que modificar los servidores ni las cuentas, ni poner DNS.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3008"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3008" class="active">Mis ips son estaticas, y las</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  28 September, 2007 - 13:44.  </div>
+
+  <div class="content">
+    <p>Mis ips son estaticas, y las cuentas son del estilo pepe@serv1, como has descrito antes.<br />
+Al utilizar windows en los dos servidores no tengo idea de como decirle como encontrar al serv2.<br />
+Si pudieses echarme un cable te lo agradecería muchisimo.<br />
+Gracias por todo lo que me estas ayudando porque ando bastante perdido.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3010"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3010" class="active">¿serv1 es una ip local (del</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  28 September, 2007 - 20:58.  </div>
+
+  <div class="content">
+    <p>¿serv1 es una ip local (del tipo 192.168.x.x o 10.x.x.x)?<br />
+En ese caso como no sea con alguna vpn o crear alguna ruta especial en el router.........</p>
+<p>Asegúrate también de que no hay ningún firewall bloqueando el tráfico por el puerto 5269 entre los servidores</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3013"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3013" class="active">serv1 tiene una ip local del</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  28 September, 2007 - 23:12.  </div>
+
+  <div class="content">
+    <p>serv1 tiene una ip local del tipo 192.168.x.x<br />
+Y supuestamente  no hay nada que bloquee el trafico, ya que en los routers esta abierto el 5269 y en el firewall de windows 5222.<br />
+He inentado en c:/windows/system32/drivers/etc poner :<br />
+192.168.x.x serv1      #ip privada<br />
+80.x.x.x serv2         #ip publica </p>
+<p>y no funciona tampoco. Conque no se si podreis hecharme un cable.<br />
+Un saludo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3014"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3014" class="active">Eso puede ser problemático,</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  29 September, 2007 - 12:28.  </div>
+
+  <div class="content">
+    <p>Eso puede ser problemático, porque si tienes cuentas usuario@192.168.x.x cuando desde el otro servidor intentes acceder al primer servidor, lo intentará accediendo a la IP 192.168.x.x que en este caso seguramente corresponderá a un equipo local, y no encontrará el servidor con las cuentas correctas ahí. 192.168.x.x es uno de los rangos reservados para crear redes locales, es decir que ese rango de IP no es usado en ninguna IP pública y, por tanto, el servidor Jabber no puede acceder a ningún servidor en Internet así.</p>
+<p>La mejor solución sería usar cuentas usuario@dominio para obtener siempre la ip correcta usando DNS.</p>
+<p>Otra solución más chapucera supongo que podría ser, si en el segundo servidor no usan 192.168.x.x como ips locales, crear una ruta en la puerta de enlace para que reenviara las consultas a la ip pública del primer servidor, o si usa 192.168.x.x quizás usar iptables o algo así (en la máquina local, de la red del segundo servidor, que tiene la ip del primer servidor) para enrutar las conexiones a la ip pública del primer servidor.....</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3015"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3015" class="active">A lo mejor me tengo que</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  29 September, 2007 - 15:49.  </div>
+
+  <div class="content">
+    <p>A lo mejor me tengo que explicar mejor...<br />
+Las cuentas no son del tipo: usuario@192.168.x.x<br />
+Yo tengo usuarios del tipo:<br />
+- juan@serv1  #los usuarios que pertenecen al servidor ejabberd 1,siendo serv1 el nombre del servidor de mi oficina.<br />
+- pepe@serv2  #los usuarios que pertenecen al servidor ejabberd 2, siendo serv2 el nombre del servidor de otra oficina.<br />
+Las dos oficinas independientemente funcionan bien en local, pero cuando yo que me conecto como juan@serv1 en el servidor serv1, y quiero añadir un usuario de la otra oficina como pepe@serv2 perteneciente al servidor serv2, me dice: "remote server not found".<br />
+Tanto los puertos 5269 en routers y 5222 en clientes estan abiertos.<br />
+O sea, que se tiene que establecer una comunicación entre servidores para que cuando yo añada con mi usuario juan@serv1, cuentas del serv2 como pepe@serv2 le pudiese indicar la ip publica 80.x.x.x del router2 y puerto 5269,o algo asi.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3016"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3016" class="active">Ya estuvimos hablando en la</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  29 September, 2007 - 20:40.  </div>
+
+  <div class="content">
+    <p>Ya estuvimos hablando en la sala, ¿lo arreglaste al final?</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3018"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3018" class="active">Todavia no lo he arreglado.</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  30 September, 2007 - 14:12.  </div>
+
+  <div class="content">
+    <p>Todavia no he podido probar mas cosas. El lunes te cuento.<br />
+Un saludo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3019"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3019" class="active">Solucionado, o eso creo.</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por scott el  1 October, 2007 - 12:57.  </div>
+
+  <div class="content">
+    <p>Bueno, parece ser que funciona. Lo último que hice fue poner en el archivo hosts que se encuentra en la ruta: </p>
+<p> c:/windows/system32/drivers/etc/hosts</p>
+<p>las ip publica de mi oficina en serv2 y la ip publica de la otra oficina en mi servidor que es serv1.<br />
+No se porque el otro dia que hice lo mismo no funcionaba, supongo yo que sería porque tendría que reiniciar el pc.<br />
+Bueno sigo haciendo pruebas haber si consigo averiguar todos los pasos para tener una documentación para si a alguien le vuelve a pasar poder pasársela.<br />
+Un saludo y gracias por todo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div></div></div></div><a id="comment-3004"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3004" class="active">Si las ips son dinámicas</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  28 September, 2007 - 11:32.  </div>
+
+  <div class="content">
+    <p>Si las ips son dinámicas (cambian cada X tiempo) y solo vais a usarlo para jabber, podéis usar algún sistema de DNS dinámico como los de dyndns. Si queréis algo que parezca más profesional, porque lo va a usar gente de fuera de la empresa, yo cogería IP estática y un dominio normal.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/980 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:30:53 GMT -->
+</html>

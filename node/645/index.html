@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/645 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:31:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Nuevo ejabberd 1.0.0 - soporte completo de XMPP | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-645" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a></div>        <h2 class="page-title">Nuevo ejabberd 1.0.0 - soporte completo de XMPP</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-645" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por badlop el 16 December, 2005 - 22:38.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_7 first"><a href="../../taxonomy/term/7/" rel="tag" title="">Lanzamientos</a></li>
+<li class="taxonomy_term_3 last"><a href="../../taxonomy/term/3/" rel="tag" title="">Servidores</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>
+Fiel a su periodicidad semestral se ha publicado nueva versión de ejabberd: 1.0.0.
+</p>
+<p>
+Las nuevas características añadidas desde la versión anterior permiten declarar que ejabberd cumple el protocolo <a href="http://www.xmpp.org/">XMPP</a> por completo, tanto XMPP-Core como XMPP-IM. De hecho, ejabberd es el primer servidor Jabber libre con soporte completo de XMPP. Es por esta razón que la nueva versión de ejabberd se numera 1.0.0. Además, el mes pasado se cumplieron tres años desde que Alexey Shchepin escribiera las primeras líneas de código de ejabberd.
+</p>
+<p>
+Algunos de los cambios:</p>
+<ul>
+<li>Soporte de <a href="http://ejabberd.jabber.ru/s2s-encryption">cifrado en conexiones servidor-a-servidor</a>: STARTTLS + SASL_EXTERNAL y STARTTLS + Dialback. Esta característica es necesaria para cumplir XMPP. La conectividad con Google Talk probablemente la requiera también.</li>
+<li>Se pueden definir certificados distintos para cada dominio virtual.</li>
+<li>Ahora se puede <a href="http://ejabberd.jabber.ru/shared-roster-all">añadir todos los usuarios a un Shared Roster Group</a>.</li>
+<li>Mejorado el soporte de ODBC.</li>
+<li>Nueva herramienta para convertir una base de datos Mnesia a ODBC.</li>
+<li>Soporte nativo de PostgreSQL.</li>
+<li>La web de administración cumple un poco más del <a href="http://ejabberd.jabber.ru/node/348">XHTML 1.0 Transitional</a>.</li>
+<li>La documentación se ha ampliado para cubrir más temas.</li>
+</ul>
+
+<p>
+Más información:</p>
+<ul>
+<li>Lectura imprescindible: <a href="http://www.process-one.net/en/projects/ejabberd/releases/release_1.0.0.html">ejabberd 1.0.0 release notes</a> - incluye la lista completa de nuevas características.</li>
+<li>Código fuente e instaladores para Microsoft Windows y Linux/x86 en: <a href="http://www.process-one.net/en/projects/ejabberd/download.html">Process-One</a></li>
+<li><a href="http://www.process-one.net/en/projects/ejabberd/docs/features.pdf">Feature Sheet</a></li>
+</ul>
+
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/645"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-N1t6UBT-qnPgybdcJ5uELreRdlZ-Mma007jtwr_FBeQ" value="form-N1t6UBT-qnPgybdcJ5uELreRdlZ-Mma007jtwr_FBeQ"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-1624"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1624" class="active">La conectividad con Google Talk ...</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Miguel (no verificado) el  20 December, 2005 - 14:56.  </div>
+
+  <div class="content">
+    <p>&gt; Soporte de cifrado en conexiones servidor-a-servidor: STARTTLS + SASL_EXTERNAL y STARTTLS + Dialback. Esta característica es necesaria para cumplir XMPP. <b>La conectividad con Google Talk probablemente la requiera también.</b></p>
+<p>Eso no sale en el anuncio original ni he leído nada oficial ni extraoficial sobre el tema. ¿En qué te basas para hacer ese comentario? (a parte de que sería recomendable, con lo cual estoy de acuerdo)</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1631"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1631" class="active">&gt; Eso no sale en el anuncio</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  20 December, 2005 - 17:04.  </div>
+
+  <div class="content">
+    <p>&gt; Eso no sale en el anuncio original ni he leído nada oficial ni extraoficial sobre el tema.</p>
+<p>En efecto, las dos últimas frases no aparecen en la noticia de prensa, lo he añadido yo para darle un valor adicional a la noticia publicada en Jabberes, aparte de traducirla al castellano. Concretamente la frase sobre los requisitos de Google Talk, puesto que no hay anuncio oficial, no sabemos qué van a requerir. Solo podemos hacer conjeturas. Si te fijas he dicho que <b>probablemente</b> será necesario; basándome solo en el sentido comun, igual que tu.</p>
+<p>Ahora mismo ya no recuerdo si lei algo extraoficial en las listas de correo de la JSF cuando surgió Google Talk que me indicara la necesidad de STARTTLS+SASL en S2S para conectarse a Google Talk. </p>
+<p>Lo único que he encontrado es esto en referencia a la federación para VoIP: 'We plan to support open server-to-server federation. We do believe, however, that it is important to have the safeguards in place to ensure that we maintain a safe and reliable service that protects user privacy and blocks spam and other abuses.' <a href="http://www.google.com/talk/developer.html">enlace</a></p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1632"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1632" class="active">Creo que STARTTLS+SASL hace</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  20 December, 2005 - 17:16.  </div>
+
+  <div class="content">
+    <p>Creo que STARTTLS+SASL hace falta al menos en los clientes. En el S2S no lo sé, pero aún no debe estar desarrollado.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div><a id="comment-1629"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1629" class="active">Y con respecto a la encriptación S2S</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Miguel (no verificado) el  20 December, 2005 - 15:55.  </div>
+
+  <div class="content">
+    <p>Ya que nos ponemos a hablar de encriptación S2S he de decir que el contenido de la página sobre encriptación S2S que hay en la página de ejabberd es bastante malinterpretable.</p>
+<p>Pese a que es recomendable e incrementa la seguridad, este incremento es muy pequeño por la siguiente razón:</p>
+<p>Si alguien puede interceptar una comunicación S2S es en el 99% de los casos o el operador del servidor XMPP o el operador de alguna de las líneas de comunicaciones entre ambos servidores. En el primer caso sigue pudiendo interceptar la comunicación con o sin encriptación S2S.</p>
+<p>En el segundo caso, y siendo alguien que controla una línea intermedia la comunicación sigue expuesta a un ataque de "man-in-the-middle" en el caso general de dos servidores entre los que no se haya establecido una autenficicación ad-hoc para usar con SASL (caso general para dos servidores de distintos dominios). Este ataque es incluso aplicable para el caso de autentificación "dialback" en el 99% de los casos en los que el "Authoritative server" es el mismo que el "Originating server" o bien están ambos en la misma red.</p>
+<p>Según la rfc de XMPP-Core TLS no se usa para autentificación, solo para encriptación del canal, por lo tanto (salvo que esté implementada la RFC3163 en su SASL) ni siquiera se pueden usar certificados digitales como autentificación (afortunadamente, pues el modelo de PKI es ya un fracaso).</p>
+<p>Por lo tanto ese contenido parece más bien publicitario y, quizás inadvertidamente, parece meter miedo a la gente para que se instale ejabberd como solución de encriptación extremo a extremo que no es. En este y otros casos solo la autentificación y encriptación extremo a extremo da ese servicio. Creo que lo prudente y sincero sería reescribir esa página con una explicación más ajustada a la realidad.</p>
+<p>Un saludo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1633"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1633" class="active">Solo tu puedes mejorarlo</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  20 December, 2005 - 18:01.  </div>
+
+  <div class="content">
+    <p>Entiendo que tu crítica se refiere al primer apartado: 'Why Server-to-server Encryption?'.</p>
+<blockquote><p>Por lo tanto ese contenido parece más bien publicitario</p></blockquote>
+<p>En efecto, el propósito de ese primer apartado es explicar porqué existe el cifrado S2S. Es publicidad de los mecanismos STARTTLS+SASL descritos en el XMPP-Core. Así mismo pretende motivar a los administradores de servidores ejabberd a que activen el cifrado en las conexiones S2S.</p>
+<blockquote><p>quizás inadvertidamente, parece meter miedo a la gente para que se instale ejabberd como solución de encriptación extremo a extremo que no es</p></blockquote>
+<p>Tu interpretación es errónea por varias razones:</p>
+<ul>
+<li>En ningún momento se dice que ejabberd sea el único servidor que lo soporta. De hecho se indica claramente que los principales servidores libres lo soportan: jabberd, jabberd2, jive (en el CVS) y ejabberd.
+</li><li>En ningun momento se dice que el cifrado C2S+cifrado S2S+cifrado C2S sea sustituto del cifrado cliente-cliente (estilo PGP). El administrador del servidor siempre puede leer los mensajes en claro. Esto queda perfectamente claro en el diagrama puesto que se ve como los servidores cifran y descifran los mensajes de los usuarios con sus claves.
+</li><li>Por supuesto, una mala instalación del servicio, mala configuración del servidor o demasiada permisividad con los certificados que se aceptan como válidos conlleva un riesgo de seguridad. Pero eso no es culpa de Jabber, ni de ejabberd, ¿verdad?
+</li></ul>
+<blockquote><p>En este y otros casos solo la autentificación y encriptación extremo a extremo da ese servicio.</p></blockquote>
+<p>Evidentemente. Pero una cosa no excluye la otra. </p>
+<p>No puedes usar cifrado PGP con todo el mundo porque no tienes la clave pública de TODO el mundo con el que charlas, ni todo el mundo va a usar PGP necesariamente. Actualmente no hay otro sistema en Jabber para hacer cifrado cliente-cliente aparte de PGP. ¿Qué haces en las salas de charla?</p>
+<p>El cifrado S2S es un paso adelante que no excluye el cifrado cliente-cliente cuando éste sea posible.</p>
+<p>Si te fijas, tanto el diagrama como el texto está destinado a los administradores de servidores, ya sean ejabberd, cualquier otro Jabber o cualquier otro sistema de mensajería:</p>
+<ul>
+<li>'intercept your users' conversations'
+</li><li>'read your users' conversations'
+</li><li>en el diagrama se usa el color amarillo entre clientes y servidores, así como entre servidores. Evidentemente, los clientes y los propios servidores pueden leer los mensajes perfectamente.
+</li></ul>
+<p>Por tanto, la posibilidad de que el administrador de tu servidor Jabber te espie no procede mencionarla en una página sobre cifrado servidor-servidor, ya que implícitamente se entiende que es posible. Si no confias en los administradores de tu servidor, deberías usar cifrado cliente-cliente, donde los mensajes vayan cifrados desde el cliente emisor hasta el cliente receptor.</p>
+<p>El objetivo del cifrado y autenticación en conexiones S2S supongo que es más bien proteger a los prestadores y a los usuarios de un servidor Jabber del espionaje ilegal efectuado por gobiernos, organizaciones, agencias o malhechores que pretenden violar el secreto de las comunicaciones reconocido en las constituciones de todos los paises democráticos, derecho que recordemos es imprescindible para que estos usuarios tegan libertad de expresión.</p>
+<p>Ahora respecto a la interceptación de la línea, digamos por el ISP: como la mayoría de los términos que usas se me escapan, no puedo comentarlos. Supongo que estás en lo cierto. En tal caso, en vez de haber errores en esa página o en ejabberd, hay un error en XMPP. Si este es el caso, deberías dirigirte a los autores del protocolo. </p>
+<p>Para concluir: estamos de acuerdo en que la única forma de garantizar la confidencialidad de las comunicaciones al 99.99% es llamar por teléfono a esa persona, que te de la firma de su clave, la instalas, la validas, etc. Pero el cifrado C2S+S2S+C2S evita el espionaje pasivo de tu ISP o malhechores tipo Echelon, ¿o no?</p>
+<p>Temas relacionados:</p>
+<ul>
+<li><a href="../191/">Seguridad en la conexión al servidor: SSL</a>
+</li><li><a href="../193/">Seguridad en la comunicación entre contactos: GnuPG</a>
+</li></ul>
+<blockquote><p>Creo que lo prudente y sincero sería reescribir esa página con una explicación más ajustada a la realidad.</p></blockquote>
+<p>Yo también considero que la explicación dada en esa página es insuficiente e incluso puede inducir a error. Pero yo ya la he mejorado todo lo que he podido, y también aquellos a los que se la he pasado.</p>
+<p>Por tanto eres el más indicado para corregir y ampliar esa página. Si me pasas el texto que crees correcto (en ingles si puede ser) lo copio tal cual alli y te menciono como autor del mismo.</p>
+<p>Si eres experto en seguridad y estás interesado o preocupado por el tema te invito a que eches un vistazo a las listas de correo de www.jabber.org porque periódicamente se trata este tema, y se ha tratado repetidamente en el pasado.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div><a id="comment-1608"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1608" class="active">ejabberd</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  18 December, 2005 - 15:37.  </div>
+
+  <div class="content">
+    <p>ejabberd es el primer servidor Jabber libre con soporte completo de XMPP.<br />
+no es cierto</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1609"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1609" class="active">¿Puedes dar detalles?</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  18 December, 2005 - 16:09.  </div>
+
+  <div class="content">
+    <p>¿Serías tan amable de proporcionar detalles? </p>
+<p>En otro caso el mensaje lo envió un troll y tendrá que ser eliminado.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1614"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1614" class="active">VoIP</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  19 December, 2005 - 21:11.  </div>
+
+  <div class="content">
+    <p>VoIP ?<br />
+http://www.jabber.org/press/2005-12-15.shtml<br />
+Google si cumple.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1619"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1619" class="active">Creo que andas un poco despistado</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  19 December, 2005 - 22:50.  </div>
+
+  <div class="content">
+    <p>Me da la impresión de que no sabes de qué estás hablando. El funcionamiento de Jabber está descrito en muchos documentos:</p>
+<ul>
+<li>los principales son XMPP Core y XMPP IM
+</li><li>luego hay muchos JEPs que describen las golosinas que nos gusta tener (transferencia de ficheros, avatares, salas de charla, VoIP...).
+</li></ul>
+<p>ejabberd 1.0.0 soporta XMPP (Core y IM), y algunos JEPs, pero no todos. Google Talk quizá soporte XMPP y otros JEPs.</p>
+<p>Además, ejabberd es Software Libre (licencia GPL), mientras que el servidor de Google Talk no está para descargar, no tiene licencia asociada ni por supuesto es Software Libre.</p>
+<p>Por último, comentar que el servicio VoIP descrito en el JEP Jingle no depende del servidor Jabber, sino de los clientes. Puesto que ejabberd es un servidor, ni implementa ni deja de implementar Jingle, porque no le atañe.</p>
+<p>Con estos datos creo que la noticia es cierta, y que tu comentario fue una metedura de pata. La próxima vez que vayas a decir algo procura explicar a qué te refieres, explicarte un poco. Así no crearás discusiones ni serás acusado de troll.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1620"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1620" class="active">Hay que tener un poco de</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  19 December, 2005 - 23:23.  </div>
+
+  <div class="content">
+    <p>Hay que tener un poco de educación ya que tu no la tienes.<br />
+Si estoy equipolado me lo dices y salgo de la duda, creo que para eso esta el apartado de de comentarios y esto no es mas que un comentario.<br />
+no es necesario andar con palabras:<br />
+acusado de troll (que miedo)<br />
+metedura de pata<br />
+no sabes de qué estás hablando</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1627"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1627" class="active">Dices
+ejabberd es el primer</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  20 December, 2005 - 15:34.  </div>
+
+  <div class="content">
+    <p>Dices<br />
+<blockquote>ejabberd es el primer servidor Jabber libre con soporte completo de XMPP.<br />
+no es cierto</blockquote></p>
+<p>Lo dijiste sin proporcionar pruebas y sin más explicaciones. Simplemente dijiste que era falso sin decir porqué o que estaba mal. Es normal que te podamos considerar un provocador que solo quiere armar bulla. En cualquier caso antes de considerarte troll se te dió la oportunidad de explicarte. Y sinceramente, creo que badlop si sabe de lo que habla.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div><a id="comment-1615"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1615" class="active">VoIP</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  19 December, 2005 - 21:27.  </div>
+
+  <div class="content">
+    <blockquote><p>VoIP ?<br />
+http://www.jabber.org/press/2005-12-15.shtml<br />
+Google si cumple.</p></blockquote>
+<p>Estás diciendo que google es más completo porque soporta VoIP? Perdona pero eso no es parte del estandar XMPP y salieron como JEP experimentales desde hace dos dias como quien dice.<br />
+El servidor de google está tan limitado que no se interconecta con otros, no soporta mensajes a usuarios desconectados ni muchas cosasque ejabberd si soporta. Además la VoIP seguramente sea cosa de los clientes.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1616"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1616" class="active">No digo que sea mejor ni</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  19 December, 2005 - 21:36.  </div>
+
+  <div class="content">
+    <p>No digo que sea mejor ni peor, si estoy contra jabberes porque para mi es la pagina en Español sobre el tema y me parece un servidor muy estable.<br />
+Voy a lo del protocolo XMPP por completo, si en el protocolo XMPP implementa funciones día a día.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1626"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1626" class="active">A ver que te estas liando.</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  20 December, 2005 - 15:27.  </div>
+
+  <div class="content">
+    <p>A ver que te estas liando. El protocolo <a href="http://www.xmpp.org/">XMPP</a> no incorpora cosas nuevas desde hace tiempo. Lo que salen son JEPs (Jabber Enhancement Proposals) es decri, propuestas de mejora de Jabber, que por cierto tardan mucho en ser aprovadas para uso normal (jingle, el VoIP de google talk es experimental actualmente)</p>
+<p>En cualquier caso la noticia habla sobre clientes <strong>libres</strong> y el de Google no lo es. La verdad no se hasta que punto implementará los RFCs de XMPP, pero como que no me apetece investigarlo.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-1617"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1617" class="active">me confundi, no estoy contra</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  19 December, 2005 - 21:37.  </div>
+
+  <div class="content">
+    <p>me confundi, no estoy contra jabberes</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/645 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:31:46 GMT -->
+</html>

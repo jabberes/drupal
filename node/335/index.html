@@ -1,0 +1,949 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/335 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:27:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>como se monta un servidor Jabber | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-335" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../forum/">Foros</a> :: <a href="../../forum/21/">Administración</a></div>        <h2 class="page-title">como se monta un servidor Jabber</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-335" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por Anónimo el 7 September, 2004 - 19:53.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_21 first last"><a href="../../taxonomy/term/21/" rel="tag" title="Cuestiones relacionadas con la instalación y configuración de un servidor Jabber o similar. También tienes la lista de correo (enlace en la parte superior de la página).">Administración</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>Hola</p>
+<p>Este mensaje lo puse en otra línea de este foro, pero he pensado que era mejor crear una nueva línea con este título. Si el administrador lo cree oportuno puede borrar el otro post igual que este en "servidores Jabber fallan continuamente" o algo así. Disculpas por las molestias.</p>
+<p>Tengo un servidor de internet, dedicado en exclusiva al alojamiento de bases de datos FileMaker, como algunos sabréis FileMaker es una aplicación para el tratamiento de la información y su almacenaje, bastante poco conocida.</p>
+<p>Me estaba planteando dar a mis clientes, mis pocos clientes, la posibilidad de tener una red propia de mensajería instantanea y encontré esta página.</p>
+<p>Solo el echo de ser un servicio poco utilizado y libre de publicidad me ha gustado e impresionado. El escrito de Badlop me ha dejado claro que con este sistema puedo tener mi propio servidor de mensajería instantánea sin tener que depender de ninguna casa comercial o gran empresa.</p>
+<p>¿Donde encuentro información de como montar un servidor Jabber?<br />
+¿Donde encuentro el programa que hace de servidor?<br />
+¿Que necesitan mis clientes para comunicarse?</p>
+<p>Perdonar mi ignirancia en el tema pero ¿Por donde empiezo?</p>
+<p>Muchas gracias<br />
+Juan Carlos<br />
+jc@udias.com</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../862/" class="topic-previous" title="Ir al tema anterior del foro">‹ Como configurar PSI para Jabberes.org</a>
+              <a href="../1201/" class="topic-next" title="Ir al tema siguiente del foro">Que es H.323 ›</a>
+      </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/335"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-zCecvf0KIQ4tCchrX_gUWUE9a5LWHr145440q20e8CM" value="form-zCecvf0KIQ4tCchrX_gUWUE9a5LWHr145440q20e8CM"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-530"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-530" class="active">Prueba Ejabberd</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  8 September, 2004 - 09:24.  </div>
+
+  <div class="content">
+    <p>
+<a href="http://www.jabber.org/software/servers.php">Servidores</a>
+</p>
+<p>
+<a href="http://www.jabberdoc.org/">Documentación para Jabberd2</a></p>
+<p>
+No obstante, tanto para Windows como para Linux la solución más completa es Ejabberd. Además, para Windows hay un instalador que hasta te lo arranca al encender el ordenador. Por probarlo no pierdes nada:</p>
+<ol>
+<li>Primero instalas <a href="http://www.erlang.org/download.html">Erlang R9C-2</a>.
+</li><li>Luego instalas <a href="http://www.jabberstudio.org/projects/ejabberd/releases/">Ejabberd</a>
+</li><li>Puedes encenderlo y configurarlo con los iconos de Menu Inicio. No hace falta configurar nada para que empieze a funcionar, porque ya viene todo preparado. Lo acabo de probar esta mañana ;) .
+</li></ol>
+
+<p>
+Una vez instalado el servidor, te bajas un cliente Jabber (por ejemplo Exodus, Psi o Pandion) y con él te creas una cuenta en tu servidor (el nombre es 'localhost' si no lo cambias en la configuración). Tu servidor solo será accesible desde su propio PC, porque el nombre de dominio por defecto es 'localhost'. Si cambias ese nombre por el de la máquina, será accesible desde toda la red local. Si el nombre está completamente cualificado (servidor.miempresa.com) entonces será accesible desde Internet.
+</p>
+<p>
+Los usuarios del servidor solo necesitan un cliente Jabber cualquiera (les puedes recomendar uno) y saber el nombre del servidor para crearse la cuenta. Puedes impedir que otros servidores Jabber se comuniquen con este (esto lo suelen hacer las empresas para que sus trabajadores solo hablen entre ellos, nunca con el exterior), puedes impedir que cualquiera se pueda crear una cuenta (solo tu podrás hacerlo), etc. Sobre Erlang hay poca documentación escrita, pero puedes preguntar aqui y casi seguro que puedo responder.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-2094"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-2094" class="active">erlang</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por arley (no verificado) el  21 July, 2006 - 01:31.  </div>
+
+  <div class="content">
+    <p>hola como estas mi pregunta es como debo instalar erlang en windwos es por el c simbol porfavor que pasos debo seguir para la instalacion de este programa gracias</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-864"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-864" class="active">Que demonios ocurre?¿</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  4 January, 2005 - 15:19.  </div>
+
+  <div class="content">
+    <p>Estoy ralladisimo, he instalado el servidor ejabberd en mi ordenador con windows xp para que trabaje en mi red local. El problema que tengo es que los usuarios que agrego con el cliente siempre me aparecen "fuera de linea" y yo les aparezco a ellos tambien fuera de linea, pero hablamos entre nosotros sin problemas. ¿de que puede ser? me instale el neos y el exodus y los dos pasa lo mismo :S</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-871"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-871" class="active">
+Hasta que no sepas qué ocu</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  4 January, 2005 - 19:49.  </div>
+
+  <div class="content">
+    <p>
+Hasta que no sepas qué ocurre, mejor usa programas bien conocidos, como Exodus o Psi. Más adelante ya puedes probar el Neos ese.
+</p>
+<p><ol>
+<li>Creáte dos usuarios nuevos: pepe1 y pepe2
+</li><li>Entra en las dos cuentas, uno con Psi y otro con Exodus, por ejemplo
+</li><li>Desde el Exodus añade al otro
+</li><li>La petición llegará al Psi. Acéptala y envia la petición de respuesta
+</li><li>La petición de respuesta llegará al Exodus, acéptala.
+</li><li>Ahora desde una cuenta deberias ver conectado al otro usuario
+</li><li>Desde un contacto puedes hablar con el otro, como ahora
+</li></ol>
+</p>
+<p>
+Haz esto en el mismo ordenador donde has instalado el ejabberd, por ejemplo. Toma nota de los problemas que se te presentan, y en qué punto aparecen.
+</p>
+<p>
+Además: ¿qué versión de ejabberd has instalado, y qué versión de Erlang?
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-865"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-865" class="active">Logs xml</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por peralta el  4 January, 2005 - 16:36.  </div>
+
+  <div class="content">
+    <p>¿Podrias <em>pastear</em> el log del XML que envía el cliente?</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-868"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-868" class="active">Donde viene eso? eso es del ejjaberd o del neos ?¿</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  4 January, 2005 - 17:02.  </div>
+
+  <div class="content">
+    <p>.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-869"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-869" class="active">Por cierto</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  4 January, 2005 - 17:08.  </div>
+
+  <div class="content">
+    <p>Desde la web donde se puede configurar un poco el ejabberd si que me aparecen los usuarios conectados, cuando se conecta. por eso no entiendo porque los clientes no detectan a la peña conectada pero el servidor si :S</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-872"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-872" class="active">fuera de linea</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Perezoso el  4 January, 2005 - 22:06.  </div>
+
+  <div class="content">
+    <p>Parece que eso es algo que el Neos hace con facilidad.</p>
+<p>1.- Fijate, en la configuracion Web del Ejabberd, si estan autorizados los otros usuarios en cada lista de contactos de cada uno de los usuarios... deberia de verse la palabra BOTH debajo de "Suscripción".<br />
+2.- Desde el Neos, envia A CADA USUARIO de la lista un "Requerir Autorizacion" y tambien (seguidamente) un "Enviar Autorizacion".<br />
+3.- Revisa de nuevo el punto 1.</p>
+<p>Si todos han recibido las peticiones de autorizacion y las han aceptado (tambien puedes aceptarlas desde el administrador Web)... solo queda reiniciar y volver a poner en linea todos los clientes Neos.</p>
+<p>Deberia de ser suficiente con eso ... :-))) ... Saludos.</p>
+          <div class="user-signature clear-block">
+        <p>Soy todo oidos  :-)</p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-873"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-873" class="active">Por fin!!!</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  4 January, 2005 - 22:29.  </div>
+
+  <div class="content">
+    <p>Muchisimas gracias, era eso :)</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-875"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-875" class="active">:-))))</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Perezoso el  4 January, 2005 - 23:21.  </div>
+
+  <div class="content">
+    <p>Me alegroooooooo!!! ... que lo disfrutes  :-)</p>
+          <div class="user-signature clear-block">
+        <p>Soy todo oidos  :-)</p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><a id="comment-874"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-874" class="active">Una ultima cosa</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  4 January, 2005 - 22:41.  </div>
+
+  <div class="content">
+    <p>Hay alguna forma de ejecutar el Ejabberd sin que se abra la ventanita del Erlang... es que quiero tenerlo siempre activo pero la ventanita del Log en medio molesta un poco...</p>
+<p>Muchas gracias por todo.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-876"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-876" class="active">hay, sip</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Perezoso el  4 January, 2005 - 23:29.  </div>
+
+  <div class="content">
+    <p>Si lo instalas como un servicio del sistema ya no le veras el pelo a ninguna ventanita... :-)</p>
+<p>En ADMINISTRACION DE EQUIPOS - SERVICIOS mira si ves ahi el nombre de EJABBAERD y fijate como está el "tipo de inicio" ... si lo pones en Automatico, la proxima vez que arranques el S.O. se arrancará el Ejabberd en modo totalmente oculto (pero funcional). </p>
+<p>Saludos.</p>
+          <div class="user-signature clear-block">
+        <p>Soy todo oidos  :-)</p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-877"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-877" class="active">Administrador de equipos ?¿</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  5 January, 2005 - 01:08.  </div>
+
+  <div class="content">
+    <p>Tengo el windows XP Profesional y no encuentro por ningun sitio ese apartado :S donde esta?</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-878"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-878" class="active">Ya esta operativo 100%</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  5 January, 2005 - 01:16.  </div>
+
+  <div class="content">
+    <p>Panel de control -&gt; Herramientas Administrativas - &gt; administracion de equipos.</p>
+<p>Muchas gracias por todo de nuevo!!</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-879"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-879" class="active">Duda avanzada XD. Siento el coñazo de verdad :_(</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  5 January, 2005 - 01:28.  </div>
+
+  <div class="content">
+    <p>Ya tengo el servidor jabber la caña de españa montado en mi red local, ahora como hago para que mi servidor se comunique con los otros servidores jabber ? :S</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-881"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-881" class="active">ya debería funcionar</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  5 January, 2005 - 10:27.  </div>
+
+  <div class="content">
+    <p>
+La configuración por defecto de ejabberd ya tiene server2server activado.</p>
+<ul>
+<li>Abre el puerto 5269 en el cortafuegos o donde haga falta.
+</li><li>El dominio del servidor ha de estar completamente cualificado, y al hacer ping a ese dominio ha de responder la máquina que lo hospeda. O sea, que no se vale dominios como 'departamento2' o 'localhost'.
+</li></ul>
+
+<p>
+Para comprobar que tu servidor se conecta a la red Jabber global:</p>
+<ol>
+<li>Conecta a tu servidor con un usuario cualquiera, y con un cliente como Exodus, Psi, Pandion o Tkabber
+</li><li>Abre el 'Descubridor' o 'Explorador'. Te saldran las cosas de tu servidor (servicio de charlas, etc).
+</li><li>Pon en la barra de direcciones 'jabber.org' o 'jabberes.org' o cualquier otro servidor conocido. Si te aparecen sus servicios ya has terminado.
+</li></ol>
+
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-883"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-883" class="active">Yo tengo Adsl con ip dinamica...</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  5 January, 2005 - 12:25.  </div>
+
+  <div class="content">
+    <p>Como podria hacer un dominio de esa forma ? :S</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-892"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-892" class="active">ya tengo dominioo</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  8 January, 2005 - 16:13.  </div>
+
+  <div class="content">
+    <p>ya he conseguido hacerme un dominio con una ip dinamica, la verdad esq ha sido bastante facil, lo he puesto en el ejabberd le he dado a reiniciar y he hecho lo que decias... pero no conecta no :S . </p>
+<p>El dominio es valido, le he hecho ping y responde.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div><a id="comment-880"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-880" class="active">Es normal?</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  5 January, 2005 - 01:52.  </div>
+
+  <div class="content">
+    <p>Cuando en el Neos le doy al boton servicios... Me aparece un error diciendo:<br />
+Se ha producido un error consultando los servicios 501:</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-882"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-882" class="active">Sí</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Perezoso el  5 January, 2005 - 12:13.  </div>
+
+  <div class="content">
+    <p>Es normal, sí.</p>
+<p>Quizas Badlop pueda explicarnos el porque de eso ... yo no lo tengo muy claro, pero me pasa eso mismo.</p>
+          <div class="user-signature clear-block">
+        <p>Soy todo oidos  :-)</p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div></div></div></div></div></div></div></div><a id="comment-531"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-531" class="active">Gracias y dudas</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  8 September, 2004 - 19:55.  </div>
+
+  <div class="content">
+    <p>Ante todo muchas gracias por tus orientaciones y explicaciones.</p>
+<p>Me estoy bajando los dos instalables que me has indicado y los instalaré.</p>
+<p>También me he bajado PSi.</p>
+<p>Ahora las dudas</p>
+<p>El servidor quiero que sea abierto, es decir que cualquiera pueda conectarse. ¿Que pongo en el configuración?</p>
+<p>servidor.miempresa.com<br />
+servidor ¿es la IP pública o un nombre cualquiera?<br />
+miempresa.com ¿Tiene que ser un dominio real o puedo poner cualquier cosa?</p>
+<p>Mi IP pública es 80.34.38.142</p>
+<p>pongo:<br />
+80.34.38.142.juancarlos.com<br />
+juancarlos.80.34.38.142<br />
+80.34.38.142<br />
+??<br />
+??</p>
+<p>¿Que puerto del router tengo que mandar al ordenador que aloja al servidor? ¿TCP, UDP o ambos?</p>
+<p>Bueno, no quiero ser pesado<br />
+Muchas gracias de nuevo<br />
+Juan Carlos</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-532"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-532" class="active">hostname</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  8 September, 2004 - 22:25.  </div>
+
+  <div class="content">
+    <p>
+--- El servidor quiero que sea abierto, es decir que cualquiera pueda conectarse. ¿Que pongo en el configuración?
+</p>
+<p>
+Entonces el <a href="http://ejabberd.jabberstudio.org/guide.html#htoc13">hostname</a> que indiques en ejabberd.cfg debe ser un FQDN. Es decir, que al hacer ping a ese nombre te responda la IP de la máquina donde está el servidor. Al final, el nombre que decidas será el que quede después de la @ de las cuentas Jabber, procura que sea fácil de recordar. juanito@85.38.51.121 no queda muy allá, jeje.
+</p>
+<p>
+--- ¿Que puerto del router tengo que mandar al ordenador que aloja al servidor? ¿TCP, UDP o ambos?
+</p>
+<p>
+Como verás en la <a href="http://ejabberd.jabberstudio.org/guide.html#htoc13">configuración</a>, 5222 para clientes, 5223 para clientes con SSL y 5269 para que este servidor se conecte a otros. Luego hay otros puertos para servicios que en principio no vas a usar. Creo que todos TCP.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-534"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-534" class="active">Funcionando</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  9 September, 2004 - 09:42.  </div>
+
+  <div class="content">
+    <p>Bueno, ya lo tengo funcionando. Lo único que no he podido es hacer que suene "bonito", no se como hacerlo.</p>
+<p>Podéis probarlo si os registráis en XXXXXXXX@80.34.38.142 las XX sería el nombre que eligáis.</p>
+<p>Una duda más, al poner como host el 80.34.38.142 desde mi red interna yo no puedo entrar. ¿Tengo o puedo añadir otro host que sea localhost?</p>
+<p>Es decir<br />
+{host, "80.34.38.142"}.<br />
+{host, "localhost"}.</p>
+<p>Los dos a la vez.</p>
+<p>Me gustaría que lo probaseis para ver que tal funciona y me lo comentáis.</p>
+<p>Muchas gracias<br />
+Juan Carlos</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-537"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-537" class="active">Nombre de dominio</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  9 September, 2004 - 15:13.  </div>
+
+  <div class="content">
+    <p>
+Puedes registrarte un dominio gratuito en sitios como <a href="http://www.uni.cc/site/home.php">uni.cc</a>. Haces que tu dominio DNS juancarlos.uni.cc (o el que registres) apunte a tu IP. Luego en ejabberd.cfg configuras el hostname como juancarlos.uni.cc y ya tienes cuentas @juancarlos.uni.cc.
+</p>
+<p>Respecto a lo de que no puedes entrar desde la red local, ni idea de porqué no puedes. En todo caso no puedes definir varios hostname.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-538"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-538" class="active">dos host</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  9 September, 2004 - 17:12.  </div>
+
+  <div class="content">
+    <p>Pues ya lo tengo funcionando y sin problemas con los dos host.</p>
+<p>80.34.38.142<br />
+192.168.0.2</p>
+<p>Y pueden entrar desde fuera y yo o los que están en mi red entran por el 192....</p>
+<p>de verdad que funciona, lo podéis probar con el 80.34.38.142</p>
+<p>Un saludo<br />
+Juan Carlos</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div><a id="comment-529"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-529" class="active">Me he bajado el jabber 1.4.3</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  7 September, 2004 - 22:07.  </div>
+
+  <div class="content">
+    <p>Me he bajado el jabber 1.4.3<br />
+Lo tengo en la carpeta<br />
+C:/user/local/jabber</p>
+<p>¿Como lo hago funcionar?</p>
+<p>Sistema operativo Windows XP profesional</p>
+<p>Muchas gracias<br />
+Juan Carlos</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-536"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-536" class="active">jabber 1.4.3</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  9 September, 2004 - 14:20.  </div>
+
+  <div class="content">
+    <p>Hola, JC.<br />
+Una vez instalado el jabber 1.4.3, entras en Inicio -&gt; Programas -&gt; JabberD y desde ahi te llama al server, el cual deberia de arrancar sin problemas.<br />
+Puedes fijarte (en propiedades) en la linea de comando que usa para arrancar.<br />
+Saludos<br />
+Perezoso</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-539"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-539" class="active">gracias Perezoso, pero con el</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  9 September, 2004 - 17:13.  </div>
+
+  <div class="content">
+    <p>gracias Perezoso, pero con el jabber2 me olvidé de problemas.</p>
+<p>Juan Carlos</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3368"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3368" class="active">Consulta de un Novato</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por jesusb31 el  3 April, 2010 - 16:47.  </div>
+
+  <div class="content">
+    <p>Hola he tratado de entender en parte todos los aportes pero mi caso es el siguiente algo simple talvez bueno tengo instalado el Ejabber 2.1.3 en Linux Debian pero quiero que entren tanto interno como externamente, al instalar me pidio un dominio pues yo le puse una IP publica que no uso la 216.xxx.xxx.xxx, instalo todo bien aparentemente ahora que hago?? ya instale un cliente el pidgin en windows y no sale un mensaje que no se puede conectar, que mas tengo que hacer??? hay algun manual paso a paso?? me pueden ayudar?? tengo una pc en debian que hace de router ahi ya abri el puerto 5223.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3369"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3369" class="active">Te borro la IP del post, por</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  4 April, 2010 - 15:30.  </div>
+
+  <div class="content">
+    <p>Te borro la IP del post, por seguridad (ademas no creo que aporte nada a la conversacion)</p>
+<p>Si usas la ip como nombre de dominio, las cuentas seran usuario@216.xxx.xxx.xxx</p>
+<p>Lo suyo seria usar un dominio de forma que queden cuentas del tipo usuario@dominio.com</p>
+<p>Tienes una <a href="http://www.process-one.net/en/ejabberd/guide_en">guía de ejabberd en inglés</a>.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/335 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:27:35 GMT -->
+</html>

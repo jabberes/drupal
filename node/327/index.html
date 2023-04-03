@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/327 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:28:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Error en mu-conference para jabberd-1.4.3 | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-327" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a></div>        <h2 class="page-title">Error en mu-conference para jabberd-1.4.3</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-327" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por jgsanchez el 31 August, 2004 - 00:58.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_9 first"><a href="../../taxonomy/term/9/" rel="tag" title="">Comunidad</a></li>
+<li class="taxonomy_term_11"><a href="../../taxonomy/term/11/" rel="tag" title="">Desarrollo</a></li>
+<li class="taxonomy_term_12 last"><a href="../../taxonomy/term/12/" rel="tag" title="Documentos generales sobre Jabber">General</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>Hola a todos.</p>
+<p>En la presidencia de la Republica Mexicana, hemos implementadao el jabber para web, como bien sabemos solo funciona para jabberd-1.4.3... (o almenos es la información que tenemos).</p>
+<p>y nos hemos encontrado con el siguiente problema:</p>
+<p>tenemos instalado lo siguiente:<br />
+jabberd-1.4.3<br />
+mu-conference-0.6.0<br />
+jcr-0.2.4</p>
+<p>pero al ingresar o dar de alta el grupo "telecom" tenemos este problema:</p>
+<p>20040830T12:56:31: [warn] (chat.intranet): xdb_file failed to open file ./spool/chat.intranet/telecom.xml: No such file or directory</p>
+<p>Si existe una corrección para esto se los agradecemos.</p>
+<p>Saludos desde la ciudad de Mexico.</p>
+<p>Gabriel</p>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><a id="comment-510"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-510" class="active">No es necesario JCR en jabberd1</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  31 August, 2004 - 09:22.  </div>
+
+  <div class="content">
+    <p>
+--- En la presidencia de la Republica Mexicana, hemos implementadao el jabber para web
+</p>
+<p>
+Que buena noticia. ¿Hay alguna página para el visitante o documento disponible públicamente al respecto? Por curiosidad
+</p>
+<p>
+--- el jabber para web, como bien sabemos solo funciona para jabberd-1.4.3... (o almenos es la información que tenemos).
+</p>
+<p>
+¿Jabber para web? ¿Te refieres a un cliente Jabber para web, en Java o algo así?
+</p>
+<p>
+--- tenemos instalado lo siguiente:<br />
+<br />
+jabberd-1.4.3<br />
+<br />
+mu-conference-0.6.0<br />
+<br />
+jcr-0.2.4
+</p>
+<p>
+Según tengo entendido,<br />
+<a href="http://mu-conference.jabberstudio.org/docs/jabberd2.php">JCR es necesario</a> para instalar mu-conference en jabberd2. En cambio, para instalar mu-conference en jabberd1, que es el que teneis puesto vosotros, <a href="http://mu-conference.jabberstudio.org/docs/readme.php">no es necesario poner JCR</a> si dispones del código fuente de jabberd1.<br />
+Eso es lo que entiendo al leer la documentación. Alguien que lo haya instalado antes podrá asegurártelo.
+</p>
+<p>
+--- xdb_file failed to open file ./spool/chat.intranet/telecom.xml: No such file or directory
+</p>
+<p>
+El aviso que da es que no existe ese fichero. Supongo que será el fichero de configuración del servicio de salas. Quizá hay algun fichero de ejemplo.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-513"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-513" class="active">Jabberd-1.4.3</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por jgsanchez el  31 August, 2004 - 19:18.  </div>
+
+  <div class="content">
+    <p>Esta es nuestra página del chat</p>
+<p>https://sim.presidencia.gob.mx</p>
+<p>solo usuarios autorizados..... 8=(</p>
+<p>En realidad se instaló el cliente web: jwchat-0.8</p>
+<p>En jabber.org mencionan que es necesario instalar el mu-conference para hacer funcionar las salas, pero sería de gran ayuda si tienes algún archivo de cofiguración de una sala ó una referencia al respecto.</p>
+<p>Saludos</p>
+<p>Gabriel</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-514"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-514" class="active">
+Aha, entonces tienes jabber</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  31 August, 2004 - 20:59.  </div>
+
+  <div class="content">
+    <p>
+Aha, entonces tienes jabberd1 como servidor Jabber, jwchat como cliente via web, y ahora vas a instalar mu-conference para tener salas de charla.
+</p>
+<p>¿Has seguido al pide de la letra el <a href="http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/*checkout*/mu-conference/README">readme</a>? Quizá te saltaste el paso de crear el fichero de configuración, y el error que da se refiere a eso. Hay un fichero de ejemplo <a href="http://www.jabberstudio.org/cgi-bin/viewcvs.cgi/*checkout*/mu-conference/muc.xml?content-type=text%2Fplain">aqui</a>. Una vez que el servicio funciona, las salas se pueden crear directamente con el cliente Jabber.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-515"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-515" class="active">Al parecer todo correcto......</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por jgsanchez el  31 August, 2004 - 21:49.  </div>
+
+  <div class="content">
+    <p>Al parecer todo correcto, no consigo ver donde puede estar el problema.</p>
+<p>tienes algun correo donde te pueda enviar el archivo muc.xml y el jabber.xml???</p>
+<p>gabriel</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-516"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-516" class="active">
+-- te pueda enviar el archi</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  31 August, 2004 - 22:25.  </div>
+
+  <div class="content">
+    <p>
+-- te pueda enviar el archivo muc.xml y el jabber.xml?
+</p>
+<p>
+¿Pero el error no era que no encontraba el fichero telecom.xml? Revisando los mensajes, aún no me queda claro qué significa esto:
+</p>
+<p>
+-- al ingresar o dar de alta el grupo "telecom" tenemos este problema
+</p>
+<p>
+No acierto a entender qué necesidad hay de dar de alta un grupo. ¿Un grupo de qué? El servicio mu-conference se instala y se arranca. Los usuarios del servidor Jabber podrán crear y entrar en las salas. ¿Qué es eso de ingresar o dar de alta un grupo? Puede que lo ponga en la documentación y yo no lo haya leido. En todo caso, como no he instalado mu-conference, no creo que pueda ayudarte mucho más que darte enlaces a otros sitios, y aportar algunas ideas de sentido común. Eespero que alguien con más experiencia lea este hilo.
+</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-519"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-519" class="active">Por fin ... ya funciona....</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por jgsanchez el  3 September, 2004 - 00:41.  </div>
+
+  <div class="content">
+    <p>Hola .<br />
+ya esta funcionando... un error en la configuracion del muc.xml.<br />
+Saludos.<br />
+Gabriel</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-1074"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-1074" class="active">tengo mismos problemas</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Anónimo el  1 April, 2005 - 21:39.  </div>
+
+  <div class="content">
+    <p>me podrias indicar cual era ese error que tenias en tu muc.xml, para asi corregir el mio...</p>
+<p>gracias</p>
+<p>nando</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/327 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:28:16 GMT -->
+</html>

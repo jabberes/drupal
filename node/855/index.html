@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/855 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:29:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>problemas Servidor Jabber2 | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-855" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../libro/">El Libro de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../forum/">Foros</a> :: <a href="../../forum/14/">El foro de JabberES</a></div>        <h2 class="page-title">problemas Servidor Jabber2</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-855" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por shinoda2033 el 27 October, 2006 - 15:54.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_14 first last"><a href="../../taxonomy/term/14/" rel="tag" title="Discusiones y conversaciones generales sobre Jabber">El foro de JabberES</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p>Buenas soy nuevo en la mensajeria con jabberd2, instale y segui la guia de administracion e instalacion de su pagina web<br />
+al parecer levanta bien el servicio como sale en los log que aqui muestro, pero en las ultimas lineas como veran cuando trato de conectarme desde un usuario, conecta pero inmediatamente lo desocnecta y la verdad no encuntro la razon<br />
+actualmente esta configurado para admitir registro publico.<br />
+el cliente que estoy probando es gaim y la verdad hay una linea que dice recurso debajo del servidor ( que por el momento estoy probando solo con ip) que no se que significa o que debo poner alli por defecto tiene Gaim y lo dejo a veces y o borro en otros intentos pero igual el servidor me rechaza.<br />
+vi la configuracion de router.xml y permite el acceso de toda mi red lan pero aun asi no puedo e iptables esta parado y el firewall del cliente tambien. la verdad ya no se que hacer haber si alguien me puede ayudar porfavor<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: starting up<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: process id is 9604, written to /usr/local/var/jabberd/pid/router.pid<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: loaded user table (1 users)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [0.0.0.0, port=5347] listening for incoming connections<br />
+Oct 27 10:23:42 creararequipa2 jabberd/resolver[9605]: starting up<br />
+Oct 27 10:23:42 creararequipa2 jabberd/resolver[9605]: process id is 9605, written to /usr/local/var/jabberd/pid/resolver.pid<br />
+Oct 27 10:23:42 creararequipa2 jabberd/resolver[9605]: attempting connection to router at 127.0.0.1, port=5347<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32860] connect<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32860] authenticated as jabberd<br />
+Oct 27 10:23:42 creararequipa2 jabberd/resolver[9605]: connection to router established<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [resolver] online (bound to 127.0.0.1, port 32860)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: starting up<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: id: jabberd<br />
+Oct 27 10:23:43 creararequipa2 jabberd/sm[9606]: process id is 9606, written to /usr/local/var/jabberd/pid/sm.pid<br />
+Oct 27 10:23:42 creararequipa2 jabberd/resolver[9605]: ready to resolve<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: initialised storage driver 'mysql'<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: version: jabberd sm 2.0s11<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: attempting connection to router at 127.0.0.1, port=5347<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32861] connect<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32861] authenticated as jabberd<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: connection to router established<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [jabberd] online (bound to 127.0.0.1, port 32861)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/s2s[9608]: starting up (interval=60, queue=60, keepalive=0, idle=86400)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/s2s[9608]: process id is 9608, written to /usr/local/var/jabberd/pid/s2s.pid<br />
+Oct 27 10:23:42 creararequipa2 jabberd/s2s[9608]: attempting connection to router at 127.0.0.1, port=5347<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32862] connect<br />
+Oct 27 10:23:42 creararequipa2 jabberd/sm[9606]: ready for sessions<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32862] authenticated as jabberd<br />
+Oct 27 10:23:42 creararequipa2 jabberd/s2s[9608]: connection to router established<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [s2s] set as default route<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [s2s] online (bound to 127.0.0.1, port 32862)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/s2s[9608]: [0.0.0.0, port=5269] listening for connections<br />
+Oct 27 10:23:42 creararequipa2 jabberd/s2s[9608]: ready for connections<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: starting up<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: process id is 9609, written to /usr/local/var/jabberd/pid/c2s.pid<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: initialised auth module 'mysql'<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: [jabberd] configured; realm=(null)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: attempting connection to router at 127.0.0.1, port=5347<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32863] connect<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [127.0.0.1, port=32863] authenticated as jabberd<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: connection to router established<br />
+Oct 27 10:23:42 creararequipa2 jabberd/router[9604]: [c2s] online (bound to 127.0.0.1, port 32863)<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: [0.0.0.0, port=5222] listening for connections<br />
+Oct 27 10:23:42 creararequipa2 jabberd/c2s[9609]: ready for connections<br />
+Oct 27 10:26:57 creararequipa2 jabberd/c2s[9609]: [7] [192.168.17.7, port=1496] connect<br />
+Oct 27 10:26:57 creararequipa2 jabberd/c2s[9609]: [7] [192.168.17.7, port=1496] disconnect<br />
+Oct 27 10:33:39 creararequipa2 jabberd/c2s[9609]: [7] [192.168.17.7, port=1538] connect<br />
+Oct 27 10:33:39 creararequipa2 jabberd/c2s[9609]: [7] [192.168.17.7, port=1538] disconnect</p>
+  <div class="forum-topic-navigation clear-block">
+          <a href="../1079/" class="topic-previous" title="Ir al tema anterior del foro">‹ Grupo Anidados en Psi</a>
+              <a href="../1077/" class="topic-next" title="Ir al tema siguiente del foro">ENVIO/RECIBO de archivos desde ICHAT  ›</a>
+      </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/855"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-scx9LgsOtFrSJoV-kr06H6Y0BPZ2K9ioNNmIoOyKkHk" value="form-scx9LgsOtFrSJoV-kr06H6Y0BPZ2K9ioNNmIoOyKkHk"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-3177"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3177" class="active">Consulta</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por ramirosky el  8 January, 2009 - 19:16.  </div>
+
+  <div class="content">
+    <p>Hola que tal, yo también estoy teniendo el mismo problema que tuvistes. Podrias comentar como solucionastes el problema?<br />
+Saludos</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3178"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3178" class="active">Viendo que el poste es de</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  9 January, 2009 - 01:12.  </div>
+
+  <div class="content">
+    <p>Viendo que el poste es de 2006 no creo que te respondan. Yo en tu caso preguntaria en <a href="http://mail.jabber.org/mailman/listinfo/jadmin">la lista de correo JAdmin de jabber.org</a></p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div><a id="comment-2639"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-2639" class="active">A nosotros nos pasaba algo parecido</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por sanguinari el  5 November, 2006 - 00:49.  </div>
+
+  <div class="content">
+    <p>A nosotros en RedLibre.org nos pasaba algo parecido, y nos pasamos a ejabberd :P</p>
+<p>Prueba a ver ^_^</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-2648"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-2648" class="active">Ya lo resolvi</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por shinoda2033 el  9 November, 2006 - 20:57.  </div>
+
+  <div class="content">
+    <p>Gracias de todos modos probe ese servidor libre ademas de wildfire ambos estan muy bien, pero como buen amante de linux quiero hacerlo todo desde el mismo Jabberd2 y lo consegui bueno es un poco largo de explicar pero ya funciona!!!!<br />
+Gracias de todas maneras por la alternativa</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/855 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:29:53 GMT -->
+</html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+  
+<!-- Mirrored from www.jabberes.org/node/191 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:18:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Seguridad en la conexión al servidor: SSL | JabberES</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="prev" href="../162/" />
+<link rel="up" href="../141/" />
+<link rel="next" href="../154/" />
+<link rel="shortcut icon" href="../../files/barroness_favicon/index.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="../../modules/book/book/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/poll/poll/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/eu-cookie-compliance/css/eu_cookie_compliance/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/modules/mollom/mollom/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/forum/forum/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/style/index.css?N" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/www.jabberes.org/themes/barron/barroness/barroness/index.css?N" />
+    <script type="text/javascript" src="../../js/js_8d7cf7345704920925c4775c0d522a81/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/" });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]>
+    <style type="text/css" media="all">@import "/sites/www.jabberes.org/themes/barron/barroness/ie-fixes.css";</style>
+    <![endif]-->
+  </head>
+
+  <body id="page-node-191" class="section-node sidebar-left">
+    <div id="container">
+      <div id="header">
+        <div id="nav">
+                      <ul class="links"><li class="menu-101 first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="menu-107"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="menu-109"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="menu-103"><a href="../../forum/">Foros</a></li>
+<li class="menu-104"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="menu-102 last"><a href="../../acerca/">Acerca de</a></li>
+</ul>                  </div><!-- /nav -->
+        <div id="logo-wrapper">
+                    <div id="logo"><a href="../../index/" title="Inicio"><img src="../../files/barroness_logo/index.png" alt="Inicio" /></a></div>                    <h2 class="site-slogan">Mensajería Instantánea Libre</h2>        </div><!-- /logo-wrapper-->
+      </div><!-- /header-->
+            <div id="sidebar-wrapper">
+        <div id="sidebar">
+                    <div id="block-book-0" class="clear-block block block-book">
+
+  <h2 class="title">Navegación del libro</h2>
+
+  <div class="content"><div id="book-block-menu-13" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../../diarios-de-jabber/">Diarios de Jabber</a></li>
+</ul></div>
+<div id="book-block-menu-15" class="book-block-menu">
+  <ul class="menu"><li class="expanded first last active-trail"><a href="../../libro/">El Libro de Jabber</a><ul class="menu"><li class="leaf first"><a href="../../introduccion/">Introducción a Jabber</a></li>
+<li class="expanded active-trail"><a href="../../cualidades/">Cualidades de Jabber</a><ul class="menu"><li class="collapsed first"><a href="../192/">Clientes</a></li>
+<li class="expanded last active-trail"><a href="../141/">Protocolo</a><ul class="menu"><li class="leaf first"><a href="../186/">Abierto y Libre</a></li>
+<li class="leaf"><a href="../781/">Compatibilidad de transferencia de ficheros</a></li>
+<li class="leaf"><a href="../185/">Extensible</a></li>
+<li class="leaf"><a href="../160/">Grupos anidados</a></li>
+<li class="leaf"><a href="../156/">Guarda mensajes cuando estás desconectado</a></li>
+<li class="leaf"><a href="../884/">Indicar direcciones Jabber con xmpp:</a></li>
+<li class="leaf"><a href="../142/">Lista de contactos ilimitada</a></li>
+<li class="leaf"><a href="../664/">Multiples recursos (Conectarse al mismo tiempo desde varios sitios)</a></li>
+<li class="leaf"><a href="../../transportes/">Pasarelas o transportes ¿que son? ¿Como conectarte a otras redes de mensajería?</a></li>
+<li class="leaf"><a href="../145/">Periodo de &#039;caducidad&#039; de la cuenta razonable</a></li>
+<li class="leaf"><a href="../162/">Seguridad en el inicio de sesión</a></li>
+<li class="leaf active-trail"><a href="index.html" class="active">Seguridad en la conexión al servidor: SSL</a></li>
+<li class="leaf"><a href="../154/">Servidores independientes e interconectados</a></li>
+<li class="leaf"><a href="../../avatares/">Soporte para avatares</a></li>
+<li class="collapsed last"><a href="../../muc/">Salas de Charla</a></li>
+</ul></li>
+</ul></li>
+<li class="collapsed"><a href="../../clientes/">Clientes</a></li>
+<li class="collapsed"><a href="../../preguntas-frecuentes/">Preguntas frecuentes</a></li>
+<li class="collapsed"><a href="../52/">Servicios públicos disponibles</a></li>
+<li class="collapsed"><a href="../../documentos/">Documentos</a></li>
+<li class="collapsed"><a href="../54/">Migración desde otras redes</a></li>
+<li class="collapsed"><a href="../21/">Administración de un servidor Jabber</a></li>
+<li class="leaf"><a href="../../glosario/">Glosario Jabber</a></li>
+<li class="leaf"><a href="../60/">Enlaces</a></li>
+<li class="collapsed last"><a href="../373/">Asuntos de JabberES</a></li>
+</ul></li>
+</ul></div>
+<div id="book-block-menu-62" class="book-block-menu">
+  <ul class="menu"><li class="collapsed first last"><a href="../62/">Glosario</a></li>
+</ul></div>
+</div>
+</div>
+<div id="block-user-1" class="clear-block block block-user">
+
+  <h2 class="title">Navegación</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first last"><a href="../../tracker/">Envíos recientes</a></li>
+</ul></div>
+</div>
+<div id="block-menu-secondary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces de interés</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="http://listas.aditel.org/listinfo/jabber-es">Lista de correo</a></li>
+<li class="leaf"><a href="../../estadisticas/" title="Estadísticas del servidor ejabberd">Estadísticas</a></li>
+<li class="leaf"><a href="../../servers/index/" title="Lista de servidores y servicios de la red publica">Lista de servidores y servicios</a></li>
+<li class="leaf"><a href="http://www.jabber.org/">Jabber.org</a></li>
+<li class="leaf last"><a href="http://planet.jabber.org/">Planet Jabber</a></li>
+</ul></div>
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+  <h2 class="title">Enlaces primarios</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first"><a href="../../como-crear-cuenta/">¡Entra en Jabber!</a></li>
+<li class="leaf"><a href="../../libro/">El Libro de Jabber</a></li>
+<li class="leaf"><a href="../../salas/index/" title="">Salas</a></li>
+<li class="leaf"><a href="../../forum/">Foros</a></li>
+<li class="leaf"><a href="http://www.jwchat.org/">Cliente web</a></li>
+<li class="leaf last"><a href="../../acerca/">Acerca de</a></li>
+</ul></div>
+</div>
+<div id="block-block-4" class="clear-block block block-block">
+
+  <h2 class="title">Web JabberES</h2>
+
+  <div class="content">Miembros registrados: 48790<br/>Comentarios: 2694<br/>Nodos: 1177</div>
+</div>
+<div id="block-block-11" class="clear-block block block-block">
+
+  <h2 class="title">Nuestro servidor Jabber</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 8px;">
+  <a href="http://www.ejabberd.im/">
+    <img src="../../files/imagenes/logos/powered-ejabberd/index.png" alt="Powered by ejabberd" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-13" class="clear-block block block-block">
+
+
+  <div class="content"><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-259131-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script></div>
+</div>
+<div id="block-block-6" class="clear-block block block-block">
+
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+  <a href="http://www.jabberpowered.org/">
+    <img src="../../files/imagenes/logos/jabber-powered-24/index.png" alt="Jabber Powered" /></a>
+</div>
+</div>
+</div>
+<div id="block-block-9" class="clear-block block block-block">
+
+  <h2 class="title">Enlázanos</h2>
+
+  <div class="content"><div style="text-align: center; padding-top: 3px; ">
+<a href="../../index/">
+  <img style="border:0px" alt="Enlazanos" title="JabberES" src="../../files/imagenes/imab/120-40-b/index.png" />
+</a>
+</div>
+<br />
+
+<div style="text-align: justify; font: 75% Verdana;"><a href="../botones/">Más información</a>.
+</div></div>
+</div>
+<div id="block-block-8" class="clear-block block block-block">
+
+  <h2 class="title">Cópianos</h2>
+
+  <div class="content"><!-- Licencia de Creative Commons -->
+
+<div style="text-align: center;">
+<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/"><img alt="Licencia de Creative Commons" border="0" src="https://creativecommons.org/images/public/somerights20.png" /></a>
+</div>
+
+<div style="text-align: justify; font: 75% Verdana;">
+Todo el contenido de este sitio (incluyendo texto e imágenes) está licenciado bajo <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/2.1/es/">esta licencia Creative Commons</a>, salvo que se indique lo contrario. 
+<a href="../371/">Más información</a>.
+</div>
+
+<!-- /Licencia de Creative Commons -->
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.1/es/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.1/es/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <prohibits rdf:resource="http://web.resource.org/cc/CommercialUse" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</div>
+</div>
+<div id="block-system-0" class="clear-block block block-system">
+
+
+  <div class="content"><a href="http://drupal.org/"><img src="../../misc/powered-blue-80x15/index.png" alt="Powered by Drupal, an open source content management system" title="Powered by Drupal, an open source content management system" width="80" height="15" /></a></div>
+</div>
+        </div><!-- /sidebar -->
+      </div><!-- /sidebar-wrapper -->
+            <div id="content">
+                <div class="breadcrumb"><a href="../../index/">Inicio</a> :: <a href="../../libro/">El Libro de Jabber</a> :: <a href="../../cualidades/">Cualidades de Jabber</a> :: <a href="../141/">Protocolo</a></div>        <h2 class="page-title">Seguridad en la conexión al servidor: SSL</h2>
+                        	      <div id="block-block-15" class="clear-block block block-block">
+
+  <h2 class="title">Contenido archivado</h2>
+
+  <div class="content"><p style="background: #FDD; border: 1px solid #DBB;font-size:larger;padding: 5px;"><strong>El contenido de la web se encuentra archivado y no se podrá crear nuevo contenido. <a href="../2104/">Más información</a>.</strong></p></div>
+</div>
+        <div id="node-191" class="node">
+
+  
+      
+  <span class="submitted">
+    Enviado por badlop el 20 January, 2004 - 18:01.  </span>
+    
+      <div class="taxonomy">
+      Tagged: <ul class="links inline"><li class="taxonomy_term_19 first last"><a href="../../taxonomy/term/19/" rel="tag" title="Cualidad:
+(Del lat. qualĭtas, -">Cualidades</a></li>
+</ul>    </div>
+      
+  <div class="content">
+    <p><strong>Actualización</strong>: SSL es el sistema antiguo de cifrado, ahora se suele usar TLS que funciona en el puerto 5222. Así que el puerto 5222 se usa para conexiones cifradas, por defecto, y también para conexiones sin cifrar.</p>
+<hr />
+<p>Como ya sabemos Jabber es un protocolo que sigue el modelo cliente-servidor, en el que el cliente se conecta a su servidor. Un primer nivel de comunicación segura se puede conseguir cifrando esta comunicación. En Jabber puedes escoger conectarte a tu servidor Jabber usando cifrado SSL.</p>
+<p>Aunque esto no garantiza que todo el trayecto realizado por los mensajes hasta el destinatario final esté cifrado, al menos lo protege desde el cliente hasta el servidor. Por ejemplo te protege frente a tu proveedor de Internet y otros usuarios de la red local.</p>
+<p>Prácticamente todos los clientes y servidores Jabber soportan cifrado SSL, así que se no hay razón para no tenerlo activado.</p>
+<p>Si cuando te conectas usando SSL tu cliente te muestra un aviso de que el certificado está auto-firmado ('Self signed certificate', 'unable to verificate the first certificate' o algo similar) lo que pasa es que el certificado SSL de tu servidor lo ha firmado el propio administrador del servidor. Esto suele ser muy común porque conseguir que una entidad certificadora (como Verisign) le firme un certificado suele ser carísimo. Es un aviso que en la mayoria de casos podemos dejar pasar, pero sin olvidar que en este caso el cifrado SSL solo nos protege frente a espias pasivos, ya que como Nethen ha explicado alguien podria hacerse pasar por el servidor. Muchos clientes Jabber, como Exodus, Psi o Tkabber tienen una opción para no mostrar este tipo de avisos.</p>
+  <div id="book-navigation-15" class="book-navigation">
+    
+        <div class="page-links clear-block">
+              <a href="../162/" class="page-previous" title="Ir a página anterior">‹ Seguridad en el inicio de sesión</a>
+                    <a href="../141/" class="page-up" title="Ir a la página padre">arriba</a>
+                    <a href="../154/" class="page-next" title="Ir a página siguiente">Servidores independientes e interconectados ›</a>
+          </div>
+    
+  </div>
+  </div>
+    
+    
+</div>
+<div id="comments"><h2 class="comments">Comentarios</h2><form action="https://www.jabberes.org/node/191"  accept-charset="UTF-8" method="post" id="comment-controls">
+<div>  <div class="box">
+    <h2 class="title">Opciones de visualización de comentarios</h2>    <div class="content"><div class="container-inline"><input type="hidden" name="form_build_id" id="form-cubyutsZhXvDVSw6xL6xM62k0gs7SgRxW3lvQxtD3y8" value="form-cubyutsZhXvDVSw6xL6xM62k0gs7SgRxW3lvQxtD3y8"  disabled="disabled" />
+<input type="hidden" name="form_id" id="edit-comment-controls" value="comment_controls"  disabled="disabled" />
+<div class="form-item" id="edit-mode-wrapper">
+ <select name="mode" disabled="disabled" class="form-select" id="edit-mode" ><option value="1">Lista plana: colapsada</option><option value="2">Lista plana: expandida</option><option value="3">Lista de hilos: colapsada</option><option value="4" selected="selected">Lista de hilos: expandida</option></select>
+</div>
+<div class="form-item" id="edit-order-wrapper">
+ <select name="order" disabled="disabled" class="form-select" id="edit-order" ><option value="1" selected="selected">Fecha - primero lo más nuevo</option><option value="2">Fecha - primero lo más viejo</option></select>
+</div>
+<div class="form-item" id="edit-comments-per-page-wrapper">
+ <select name="comments_per_page" disabled="disabled" class="form-select" id="edit-comments-per-page" ><option value="10">10 comentarios por página</option><option value="30" selected="selected">30 comentarios por página</option><option value="50">50 comentarios por página</option><option value="70">70 comentarios por página</option><option value="90">90 comentarios por página</option><option value="150">150 comentarios por página</option><option value="200">200 comentarios por página</option><option value="250">250 comentarios por página</option><option value="300">300 comentarios por página</option></select>
+</div>
+<input type="submit" name="op" id="edit-submit" value="Guardar las opciones"  disabled="disabled" class="form-submit" />
+</div><div class="description">Seleccione la forma que prefiera para mostrar los comentarios y haga clic en «Guardar las opciones» para activar los cambios.</div></div>
+ </div>
+
+
+</div></form>
+<a id="comment-3359"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3359" class="active">Error en la conexión sigo sin saber porque...</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Silvestre el  30 March, 2010 - 23:10.  </div>
+
+  <div class="content">
+    <p>Bien, como les comenté en un post anterior, se tiene un modulo de chat interno en un sistema. Este chat utiliza la aplicación de Jabber en .NET. Ahora bien, meses anteriores al error se tenia una versión más antigua a la que estamos utlizando, de tal forma que la palicación interactuaba de manera eficiente, simplemente se craban las cuentas y automaticamente las reconocia, la aplciaciòn y se colocaban en un panel... en fin..</p>
+<p>Despues de unos problemas con el servidor, se borraron todas las cuentas, y el servidor del jabber quedo practicamente borrado. Entonces se instaló un nuevo jabber la versión 2.6,, esa versión se instaló en todos los clientes y bueno el servidor tambien, ahora el detalle está en que la conexión es por medio de SSL lo cual nos trajo un problema en la conexión con nuestra aplicación de .NET pues ahora muestra un error que tiene que ver con la conexión TLS/SSL. </p>
+<p>Es por eso que me dirijo a ustedes para saber que hacer, y como poder debugger este error, el cual es el siguiente.</p>
+<p>.... Error Org.Mentalis.Security.CertificateException: Invalid certificate: UntrustedRoot.</p>
+<p>Cabe mencionar que tenemos una DDL que se llama   </p>
+<p>&gt;&gt;&gt;&gt; Org.Mentalis.Security.dll</p>
+<p>Esta ddl supuestamente está ligada a ese problema porque menciona algo por el estilo. El puerto que utlizamos desde un principio es el 5222. Por lo que leí este puerto se utiliza para conexiones cifradas por defecto, pero porque si desde hace tiempo ya estaba así, porque no enviaba este error.</p>
+<p>Un desglose del error más amplio es el siguiente;</p>
+<p>Error Org.Mentalis.Security.SecurityException: An error occurs while communicating with the remote host. ---&gt; Org.Mentalis.Security.Ssl.Shared.SslException: The certificate could not be verified.<br />
+   at Org.Mentalis.Security.Ssl.Shared.HandshakeLayer.VerifyChain(CertificateChain chain, Boolean client)<br />
+   at Org.Mentalis.Security.Ssl.Shared.HandshakeLayer.ProcessCertificate(HandshakeMessage message, Boolean client)<br />
+   at Org.Mentalis.Security.Ssl.Shared.ClientHandshakeLayer.ProcessMessage(HandshakeMessage message)<br />
+   at Org.Mentalis.Security.Ssl.Shared.HandshakeLayer.ProcessMessages(RecordMessage message)<br />
+   at Org.Mentalis.Security.Ssl.Shared.RecordLayer.ProcessBytes(Byte[] buffer, Int32 offset, Int32 size)<br />
+   at Org.Mentalis.Security.Ssl.Shared.CompatibilityLayer.ProcessServerHello(Byte[] bytes, Int32 offset, Int32 size)<br />
+   at Org.Mentalis.Security.Ssl.Shared.CompatibilityLayer.ProcessHello(Byte[] bytes, Int32 offset, Int32 size)<br />
+   at Org.Mentalis.Security.Ssl.Shared.SocketController.OnReceive(IAsyncResult ar)<br />
+   --- End of inner exception stack trace ---<br />
+   at Org.Mentalis.Security.Ssl.SecureSocket.EndSend(IAsyncResult asyncResult)<br />
+   at bedrock.net.AsyncSocket.WroteData(IAsyncResult ar).</p>
+<p>Nosotros tenemos en nuestra area local utilzando el jabber, con la aplicación del pandion, y no te nemos problemas de comunicación, me gustaría saber si existe algo que deba instalr en la aplicación de .NET</p>
+<p>Les agradecería su ayuda y consejos al respecto, pues not engo mucha experiencia con el jabber en .NET y no logro comprender el porque del error.</p>
+<p>Saludos!!!</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3360"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3360" class="active">He visto que las ultimas</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  31 March, 2010 - 08:49.  </div>
+
+  <div class="content">
+    <p>He visto que las ultimas versiones de Pandion tratan de hacer cosas como cambiar la pagina de inicio por una propia... Preguntan al usuario, pero me parece mala cosa.</p>
+<p>En cuanto al error SSL: "Invalid certificate: UntrustedRoot." quiere decir que la CA (autoridad de certificacion) que ha firmado el certificado que usas no es de confianza para el servidor. Deberías añadirla al servidor, o mejor aun, hacer que lo firme una CA ampliamente reconocida, puesto qu asi los clientes tampoco verán advertencias. Echale un vistazo a <a href="http://www.startssl.com/">StartSSL</a>. Muchos servidores usan <a href="http://www.cacert.org/">CACert</a> pero no se como de reconocido estará...</p>
+<p>También puede que haya alguna forma de activar en el servidor soporte para certificados autofirmados o que no estén firmados por una CA fiable.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div><a id="comment-3334"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3334" class="active">Re: Seguridad en la conexión al servidor: SSL</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por ebprz el  21 February, 2010 - 21:06.  </div>
+
+  <div class="content">
+    <p>Eso me parece muy bien y lo entiendo, yo he montado un servidor ejabberd en mi red y se que para atender las conexiones de mis usuarios los servidores jabber usan por default el puerto 5222 para conexiones sin cifrar y el 5223 para conexiones cifradas, entonces no se porque si tengo el fichero .pem (autofirmado por mi claro esta!) y he descomentado el bloque:</p>
+<p>{5223, ejabberd_c2s, [<br />
+                        {access, c2s},<br />
+                        {shaper, c2s_shaper},<br />
+                        {max_stanza_size, 65536},<br />
+                        tls, {certfile, "/etc/ejabberd/ejabberd.pem"}<br />
+                       ]},</p>
+<p>En el fichero de configuracion de ejabberd, porque no se conecta usando el 5223? Estoy trabajando sobre Ubuntu 9.10 y como cliente uso Pidgin, en las opciones avanzadas, en opciones xmpp tengo activada la opcion: Requiere SSL/TLS, asi se conecta, pero cuando uso ipfraf en el servidorç, que es un Debian Lenny veo que la conexion fue usando el 5222 y no el 5223, si le marco al pidgin la opcion de forzar SSL antiguo (puerto 5223) me da error y no se conecta, alguna idea???</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3335"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3335" class="active">SSL es el sistema antiguo de cifrado, ahora se suele usar TLS</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  22 February, 2010 - 10:34.  </div>
+
+  <div class="content">
+    <p>SSL es el sistema antiguo de cifrado, ahora se suele usar TLS que funciona en el puerto 5222.</p>
+<p>Así que el puerto 5222 se usa para conexiones cifradas, por defecto, y también para conexiones sin cifrar.</p>
+<p>En tu caso, al simplemente "Requerir SSL/TLS" supongo que conecte usando TLS por el puerto 5222 y, en caso de que TLS no estuviese disponible, usando SSL.</p>
+<p>Para investigar el asunto, puedes mirar los logs del servidor y la consola XMPP (es un plugin) de pidgin.</p>
+<p>Pero vamos, si usa TLS, no te compliques y sigue con TLS. SSL solo está por compatibilidad con sistemas antiguos.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div><a id="comment-3319"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3319" class="active">error de conexión al jabber</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Silvestre el  11 February, 2010 - 17:35.  </div>
+
+  <div class="content">
+    <p>Yo tengo un error al conectarme en un aplicación .NET con el jabber. Lo utilizo como un modulo más en mi aplicación, todo funcionaba bien antes de que cambiaran el jabber de servidor, e incluso ahora la conexión es con SSL,pero el error, es el siguiente....</p>
+<p>" Error Org.Mentails.Security.Certificates.CertificateException: Invalid certificate: UntrustedRoot"</p>
+<p>por favor es importante resolver ese error...</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3324"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3324" class="active">Lo que pasa es que tu</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  13 February, 2010 - 22:10.  </div>
+
+  <div class="content">
+    <p>Lo que pasa es que tu aplicación/sistema operativo no confia en quien ha firmado el certificado del servidor.</p>
+<p>Puede que no confíes en la autoridad certificadora o que el certificado este autofirmado.</p>
+<p>En ambos casos, el sistema no puede confirmar la identidad del otro y por tanto rechaza la conexión.</p>
+<p>¿Que servidor es el que te da esos problemas?<br />
+En <a href="http://xmpp.org/services/">http://xmpp.org/services/</a> puedes ver quien certifica a algunos de los servidores jabber de la red publica.</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3325"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3325" class="active">error de conexión al jabber</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Silvestre el  15 February, 2010 - 18:40.  </div>
+
+  <div class="content">
+    <p>No tengo mucha experiencia en la conexión del jabber el sistema operativo es windows 2003 server...y bueno todo funcionaba bien con al versión anterior ahora tengo la versión  2.6.. y no funciona !! :(</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3326"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3326" class="active">Versión 2.6 ¿de que?
+¿Has</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  16 February, 2010 - 11:53.  </div>
+
+  <div class="content">
+    <p>Versión 2.6 ¿de que?<br />
+¿Has cambiado de servidor jabber o algo?¿cual es el que usas?</p>
+<p>En Windows Update suele haber actualizaciones de certificados raiz, pueden ser una ayuda para el tema del los certificados</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3361"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3361" class="active">He enviado un nuevo post más</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por Silvestre el  31 March, 2010 - 19:15.  </div>
+
+  <div class="content">
+    <p>He enviado un nuevo post más detallado con respecto al error... de certificados en jabber<br />
+me gustaría que lo checaras porfavor y comentaras al respecto para poder tener más conocimiento y poder resolverlo...</p>
+<p>mil gracias!!!</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-3364"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-3364" class="active">Ya te habia respondido...</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por naw el  2 April, 2010 - 10:53.  </div>
+
+  <div class="content">
+    <p>Ya te habia respondido...</p>
+          <div class="user-signature clear-block">
+        <p><img src="http://jabberes.org:5280/presence/jid/lambda512/jabberes.org/image/simple-es-sombreado" /></p>
+      </div>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div></div></div><a id="comment-243"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-243" class="active">El peligro de la autofirma: historia de Carlos, Simón y Marcos.</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por nethen el  21 January, 2004 - 16:07.  </div>
+
+  <div class="content">
+    <blockquote><p>[...]<br /><br />
+el certificado está auto-firmado<br /><br />
+[...]<br /><br />
+Es un aviso que podemos desoir sin peligro, ya que si usamos ese servidor es porque confiamos en el administrador del servidor.
+</p></blockquote>
+<p>
+<b>Esto no es cierto y puede ser una brecha que comprometa nuestra seguridad</b> con lo que obtendríamos la misma seguridad que sin SSL pero con una falsa sensacion de seguridad.<br /><br />Al no poder verificar la firma del certificado, no podemos saber si ese certificado es el del servidor o no, y por lo tanto no podemos saber con quien estamos hablando realmente y podemos estar expuestos fácilmente a un ataque de man-in-the-middle! (ver technicalesse)</p>
+<p>
+<hr />
+<b>Technicalesse (en forma de historieta clásica)</b><br /><br />
+Si te lías/aburres salta a la conclusión:<br /><br /><br />
+Para nuestra historia, supongamos los siguientes personajes:<br /><br />
+<u>Carlos:</u> El cliente de Jabber.<br /><br />
+<u>Simón:</u> El servidor de Jabber.<br /><br />
+<u>Marcos:</u> Un transportista malicioso que pueda modificar los datos. (un proveedor de Internet malicioso, otros usuarios de la red local cotillas y arp-spooferos, ...)<br /><br /><br />
+Y los siguientes objetos:<br /><br />
+<u>Candado</u>: Un sistema que cualquiera puede cerrar, pero que sólo el propietario de la llave puede abrir<br /><br />
+<u>Sello:</u> Como los típicos de goma de las empresas, sirve para certificar la autenticidad de un documento. En el caso del SSL se le llama Certificado.<br />
+<br /><br /><br />
+Carlos quiere enviar a Simón información confidencial, así que lo pone en una caja, coge un candado de los de Simón y se lo pone a la caja. Marcos (que por ejemplo, trabaja en correos) ve la caja pero no la puede abrir, así que el mensaje llega intacto a Simón. Parece que el protocolo candado publico-llave privada funciona. Pero NO.<br /><br /><br />
+Ahora cuando Carlos quiere otro candado para enviar a Simón, Marcos le da su propio candado. Carlos cierra el candado y lo lleva a Correos. Marcos abre la caja, LEE el contenido, LO MODIFICA si quiere y pone el candado de Simón, con lo que éste no sospecha nada.<br /><br /></p>
+<p>La solución es que Simón ponga su sello en sus candados, para que cuando Carlos cierre el candado, sepa de fijo que sólo Simón puede abrirlo.<br /><br /><br />
+Pero ¿cómo sabemos que el sello es de Simón?<bR /><br />  Si en el candado al lado del sello pone: <i>Este sello es de Simón, Verisign</i>. y confiamos en Verisign (ya sabemos cómo es el sello de Verisign, pues viene de serie en la distribución de OpenSSL), pues sabremos que no nos van a dar gato por liebre.<br /><br />Pero si pone <i> Este sello es mio. Simón</i> (auto firma SSL) pues no sabemos si es de Simón o del malicioso Marcos, a no ser que tengamos la posibilidad de obtener un papel sellado por Simón.<br /><br /><br /></p>
+<hr />
+<b>Conclusión:</b><br /><br />
+1-. Si no sabemos de quien es el candado (llave publica SSL) puede que nuestros datos estén siendo descifrados por Marcos, modificados, y vueltos a cifrar, sin que nos demos cuenta.<br /><br /><br />
+2-. Para saber de quien el sello del candado (el certificado SSL) necesitamos que alguien como Verisign (Certification Authority) nos lo diga, o tener un papel sellado que podamos obtener por ejemplo de la Web de Simón. (certificado SSL en formato PEM obtenido por un canal fiable).<br />
+<br /><br /><br />
+3-. De todas maneras como para poder atacar el cifrado SSL, es necesario modificar los paquetes, el SSL -incluso el autofirmado- es útil ante miradas de cotillas casuales (p.ej que no quieren hacerse su propio certificado SSL) que encontrarán las conversaciones de MSN mas sencillas de leer, y además siempre nos quedará el GnuPG.<br />
+<br />
+<hr />
+Un par de links:<br />1: <a href="http://psi.affinix.com/forums/index.php?act=ST&amp;f=1&amp;t=780"><br />
+Acerca del problema de la autofirma, soluciones para el servidor y el cliente (foro de PSI)</a><br />
+<br /><br />
+2:<a href="http://www.modssl.org/docs/2.8/ssl_faq.html#ToC29"> Para el admin de un servidor Jabber, como montar una CA:</a>
+<p>
+Nethen nethen@jabberes.org. </p>
+<p></p>      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-251"></a>
+<div class="comment comment-published even">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-251" class="active">Tienes toda la razón</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por peralta el  22 January, 2004 - 15:42.  </div>
+
+  <div class="content">
+    <p>Pero la solución a ese problema es muy difícil, a no ser que alguien nos done el certificado comprado a alguna de las CAs establecidas. Estos certificados cuestan del orden de los 100 USD.</p>
+<p>De momento nos tenemos que conformar únicamente con el cifrado que ofrece SSL.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div><div class="indented"><a id="comment-257"></a>
+<div class="comment comment-published odd">
+  
+  
+  
+  <h3 class="commen-title">
+    <a href="index.html#comment-257" class="active">soluciones para el SSL</a>  </h3>
+
+  <div class="submitted">
+    Enviado  por badlop el  23 January, 2004 - 11:51.  </div>
+
+  <div class="content">
+    <p>Lo que me comentó Nethen es que hay algunas posibilidades:</p>
+<ul>
+<li>Si los clientes Jabber permitieran cargar el certificado SSL desde un fichero local, podriamos bajárnoslo del servidor una vez, validarlo y ya solo usar el del fichero, de forma que un intermediario posteriormente no tendria ocasión de 'colarnos' su certificado.
+</li><li>En vez de acudir directamente a una entidad que nos saca un riñón por estampar su cuño, la JSF podria iniciar una cadena de firmas. Si Jabberes.org está firmado por Jabber.org, yo me fiaría más que sin esa firma. Luego el certificado de Jabber.org podrían incluirlo todos los clientes Jabber.
+</li><li>También resulta curioso que una organización con suficientes fondos no consiga que un CA reconocido le firme, para luego empezar ella a firmar a proyectos como Jabber.org, que a su vez firmará a otros como nosotros.
+</li></ul>
+<p>Lo de que JSF empieze una cadena para proyectos Jabber y su certificado se incpluya en los clientes me gusta. Si nadie objeta nada se le podría comentar a alguien de la JSF a ver.</p>
+<p>Advertencia: este texto puede tener graves errores conceptuales ;) Agradecería que los comentaras.</p>
+      </div>
+
+  <div class="links">
+      </div>
+</div></div></div></div>        		              </div><!-- /content -->
+      
+      <div id="footer">
+        <table width="100%"><tr>
+<td valign="middle" align="left">
+  2003-2010 &copy; JabberES
+  <br />
+  Jabber® marca registrada de Jabber, Inc.
+</td>
+<td valign="top" align="right">
+  <a href="http://validator.w3.org/check?uri=referer">
+    <img src="../../files/imagenes/logos/valid-xhtml10/index.png" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+  <a href="http://www.drupal.org/">
+    <img src="../../files/imagenes/logos/powered-by-drupal-light2/index.png" alt="Powered by Drupal" />
+  </a>
+  <a href="http://www.gimp.org/">
+    <img src="../../files/imagenes/logos/gfx-by-gimp/index.png" alt="Graphics by Gimp" />
+  </a>
+  <a href="http://www.php.net/">
+    <img src="../../files/imagenes/logos/php-powered/index.png" alt="Powered by PHP" />
+  </a>
+  <a href="http://www.apache.org/">
+     <img src="../../files/imagenes/logos/powered-by-apache2/index.png" alt="Powered by Apache" />
+  </a>
+  <a href="http://www.linux.org/">
+     <img src="../../files/imagenes/logos/poweredby_linux/index.png" alt="Powered by Linux" />
+  </a>
+</td>
+</tr>
+</table>        		<div id="credits"><a href="http://themeroot.com/" title="Drupal themes">Drupal themes</a> by <a href="http://arborwebdev.com/" title="Arbor Web Development">Arbor Web Development</a>.</div>
+      </div><!-- /footer -->
+    </div><!-- /container -->
+    <script type="text/javascript" src="../../js/js_42170ca008ae262550d7f750f5e5d0aa/index.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "eu_cookie_compliance": { "popup_enabled": 1, "popup_agreed_enabled": 0, "popup_hide_agreed": 0, "popup_clicking_confirmation": 1, "popup_html_info": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content info\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3e¡Usamos cookies!\x3c/h2\x3e\n\x3cp\x3eHaciendo click en cualquier enlace de esta página, da su consentimiento para el uso de las cookies. \x3ca href=\"/politica-cookies\"\x3eMás información.\x3c/a\x3e\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"agree-button\"\x3eOK\x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\"\x3eNo\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_html_agreed": "\n\x3cdiv\x3e\n  \x3cdiv class =\"popup-content agreed\"\x3e\n    \x3cdiv id=\"popup-text\"\x3e\n      \x3ch2\x3eThank you for accepting cookies\x3c/h2\x3e\n\x3cp\x3eYou can now hide this message or find out more about cookies.\x3c/p\x3e\n    \x3c/div\x3e\n    \x3cdiv id=\"popup-buttons\"\x3e\n      \x3cbutton type=\"button\" class=\"hide-popup-button\"\x3eHide \x3c/button\x3e\n    \x3cbutton type=\"button\" class=\"find-more-button\" \x3eMore info\x3c/button\x3e\n    \x3c/div\x3e\n  \x3c/div\x3e\n\x3c/div\x3e\n", "popup_height": "auto", "popup_width": "100%", "popup_delay": 1000, "popup_link": "/politica-cookies", "popup_position": null, "popup_language": "es" } });
+//--><!]]>
+</script>
+  </body>
+
+<!-- Mirrored from www.jabberes.org/node/191 by HTTrack Website Copier/3.x [XR&CO'2013], Sun, 01 Apr 2018 23:18:53 GMT -->
+</html>
